@@ -21,7 +21,7 @@ body {
   margin: 0;
   padding: 5px 0 0 0;
   font-family: Georgia, serif;
-  background: #dff3e3;
+  background: linear-gradient(90deg, #d1e8f9, #f8fdfd);
   color: #222;
   line-height: 1.6;
   box-sizing: border-box;
@@ -81,7 +81,7 @@ body {
   grid-template-columns: repeat(3, 1fr); 
   gap: 10px; 
   width: 100%;
-  max-width: 900px;
+  max-width: 720px;
   margin: 0 auto;
 }
 
@@ -91,7 +91,7 @@ body {
   align-items: center;
   line-height: 1.0;
   padding: 12px 0;
-  background: #80cde4; 
+  background: linear-gradient(135deg, #2cc3f1, #f7f7f7);
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 20px;
@@ -188,7 +188,7 @@ h2 {
 
 .responsive-steps {
             width: 80%;
-            max-width: 600px;
+            max-width: 720px;
             min-width: 220px;
             /* 1. CENTERS THE CONTAINER: Sets top/bottom margin to 0 and left/right to auto */
             margin: 0 auto; 
@@ -376,7 +376,6 @@ h2 {
 
   border-radius: 12px;
   background: linear-gradient(135deg, #3A9BE2, #CBE2F3);
-  border: 1px solid #dcdcdc;
   box-shadow: 0 0 10px rgba(0,0,0,0.08);
   text-align: center;
   font-family: Georgia, serif;
@@ -425,7 +424,7 @@ h2 {
 
 .front-cover-cube-wrapper {
             width: 80%;
-            max-width: 600px;
+            max-width: 720px;
             min-width: 200px;
             /* 1. CENTERS THE CONTAINER: Sets top/bottom margin to 0 and left/right to auto */
             margin: 60px auto;  
@@ -453,7 +452,6 @@ h2 {
   margin-bottom: 40px;
   padding: 40px 40px 100px 40px;
   border-radius: 12px;
-  border: 1px solid #dcdcdc;
   box-shadow: 0 0 10px rgba(0,0,0,0.08);
   background: linear-gradient(315deg, #3A9BE2 0%, #CBE2F3 100%);
   font-family: Georgia, serif;
@@ -778,7 +776,19 @@ font-family: Georgia, serif;
     <a href="#philosophy">Philosophy</a>
     <a href="#benefits">Benefits</a>
   </nav>
-  <div style="margin-left:30px; margin-right:30px;">
+
+
+  <div id="the-visual-structural-method" 
+     style="max: width 720px;
+            margin: 10px 0px 40px 0px;
+            padding:0px 30px 50px 30px;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            text-align:left;
+            font-weight:700;
+            background: linear-gradient(225deg, #c2ddf3, #f7f7f7);
+            border-radius:12px;
+            border:3px solid #5ea8eed3;
+            color:#222222;">
     <h1 class="hero-title">The Visual Structural Method™</h1>
     <div class="front-cover-cube-wrapper">
       <img src="cube.png" alt="Cube sequence" class="front-cover-cube-image">
@@ -786,177 +796,194 @@ font-family: Georgia, serif;
 
     <h1 class="hero-subtitle">An Intuitive Structure Based 3D Architectural Approach for Solving the 2×2 and 3×3 Cubes</h1>
     <h2 style="text-align: center; font-weight: bold;line-height: 1.2;">A House Building Method that turns the cube from a confusing puzzle into a clear, logical structure you can see and understand</h2>
-    <h2 style="color: #005599;; text-align: center; font-weight:700; letter-spacing: -1px; line-height: 1.0; font-size: 32px;">
-    A Gentle and Visual Way to Learn the Cube
-    </h2>
-    <h2 style="text-align: center; font-weight: bold;line-height: 1.2;">When solving the cube, you can watch it grow step by step just like building a small house. Each stage adds a new structural layer, and the cube becomes clearer as it progresses.</h2>
-  </div>
-  <div class="responsive-steps">
-    <!-- Replace the source URL with your image path -->
-    <img src="Steps.png" alt="Progressively scaling example" class="responsive-stesps-image">
-  </div>
-  <div style="margin: 30px 30px 0px 30px;font-size:18px; text-align: left; font-weight:500; line-height:1.2;">
-    <h3 style="margin-bottom:-15px;">Foundation – Corner Frame (Steps 1 &amp; 2)</h3>
-    <p>
-    The foundation is the cube’s structural frame. It is made from the
-    bottom and top corner sets, forming the “house outline” that stays
-    intact for the whole solve.
-    </p>
-    <h3 style="margin-bottom:-15px;">Walls – Vertical Structure (Steps 3 &amp; 4)</h3>
-    <p>
-    The walls are the vertical  layers built around the foundation. In these
-    steps, the cube raises its vertical sides, completing the main body of
-    the “house” while keeping the corner frame stable.
-    </p>
+    <div class="responsive-steps">
+      <!-- Replace the source URL with your image path -->
+      <img src="Steps.png" alt="Progressively scaling example" class="responsive-stesps-image">
+    </div>
+    <div style="font-size:18px; text-align: left; font-weight:500; line-height:1.2;">
+      <h3 style="margin-bottom:-15px;">Foundation – Corner Frame (Steps 1 &amp; 2)</h3>
+      <p>
+      The foundation is the cube’s structural frame. It is made from the
+      bottom and top corner sets, forming the “house outline” that stays
+      intact for the whole solve.
+      </p>
+      <h3 style="margin-bottom:-15px;">Walls – Vertical Structure (Steps 3 &amp; 4)</h3>
+      <p>
+      The walls are the vertical  layers built around the foundation. In these
+      steps, the cube raises its vertical sides, completing the main body of
+      the “house” while keeping the corner frame stable.
+      </p>
 
-    <h3 style="margin-bottom:-15px;">Windows – Final Center Pieces (Step 5)</h3>
-    <p>
-    The windows are the last small pieces for surfaces.
-    These are the remaining center pieces solved in Step 5, completing
-    the “house” visually.
-    </p>
-    <p>© 2005–2026 Teckel. All rights reserved. All instructional solutions and 3D movement sequences are original proprietary works. Unauthorized copying or recording is prohibited.</p>
-    <hr style="margin-top: 30px; height: 4px; border: none; background-color: rgb(49, 99, 226)">
-  </div>
+      <h3 style="margin-bottom:-15px;">Windows – Final Center Pieces (Step 5)</h3>
+      <p>
+      The windows are the last small pieces for surfaces.
+      These are the remaining center pieces solved in Step 5, completing
+      the “house” visually.
+      </p>
 
-  <section id="independent-step-practice" style="padding: 10px 30px 10px 30px; max-width: 900px; margin: 0 auto; line-height: 1.1;">
+      <h2 style="color: #005599;; text-align: center; font-weight:700; letter-spacing: -1px; line-height: 1.0; font-size: 32px;">
+      A Gentle and Visual Way to Learn the Cube
+      </h2>
+      <h2 style="text-align: center; font-weight: bold;line-height: 1.2;">When solving the cube, you can watch it grow step by step just like building a small house. Each stage adds a new structural layer, and the cube becomes clearer as it progresses.</h2>
 
-    <h2 style="text-align: center; margin-bottom: 1rem; font-size: 1.8rem; font-weight: 800; line-height: 1.1;">
-      Independent Step Practice<br/> A Visual Structural Learning Approach
-    </h2>
-
-    <p style="text-align: left; margin-bottom: 0.5rem; font-size: 1.2rem; font-weight: 500; line-height: 1.1;">
-      Learners can practice <strong>any step independently</strong> without restarting the cube. Each step has its own safe movement rules that help keep the structure stable while practicing.
-    </p>
-
-    <div style="display: flex; flex-wrap: wrap; gap: 1.2rem; justify-content: center; line-height: 1.1;">
-
-      <!-- Unlimited Safe Step Practice -->
-      <div style="display: flex; flex-wrap: wrap; gap: 1.2rem; justify-content: center; line-height: 1.1;">
-
-      <!-- Combined Safe Step Practice + Gentle Step-by-Step Learning -->
-      <div style="flex: 1 1 220px; min-width: 220px; margin: -10px 0;">
-        <h3 style="display: flex; align-items: flex-start; gap: 0.4rem; margin-bottom: -0.5rem; font-size: 1.3rem; font-weight: 700; line-height: 1.1;">
-          <span style="display:inline-block; width:1.4rem; text-align:center;">🔁</span>
-          <span>Gentle, Safe Step by Step Practice</span>
-        </h3>
-        <p style="font-size: 1.15rem; font-weight: 500; line-height: 1.1;">
-          Learners focus on one step at a time and repeat it safely as many times as they like. Each step is like a short, clear chapter with stable patterns and protected movements, so progress is never lost. This gentle pacing helps learners build confidence gradually while the cube remains visually organized and easy to follow.
-        </p>
-      </div>
-
-      <!-- Structure Always Protected -->
-      <div style="flex: 1 1 220px; min-width: 220px; margin: -10px 0;">
-        <h3 style="display: flex; align-items: flex-start; gap: 0.4rem; margin-bottom: -0.5rem; font-size: 1.3rem; font-weight: 700; line-height: 1.1;">
-          <span style="display:inline-block; width:1.4rem; text-align:center;">🔒</span>
-          <span>Structure Always Protected</span>
-        </h3>
-        <p style="font-size: 1.15rem; font-weight: 500; line-height: 1.1;">
-          Safe movements keep the cube’s structure stable while practicing. If an unexpected turn happens, it can be reversed calmly provided the corner frame and pillar stay intact.
-        </p>
-      </div>
-
-      <!-- Visual Pattern Guidance -->
-      <div style="flex: 1 1 220px; min-width: 220px; margin: -20px 0;">
-        <h3 style="display: flex; align-items: flex-start; gap: 0.4rem; margin-bottom: -0.5rem; font-size: 1.3rem; font-weight: 700; line-height: 1.1;">
-          <span style="display:inline-block; width:1.4rem; text-align:center;">👁️</span>
-          <span>Visual Pattern Guidance</span>
-        </h3>
-        <p style="font-size: 1.15rem; font-weight: 500; line-height: 1.1;">
-          Clear patterns and structure guide every movement. Learners see how pieces relate to each other, gaining understanding through visuals instead of memorizing formulas or long move sequences.
-        </p>
-      </div>
-
-      <!-- For All Ages -->
-      <div style="flex: 1 1 220px; min-width: 220px; margin: -20px 0;">
-        <h3 style="display: flex; align-items: flex-start; gap: 0.4rem; margin-bottom: -0.5rem; font-size: 1.3rem; font-weight: 700; line-height: 1.1;">
-          <span style="display:inline-block; width:1.4rem; text-align:center;">👨‍👩‍👧</span>
-          <span>For All Ages</span>
-        </h3>
-        <p style="font-size: 1.15rem; font-weight: 500; line-height: 1.1;">
-          Gentle, intuitive, and accessible: suitable for children, adults, and seniors. The clear visual steps support learners who prefer seeing and understanding the cube, rather than memorizing complex formulas.
-        </p>
-      </div>
+      <p>© 2005–2026 Teckel. All rights reserved. All instructional solutions and 3D movement sequences are original proprietary works. Unauthorized copying or recording is prohibited.</p>
     </div>
   </div>
-
-    <p style="text-align: center; margin-top: 1.2rem; font-size: 1.4rem; font-weight: 800; line-height: 1.1;">
-      Simple, Safe, Clear, Supportive<br>
-      A visual structural approach that helps learners understand the cube step by step.
-    </p>
-    <hr style="height: 4px; border: none; background-color: rgb(49, 99, 226); margin-top: 40px;">
-  </section>
-
-  <section id="why-visual-patterns-feel-natural" style="padding: 30px 30px 30px 30px; max-width: 900px; margin-top: -20px;  margin-bottom: -40px; line-height: 1.1;">
-     
+  
+  <div id="independent-step-practice" 
+     style="max-width: 720px;
+            margin: 10px 0px 40px 0px;
+            padding:40px 30px 40px 30px;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            text-align:left;
+            font-weight:700;
+            line-height: 1.1;
+            background: linear-gradient(225deg, #c2ddf3, #f7f7f7);
+            border-radius:12px;
+            border:3px solid #5ea8eed3;
+            color:#222222;">
+    
       <h2 style="text-align: center; margin-bottom: 1rem; font-size: 1.8rem; font-weight: 800; line-height: 1.1;">
-        Why These Visual Patterns Feel Natural
+        Independent Step Practice<br/> A Visual Structural Learning Approach
       </h2>
 
-      <p style="font-size: 1.2rem; font-weight: 500; line-height: 1.2; margin-bottom: 1rem;">
-        Not all cube methods feel the same. Many approaches ask learners to repeat a sequence until a 2D color pattern appears. This method works differently.
+      <p style="text-align: left; margin-bottom: 0.5rem; font-size: 1.2rem; font-weight: 500; line-height: 1.1;">
+        Learners can practice <strong>any step independently</strong> without restarting the cube. Each step has its own safe movement rules that help keep the structure stable while practicing.
       </p>
 
-      <p style="font-size: 1.15rem; font-weight: 500; line-height: 1.2;">
-        Each visual pattern move in this book follows the same stable 3D route:<br>
-        <strong>Solved structure → move away → correct the unsolved pieces → travel back → solved structure restored</strong>
+      <div style="display: flex; flex-wrap: wrap; gap: 1.2rem; justify-content: center; line-height: 1.1;">
+
+        <!-- Unlimited Safe Step Practice -->
+        <div style="display: flex; flex-wrap: wrap; gap: 1.2rem; justify-content: center; line-height: 1.1;">
+
+        <!-- Combined Safe Step Practice + Gentle Step-by-Step Learning -->
+        <div style="flex: 1 1 220px; min-width: 220px; margin: -10px 0;">
+          <h3 style="display: flex; align-items: flex-start; gap: 0.4rem; margin-bottom: -0.5rem; font-size: 1.3rem; font-weight: 700; line-height: 1.1;">
+            <span style="display:inline-block; width:1.4rem; text-align:center;">🔁</span>
+            <span>Gentle, Safe Step by Step Practice</span>
+          </h3>
+          <p style="font-size: 1.15rem; font-weight: 500; line-height: 1.1;">
+            Learners focus on one step at a time and repeat it safely as many times as they like. Each step is like a short, clear chapter with stable patterns and protected movements, so progress is never lost. This gentle pacing helps learners build confidence gradually while the cube remains visually organized and easy to follow.
+          </p>
+        </div>
+
+        <!-- Structure Always Protected -->
+        <div style="flex: 1 1 220px; min-width: 220px; margin: -10px 0;">
+          <h3 style="display: flex; align-items: flex-start; gap: 0.4rem; margin-bottom: -0.5rem; font-size: 1.3rem; font-weight: 700; line-height: 1.1;">
+            <span style="display:inline-block; width:1.4rem; text-align:center;">🔒</span>
+            <span>Structure Always Protected</span>
+          </h3>
+          <p style="font-size: 1.15rem; font-weight: 500; line-height: 1.1;">
+            Safe movements keep the cube’s structure stable while practicing. If an unexpected turn happens, it can be reversed calmly provided the corner frame and pillar stay intact.
+          </p>
+        </div>
+
+        <!-- Visual Pattern Guidance -->
+        <div style="flex: 1 1 220px; min-width: 220px; margin: -20px 0;">
+          <h3 style="display: flex; align-items: flex-start; gap: 0.4rem; margin-bottom: -0.5rem; font-size: 1.3rem; font-weight: 700; line-height: 1.1;">
+            <span style="display:inline-block; width:1.4rem; text-align:center;">👁️</span>
+            <span>Visual Pattern Guidance</span>
+          </h3>
+          <p style="font-size: 1.15rem; font-weight: 500; line-height: 1.1;">
+            Clear patterns and structure guide every movement. Learners see how pieces relate to each other, gaining understanding through visuals instead of memorizing formulas or long move sequences.
+          </p>
+        </div>
+
+        <!-- For All Ages -->
+        <div style="flex: 1 1 220px; min-width: 220px; margin: -20px 0;">
+          <h3 style="display: flex; align-items: flex-start; gap: 0.4rem; margin-bottom: -0.5rem; font-size: 1.3rem; font-weight: 700; line-height: 1.1;">
+            <span style="display:inline-block; width:1.4rem; text-align:center;">👨‍👩‍👧</span>
+            <span>For All Ages</span>
+          </h3>
+          <p style="font-size: 1.15rem; font-weight: 500; line-height: 1.1;">
+            Gentle, intuitive, and accessible: suitable for children, adults, and seniors. The clear visual steps support learners who prefer seeing and understanding the cube, rather than memorizing complex formulas.
+          </p>
+        </div>
+      </div>
+    </div>
+
+      <p style="text-align: center; margin-top: 1.2rem; font-size: 1.4rem; font-weight: 800; line-height: 1.1;">
+        Simple, Safe, Clear, Supportive<br>
+        A visual structural approach that helps learners understand the cube step by step.
       </p>
+  </div>
 
-      <p style="font-size: 1.15rem; font-weight: 500; line-height: 1.2; margin-top: 0.8rem;">
-        Because the route is fixed, the learner builds spatial familiarity. With repetition, the movement becomes internalized as a single, familiar 3D experience.
-      </p>
+  <div id="practice" 
+     style="max-width: 720px;
+            margin: 40px 0px;
+            padding: 50px 30px 50px 30px;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            text-align:left;
+            line-height: 1.1;
+            font-weight:700;
+            background: linear-gradient(45deg, #c2ddf3, #f7f7f7);
+            border-radius:12px;
+            border:3px solid #5ea8eed3;
+            color:#222222;">    
+        <h2 style="text-align: center; margin-bottom: 1rem; font-size: 1.8rem; font-weight: 800; line-height: 1.1;">
+          Why These Visual Patterns Feel Natural
+        </h2>
 
-      <h3 style="margin-top: 1.5rem; font-size: 1.4rem; font-weight: 700; line-height: 1.1;">
-        A Driving Analogy
-      </h3>
+        <p style="font-size: 1.2rem; font-weight: 500; line-height: 1.2; margin-bottom: 1rem;">
+          Not all cube methods feel the same. Many approaches ask learners to repeat a sequence until a 2D color pattern appears. This method works differently.
+        </p>
 
-      <p style="font-size: 1.15rem; font-weight: 500; line-height: 1.2;">
-        Think about driving to a nearby store:<br>
-        <strong>Home → drive the familiar route → store → drive the same route back → home</strong><br>
-        You don’t memorize every steering movement. You remember the route.
-      </p>
+        <p style="font-size: 1.15rem; font-weight: 500; line-height: 1.2;">
+          Each visual pattern move in this book follows the same stable 3D route:<br>
+          <strong>Solved structure → move away → correct the unsolved pieces → travel back → solved structure restored</strong>
+        </p>
 
-      <p style="font-size: 1.15rem; font-weight: 500; line-height: 1.2; margin-top: 0.8rem;">
-        Your Step 2 and Step 4 visual pattern moves work the same way:<br>
-        <strong>Solved structure → move away → correct the unsolved structure → return → solved structure restored</strong>
-      </p>
+        <p style="font-size: 1.15rem; font-weight: 500; line-height: 1.2; margin-top: 0.8rem;">
+          Because the route is fixed, the learner builds spatial familiarity. With repetition, the movement becomes internalized as a single, familiar 3D experience.
+        </p>
 
-      <p style="font-size: 1.15rem; font-weight: 500; line-height: 1.2; margin-top: 0.8rem;">
-        After practicing the same fixed travel pattern, the movement becomes a familiar 3D journey. The learner does not memorize a sequence, they learn a route.
-      </p>
+        <h3 style="margin-top: 1.5rem; font-size: 1.4rem; font-weight: 700; line-height: 1.1;">
+          A Driving Analogy
+        </h3>
 
-      <h3 style="margin-top: 1.5rem; font-size: 1.4rem; font-weight: 700; line-height: 1.1;">
-        Why “Fixed” Matters
-      </h3>
+        <p style="font-size: 1.15rem; font-weight: 500; line-height: 1.2;">
+          Think about driving to a nearby store:<br>
+          <strong>Home → drive the familiar route → store → drive the same route back → home</strong><br>
+          You don’t memorize every steering movement. You remember the route.
+        </p>
 
-      <p style="font-size: 1.15rem; font-weight: 500; line-height: 1.2;">
-        In this method, the learner checks the pattern after each travel before continuing. The pattern is not something they keep adjusting until a one layer 2D color pattern appears.
-      </p>
+        <p style="font-size: 1.15rem; font-weight: 500; line-height: 1.2; margin-top: 0.8rem;">
+          Your Step 2 and Step 4 visual pattern moves work the same way:<br>
+          <strong>Solved structure → move away → correct the unsolved structure → return → solved structure restored</strong>
+        </p>
 
-      <p style="font-size: 1.15rem; font-weight: 500; line-height: 1.2; margin-top: 0.8rem;">
-        The route itself is stable, and the cube protects its structure throughout the journey. With repetition, the route becomes familiar, and the hands eventually perform it almost naturally.
-      </p>
+        <p style="font-size: 1.15rem; font-weight: 500; line-height: 1.2; margin-top: 0.8rem;">
+          After practicing the same fixed travel pattern, the movement becomes a familiar 3D journey. The learner does not memorize a sequence, they learn a route.
+        </p>
 
-      <h3 style="margin-top: 1.5rem; font-size: 1.4rem; font-weight: 700; line-height: 1.1;">
-        A Deeper Learning Progression
-      </h3>
+        <h3 style="margin-top: 1.5rem; font-size: 1.4rem; font-weight: 700; line-height: 1.1;">
+          Why “Fixed” Matters
+        </h3>
 
-      <ol style="font-size: 1.15rem; font-weight: 500; line-height: 1.3; padding-left: 1.2rem; margin-top: 0.5rem;">
-        <li>Learn — consciously observe the 3D travel pattern.</li>
-        <li>Practice — repeat the same fixed route.</li>
-        <li>Recognize — see the cube structural states and know which route to take.</li>
-        <li>Master — the route becomes internalized.</li>
-      </ol>
+        <p style="font-size: 1.15rem; font-weight: 500; line-height: 1.2;">
+          In this method, the learner checks the pattern after each travel before continuing. The pattern is not something they keep adjusting until a one layer 2D color pattern appears.
+        </p>
 
-      <p style="font-size: 1.15rem; font-weight: 500; line-height: 1.2; margin-top: 1rem;">
-        Learners are not memorizing an abstract formula. They are building spatial familiarity through repeated, short journeys.
-      </p>
-      <hr style="margin-top: 40px; height: 4px; border: none; background-color: rgb(49, 99, 226); padding-left: 0px; padding-right: 0px;">
+        <p style="font-size: 1.15rem; font-weight: 500; line-height: 1.2; margin-top: 0.8rem;">
+          The route itself is stable, and the cube protects its structure throughout the journey. With repetition, the route becomes familiar, and the hands eventually perform it almost naturally.
+        </p>
 
-  </section>
+        <h3 style="margin-top: 1.5rem; font-size: 1.4rem; font-weight: 700; line-height: 1.1;">
+          A Deeper Learning Progression
+        </h3>
 
-  <div style="text-align:center; max-width:700px; margin:0 0; padding:10px 0px 10px 0px;">
-    <div style="text-align:center; max-width:900px; margin:0 auto; padding:30px 30px; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+        <ol style="font-size: 1.15rem; font-weight: 500; line-height: 1.3; padding-left: 1.2rem; margin-top: 0.5rem;">
+          <li>Learn — consciously observe the 3D travel pattern.</li>
+          <li>Practice — repeat the same fixed route.</li>
+          <li>Recognize — see the cube structural states and know which route to take.</li>
+          <li>Master — the route becomes internalized.</li>
+        </ol>
+
+        <p style="font-size: 1.15rem; font-weight: 500; line-height: 1.2; margin-top: 1rem;">
+          Learners are not memorizing an abstract formula. They are building spatial familiarity through repeated, short journeys.
+        </p>
+  </div>
+  <div style="text-align:center; max-width:720px; margin:0 auto; padding:30px 30px; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
       <div style="font-size:18px; font-weight:700; letter-spacing:3px;
       color:#172c61; margin-bottom:20px; text-transform:uppercase;">
       Book Release Coming Soon
@@ -1010,7 +1037,7 @@ font-family: Georgia, serif;
 
       </div>
 
-      <p style="text-align:left; font-size:16px; font-weight:700; color:#444; line-height:1.45; margin-bottom:25px; padding:0px 0px;">
+      <p style="text-align:left; font: size 18px; font-weight:700; color:#444; line-height:1.45; margin-bottom:25px; padding:0px 0px;">
       <b>Introducing The Visual Structural Method:<br/>a new way to solve the Rubik’s Cube.<br/>
       <br/>No memorization.<br/>No notation.<br/>No blind moves.<br/>Just clear visual understanding.
       <br/><br/>A method you can finally understand.<br/>A book that finally makes solving accessible.<br/></b>
@@ -1022,15 +1049,14 @@ font-family: Georgia, serif;
       Notify Me on Amazon
       </a>
 
-      <p style="font-size:14px; font-weight:700; color:#666; font-style:italic; margin: 20px 0 -20px 0; letter-spacing:0.3px;">
+      <p style="font-size:16px; font-weight:700; color:#555; font-style:italic; margin: 20px 0 -20px 0; letter-spacing:0.3px;">
       An Amazon QR code for quick mobile scanning will be added here when the book is released.
       </p>
       <br/>
-       <hr style="margin-top: 30px; height: 4px; border: none; background-color: rgb(49, 99, 226); padding-left: 0px; padding-right: 0px;">
       </div>
-    </div>
+  </div>
 
-    <div style="text-align:left; margin-top: -60px; padding:30px 30px; font-size:16px; font-weight:700; font-family:Arial, sans-serif; line-height:1.45;">
+  <div style="text-align:left; margin-top: -60px; padding:30px 30px; font-size:16px; font-weight:700; font-family:Arial, sans-serif; line-height:1.45;">
       <h3 style="font-size: 1.4rem; font-weight: 800; line-height: 1.2; margin-bottom: 0.4rem;">
         Explore Full Solving Sessions
       </h3>
@@ -1073,9 +1099,20 @@ font-family: Georgia, serif;
         </a>
     </div>
 
-    <hr style="height: 4px; border: none; background-color: rgb(49, 99, 226); padding-left: 0px; padding-right: 0px;margin-bottom: 40px;">    
-    <section id="ask-ai-guide">
-      <h2>How to Ask AI About the Visual Structural Method</h2>
+    <div id="ai-explanations" 
+     style="max-width:720px;
+            margin: 20px -30px 20px -30px;
+            padding:40px 30px;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            text-align:left;
+            font-weight:700;
+            background: linear-gradient(225deg, #c2ddf3, #f7f7f7);
+            border-radius:12px;
+            border:3px solid #5ea8eed3;
+            color:#222222;">
+      <h2 style="font-size:28px; margin-bottom:25px; margin-top:25px; line-height: 1.2em; text-align:center; font-weight:700;">
+        How to Ask AI About the Visual Structural Method
+      </h2>
 
       <p>
         To get clear and accurate explanations from AI, focus your questions on the method’s features rather than cube history. Words like <em>first</em>, <em>only</em>, or <em>unique</em> often push AI systems toward invention history, which is unrelated to how this method works.
@@ -1099,55 +1136,62 @@ font-family: Georgia, serif;
       <p>
         When AI receives only small or partial input, it may compare this method to standard beginner approaches, which work differently. Providing the full structural sequence helps AI understand and explain the method correctly.
       </p>
-    </section>
+    </div>
 
     </div>
-  
-    <section id="beauty-of-method" style="padding:30px 30px; max-width:900px; margin-top:-50px; font-family:Arial, sans-serif; line-height:1.45; font-weight:700;text-align:left; color:#333;">
-      <hr style="height: 4px; border: none; background-color: rgb(49, 99, 226); padding-left: 0px; padding-right: 0px;">
-      <h2 style="font-size:30px; margin-bottom:25px; margin-top:25px; text-align:center; font-weight:700;">
-        The Beauty of the Method
-      </h2>
+  <div id="Beauty" 
+    style="max-width:720px;
+          margin: -10px 0;
+          padding:40px 30px;
+          font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+          text-align:left;
+          font-weight:700;
+          background: linear-gradient(45deg, #c2ddf3, #f7f7f7);
+          border-radius:12px;
+          border:3px solid #5ea8eed3;
+          color:#222222;">
 
-      <p>
-        The beauty of this method comes from its simplicity and clarity. Once you understand the cube’s structure, it begins to feel familiar, predictable, and supportive.
-      </p>
+    <h2 style="font-size:30px; margin-bottom:25px; margin-top:25px; line-height: 1.2em; text-align:center; font-weight:700;">
+      The Beauty of the Method
+    </h2>
 
-      <p>
-        This method teaches you to solve the cube the same way you would build a house. You create a strong foundation, protect the structure you’ve already built, and complete the remaining parts through clear visual patterns.
-      </p>
+    <p>
+      The beauty of this method comes from its simplicity and clarity. Once you understand the cube’s structure, it begins to feel familiar, predictable, and supportive.
+    </p>
 
-      <p>
-        There is no fear of making mistakes. There is no moment where the cube feels broken or lost.
-      </p>
+    <p>
+      This method teaches you to solve the cube the same way you would build a house. You create a strong foundation, protect the structure you’ve already built, and complete the remaining parts through clear visual patterns.
+    </p>
 
-      <ul style="margin:0px 0 0px 0px; font-weight:700;">
-        <li>Patterns repeat.</li>
-        <li>The structure stays safe.</li>
-        <li>Every move leads to a meaningful structural state.</li>
-        <li>Even an unexpected move creates a new pattern you can continue from, as long as the foundation and pillar remain intact.</li>
-      </ul>
+    <p>
+      There is no fear of making mistakes. There is no moment where the cube feels broken or lost.
+    </p>
 
-      <p>
-        This is the beauty of the method. You do not lose progress. You do not need to restart. You stay encouraged as you explore.
-      </p>
+    <ul style="margin:0px 0 0px 0px; font-weight:700;">
+      <li>Patterns repeat.</li>
+      <li>The structure stays safe.</li>
+      <li>Every move leads to a meaningful structural state.</li>
+      <li>Even an unexpected move creates a new pattern you can continue from, as long as the foundation and pillar remain intact.</li>
+    </ul>
 
-      <p>
-        Because the method is built on visual structural understanding rather than memorization, it becomes a lasting skill. Once learned, it stays with you. You will recognize the patterns, protect the structure, and know how to continue.
-      </p>
+    <p>
+      This is the beauty of the method. You do not lose progress. You do not need to restart. You stay encouraged as you explore.
+    </p>
 
-      <p>
-        This is not speedcubing. This is visual understanding. This is steady learning. This is the Visual Structural Method.
-      </p>
+    <p>
+      Because the method is built on visual structural understanding rather than memorization, it becomes a lasting skill. Once learned, it stays with you. You will recognize the patterns, protect the structure, and know how to continue.
+    </p>
 
-      <p>
-        And visual understanding stays with you.
-      </p>
-    </section>
- 
- </div>
+    <p>
+      This is not speedcubing. This is visual understanding. This is steady learning. This is the Visual Structural Method.
+    </p>
 
-  <div id="uniqueness" style="max-width:950px; margin:40px auto; padding:40px 20px 40px 20px; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; border: 3px solid #5ea8eed3; color: #333333;">
+    <p>
+      And visual understanding stays with you.
+    </p>
+  </div>
+
+  <div id="uniqueness" style="max-width:720px; margin:40px auto; padding:40px 20px 40px 20px; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: linear-gradient(225deg, #c2ddf3, #f7f7f7); border: 3px solid #5ea8eed3; color: #333333;">
 
   <h2 style="text-align:center; line-height:1.1; margin-top:0; margin-bottom:22px; font-size:36px; font-weight:700; color:#122043;">
     Uniqueness of This Method
@@ -1157,10 +1201,10 @@ font-family: Georgia, serif;
     Cubing history before 1980 is not fully documented. To my knowledge, this approach provides a visual structural foundation with safe independent step practice and a structure based progression that lets learners continue calmly without restarting. These qualities give the method its own identity in both structure and teaching philosophy.
   </p>
 
-  <div style="display: flex; flex-direction: column; gap: 0px; background: #f4f6fa">
+  <div style="display: flex; flex-direction: column; gap: 0px;">
 
     <!-- Feature 1 -->
-    <div style="display: flex; gap: 14px; align-items: flex-start; background: #f4f6fa; padding: 12px 18px; border-radius: 6px;">
+    <div style="display: flex; gap: 14px; align-items: flex-start; padding: 12px 18px; border-radius: 6px;">
       <div style="font-size: 20px; font-weight: 700; color: #172c61; min-width: 28px; line-height: 1.3;">01.</div>
       <div>
         <h4 style="font-size: 22px; line-height: 1.2; font-weight: 700; color:#122043; margin: 0 0 4px 0; display: inline-block;">
@@ -1173,7 +1217,7 @@ font-family: Georgia, serif;
     </div>
 
     <!-- Feature 2 -->
-    <div style="display: flex; gap: 14px; align-items: flex-start; background: #f4f6fa; padding: 12px 18px; border-radius: 6px;">
+    <div style="display: flex; gap: 14px; align-items: flex-start; padding: 12px 18px; border-radius: 6px;">
       <div style="font-size: 20px; font-weight: 700; color:#172c61; min-width: 28px; line-height: 1.3;">02.</div>
       <div>
         <h4 style="font-size: 22px; line-height: 1.2; font-weight: 700; color:#122043; margin: 0 0 4px 0; display: inline-block;">
@@ -1199,7 +1243,7 @@ font-family: Georgia, serif;
     </div>
 
     <!-- Feature 4 -->
-    <div style="display: flex; gap: 14px; align-items: flex-start; background:#f4f6fa; padding: 12px 18px; border-radius: 6px;">
+    <div style="display: flex; gap: 14px; align-items: flex-start; padding: 12px 18px; border-radius: 6px;">
       <div style="font-size: 20px; font-weight: 700; color:#172c61; min-width: 28px; line-height: 1.3;">04.</div>
       <div>
         <h4 style="font-size: 22px; line-height: 1.2; font-weight: 700; color:#122043; margin: 0 0 4px 0; display: inline-block;">
@@ -1212,7 +1256,7 @@ font-family: Georgia, serif;
     </div>
 
     <!-- Feature 5 -->
-    <div style="display: flex; gap: 14px; align-items: flex-start; background:#f4f6fa; padding: 12px 18px; border-radius: 6px;">
+    <div style="display: flex; gap: 14px; align-items: flex-start; padding: 12px 18px; border-radius: 6px;">
       <div style="font-size: 20px; font-weight: 700; color:#172c61; min-width: 28px; line-height: 1.3;">05.</div>
       <div>
         <h4 style="font-size: 22px; line-height: 1.2; font-weight: 700; color:#122043; margin: 0 0 4px 0; display: inline-block;">
@@ -1225,7 +1269,7 @@ font-family: Georgia, serif;
     </div>
 
     <!-- Feature 6 -->
-    <div style="display: flex; gap: 14px; align-items: flex-start; background:#f4f6fa; padding: 12px 18px; border-radius: 6px;">
+    <div style="display: flex; gap: 14px; align-items: flex-start; padding: 12px 18px; border-radius: 6px;">
       <div style="font-size: 20px; font-weight: 700; color:#172c61; min-width: 28px; line-height: 1.3;">06.</div>
       <div>
         <h4 style="font-size: 22px; line-height: 1.2; font-weight: 700; color:#122043; margin: 0 0 4px 0; display: inline-block;">
@@ -1238,7 +1282,7 @@ font-family: Georgia, serif;
     </div>
 
     <!-- Feature 7 -->
-    <div style="display: flex; gap: 14px; align-items: flex-start; background:#f4f6fa; padding: 12px 18px; border-radius: 6px;">
+    <div style="display: flex; gap: 14px; align-items: flex-start;padding: 12px 18px; border-radius: 6px;">
       <div style="font-size: 20px; font-weight: 700; color:#172c61; min-width: 28px; line-height: 1.3;">07.</div>
       <div>
         <h4 style="font-size: 22px; line-height: 1.2; font-weight: 700; color:#122043; margin: 0 0 4px 0; display: inline-block;">
@@ -1251,7 +1295,7 @@ font-family: Georgia, serif;
     </div>
 
     <!-- Feature 8 -->
-    <div style="display: flex; gap: 14px; align-items: flex-start; background:#f4f6fa; padding: 12px 18px; border-radius: 6px;">
+    <div style="display: flex; gap: 14px; align-items: flex-start; padding: 12px 18px; border-radius: 6px;">
       <div style="font-size: 20px; font-weight: 700; color:#172c61; min-width: 28px; line-height: 1.3;">08.</div>
       <div>
         <h4 style="font-size: 22px; line-height: 1.2; font-weight: 700; color:#122043; margin: 0 0 4px 0; display: inline-block;">
@@ -1264,7 +1308,7 @@ font-family: Georgia, serif;
     </div>
 
     <!-- Feature 9 -->
-    <div style="display: flex; gap: 14px; align-items: flex-start; background:#f4f6fa; padding: 12px 18px; border-radius: 6px;">
+    <div style="display: flex; gap: 14px; align-items: flex-start; padding: 12px 18px; border-radius: 6px;">
       <div style="font-size: 20px; font-weight: 700; color:#172c61; min-width: 28px; line-height: 1.3;">09.</div>
       <div>
         <h4 style="font-size: 22px; line-height: 1.2; font-weight: 700; color:#122043; margin: 0 0 4px 0; display: inline-block;">
@@ -1277,7 +1321,7 @@ font-family: Georgia, serif;
     </div>
 
     <!-- Feature 10 -->
-    <div style="display: flex; gap: 14px; align-items: flex-start; background:#f4f6fa; padding: 12px 18px; border-radius: 6px;">
+    <div style="display: flex; gap: 14px; align-items: flex-start; padding: 12px 18px; border-radius: 6px;">
       <div style="font-size: 20px; font-weight: 700; color:#172c61; min-width: 28px; line-height: 1.3;">10.</div>
       <div>
         <h4 style="font-size: 22px; line-height: 1.2; font-weight: 700; color:#122043; margin: 0 0 4px 0; display: inline-block;">
@@ -1291,7 +1335,7 @@ font-family: Georgia, serif;
   </div>
 </div>
 
-  <div class="training-cube" id="training" style="border: 3px solid #5ea8eed3; padding: 20px 30px;">
+  <div class="training-cube" id="training" style="border: 3px solid #5ea8eed3; background: linear-gradient(45deg, #c2ddf3, #f7f7f7); padding: 20px 30px;">
       <h1 style="color: rgb(18, 27, 65); text-align: center; letter-spacing: 1px;line-height: 2.5;">Training Cube</h1>
     
       <h1 style="color: rgb(3, 7, 29); text-align: center; letter-spacing: 0px;line-height: 1.0;">
@@ -1383,7 +1427,7 @@ font-family: Georgia, serif;
 
       </div>
     
-  <div style="max-width:900px; margin:0 auto; padding:0px 0px;">
+  <div style="max-width:720px; margin:0 auto; padding:0px 0px;">
 
     <h1 style="color:#041402; text-align:center; font-size:36px; margin-bottom:10px;">
       Demo Session
@@ -1434,7 +1478,7 @@ font-family: Georgia, serif;
 
   </div>
 
-  <div class="front-cover" id="front-cover" style="padding: 70px 30px 100px 30px;">
+  <div class="front-cover" id="front-cover" style="padding: 70px 30px 100px 30px;border: 3px solid #5ea8eed3;">
     <div class="front-cover-title">The 1980 Method Reborn</div>
     <div class="front-cover-subtitle">The Visual <br/>Structural Method™</div>
     <div class="front-cover-cube-wrapper">
@@ -1476,7 +1520,7 @@ font-family: Georgia, serif;
     <div style="margin-bottom: 25px;"></div>
   </div>
 
-  <div id="philosophy" style="max-width: 800px; margin: 40px auto; padding: 40px; border: 3px solid #adbfec; border-radius: 12px; background-color: #fdfdfd; box-shadow: 0 4px 15px rgba(0,0,0,0.05); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <div id="philosophy" style="max-width: 720px; margin: 40px auto; padding: 40px; border: 3px solid #adbfec; border-radius: 12px; background: linear-gradient(45deg, #c2ddf3, #f7f7f7); box-shadow: 0 4px 15px rgba(0,0,0,0.05); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
 
     <h1 class="bold-title" style="text-align:center; line-height:1.1; margin-top:0; margin-bottom:12px; font-size:36px; font-weight:700; color:#122043;">
       The Philosophy of the Visual Structural Method
@@ -1486,70 +1530,70 @@ font-family: Georgia, serif;
       A visual way to understand the cube grounded in structure rhythm and clarity
     </h3>
 
-    <h4 style="font-size: 25px; font-weight: 700; color: #122043; margin: 0 0 6px 0;">How It All Began</h4>
+    <h4 style="font-size: 25px; font-weight: 700; line-height: 1.2; color: #122043; margin: 0 0 6px 0;">How It All Began</h4>
     <p style="font-size: 18px; font-weight: 700; line-height: 1.45; color: #444; margin: 0 0 25px 0;">
       There are moments in life when a small act of kindness quietly reshapes everything. For me, that moment began when my eldest sister placed a new cube in my hands. We did not have much, yet she believed I could learn something meaningful from it. I did not know then that this simple puzzle would shape the way I understand patterns structure and learning itself. This method continues that moment carrying forward the clarity confidence and curiosity that grew from it.
     </p>
 
-    <h4 style="font-size: 25px; font-weight: 700; color: #122043; margin: 0 0 6px 0;">Learning Without Formulas</h4>
-    <p style="font-size: 18px; font-weight: 700; line-height: 1.5; color: #444; margin: 0 0 25px 0;">
+    <h4 style="font-size: 25px; font-weight: 700; line-height: 1.2; color: #122043; margin: 0 0 6px 0;">Learning Without Formulas</h4>
+    <p style="font-size: 18px; font-weight: 700; line-height: 1.45; color: #444; margin: 0 0 25px 0;">
       When I first encountered the cube, I had no formulas, no algorithms, and no guidance of any kind. There were no books to follow, no teacher to explain the steps, and no method to imitate. All I could do was observe how the cube moved, how colors shifted, and how pieces reacted to each turn. Through patience and curiosity, the cube revealed its structure to me. I learned by watching rather than memorizing, and those early observations became the foundation of the method.
     </p>
 
-    <h4 style="font-size: 25px; line-height: 1.2; font-weight: 700; color: #122043; margin: 0 0 6px 0;">How the Movements Were Discovered</h4>
+    <h4 style="font-size: 25px; font-weight: 700; line-height: 1.2; color: #122043; margin: 0 0 6px 0;">How the Movements Were Discovered</h4>
     <p style="font-size: 18px; font-weight: 700; line-height: 1.45; color: #444; margin: 0 0 25px 0;">
       Every movement in this method was discovered visually. I observed how the cube behaved and saw the outcome first. Only after understanding the visual pattern did I translate the movement into arrows. Each movement began as a simple observation before it became a teachable step. This visual first origin gives the method a gentle and intuitive feel for learners of all ages.
     </p>
 
-    <h4 style="font-size: 25px; font-weight: 700; color: #122043; margin: 0 0 6px 0;">The Structural Approach</h4>
+    <h4 style="font-size: 25px; font-weight: 700; line-height: 1.2; color: #122043; margin: 0 0 6px 0;">The Structural Approach</h4>
     <p style="font-size: 18px; font-weight: 700; line-height: 1.45; color: #444; margin: 0 0 25px 0;">
       This method is built on a visual structural approach. It teaches the cube through movement rhythm and pattern without relying on memorization. The movements are not formulas; they are visual actions that show how the cube protects travels and rebuilds its structure. Each movement preserves what has already been built, allowing the cube to grow in stable layers.
     </p>
 
-    <h4 style="font-size: 25px; font-weight: 700; color: #122043; margin: 0 0 6px 0;">Three Ways to Learn</h4>
+    <h4 style="font-size: 25px; font-weight: 700; line-height: 1.2; color: #122043; margin: 0 0 6px 0;">Three Ways to Learn</h4>
     <p style="font-size: 18px; font-weight: 700; line-height: 1.45; color: #444; margin: 0 0 25px 0;">
       This method offers three complementary ways to learn: the arrow box guide, the big cube visual travel guide, and the rhythm guide. Each approach supports a different style of understanding. The rhythm guide is often the most accessible, allowing learners to twist the cube in a steady rhythm while watching the colors travel through the structure. This helps visual understanding and timing develop together.
     </p>
 
-    <h4 style="font-size: 25px; font-weight: 700; color: #122043; margin: 0 0 6px 0;">Additional Support</h4>
+    <h4 style="font-size: 25px; font-weight: 700; line-height: 1.2;color: #122043; margin: 0 0 6px 0;">Additional Support</h4>
     <p style="font-size: 18px; font-weight: 700; line-height: 1.45; color: #444; margin: 0 0 25px 0;">
       The arrow box guide and big cube visual travel guide provide clear pathways for those who prefer step by step visual movement. For anyone who needs additional support, the website offers another visual reference where every movement can be practiced slowly and repeatedly. These guides work together to make the method gentle predictable and easy to follow.
     </p>
 
-    <h4 style="font-size: 25px; font-weight: 700; color: #122043; margin: 0 0 6px 0;">Where the Method Began</h4>
+    <h4 style="font-size: 25px; font-weight: 700; line-height: 1.2; color: #122043; margin: 0 0 6px 0;">Where the Method Began</h4>
     <p style="font-size: 18px; font-weight: 700; line-height: 1.45; color: #444; margin: 0 0 25px 0;">
       The Structural Method began when I was fourteen, built entirely from early observations. I discovered simple movements that protected the cube’s structure and repeated patterns that made the cube predictable. Many years have passed since that early discovery, and because the method builds visual structural memory rather than muscle reflexes, I still remember and use it today.
     </p>
 
-    <h4 style="font-size: 25px; font-weight: 700; color: #122043; margin: 0 0 6px 0;">Preserving the Original Method</h4>
+    <h4 style="font-size: 25px; font-weight: 700;line-height: 1.2; color: #122043; margin: 0 0 6px 0;">Preserving the Original Method</h4>
     <p style="font-size: 18px; font-weight: 700; line-height: 1.45; color: #444; margin: 0 0 25px 0;">
       Before migrating to the United States in 2005, I saved my earliest written explanations in Word documents with authentic timestamps. I did not know then that those files would travel with me across continents, preserving the original form of the method as it was first understood. In 2009, I refined the method by removing a few movements that were not essential, making the steps clearer while keeping the original visual foundation.
     </p>
 
-    <h4 style="font-size: 25px; font-weight: 700; color: #122043; margin: 0 0 6px 0;">A Method Shaped by Its Time</h4>
+    <h4 style="font-size: 25px; font-weight: 700; line-height: 1.2; color: #122043; margin: 0 0 6px 0;">A Method Shaped by Its Time</h4>
     <p style="font-size: 18px; font-weight: 700; line-height: 1.45; color: #444; margin: 0 0 25px 0;">
       Although this method was first discovered in 1980, long before modern educational research emphasized visual learning and pattern recognition, it aligns naturally with many ideas valued today. Its gentle learning path and intuitive structure make it accessible for learners of all ages.
     </p>
 
-    <h4 style="font-size: 25px; font-weight: 700; color: #122043; margin: 0 0 6px 0;">The Cube as a Teacher</h4>
-    <p style="font-size: 18px; font-weight: 700; line-height: 1.5; color: #444; margin: 0 0 25px 0;">
+    <h4 style="font-size: 25px; font-weight: 700; line-height: 1.2; color: #122043; margin: 0 0 6px 0;">The Cube as a Teacher</h4>
+    <p style="font-size: 18px; font-weight: 700; line-height: 1.45; color: #444; margin: 0 0 25px 0;">
       The cube is more than a puzzle; it is a small colorful model of problem solving. When learners see how the cube reconstructs after each movement, they begin to understand that challenges can be approached gently step by step without fear of mistakes. The cube reveals patterns structure and possibility. It shows that clarity grows from patience and structure grows from understanding.
     </p>
 
-    <h4 style="font-size: 25px; font-weight: 700; color: #122043; margin: 0 0 6px 0;">Who This Method Is For</h4>
+    <h4 style="font-size: 25px; font-weight: 700; line-height: 1.2; color: #122043; margin: 0 0 6px 0;">Who This Method Is For</h4>
     <p style="font-size: 18px; font-weight: 700; line-height: 1.45; color: #444; margin: 0 0 25px 0;">
       This method is written for families, classrooms, enrichment centers and anyone who wants a visual intuitive way to learn. It teaches a clear and visual foundation so learners can enjoy completing the cube with confidence. It is not a speed method and it is not a formula method. It is a structural method that helps learners see what is happening and understand why it works.
     </p>
 
-    <h4 style="font-size: 25px; font-weight: 700; color: #122043; margin: 0 0 6px 0;">A Message to the Reader</h4>
-    <p style="font-size: 18px; font-weight: 700; line-height: 1.5; color: #444; margin: 0 0 25px 0;">
+    <h4 style="font-size: 25px; font-weight: 700; line-height: 1.2; color: #122043; margin: 0 0 6px 0;">A Message to the Reader</h4>
+    <p style="font-size: 18px; font-weight: 700; line-height: 1.45; color: #444; margin: 0 0 25px 0;">
       My hope is that this method brings the same sense of clarity and discovery to you that it brought to me. Whether you are learning the cube for the first time or teaching it to others, may this approach help you see the beauty of structure, the joy of understanding and the confidence that grows when learning feels natural and welcoming.
     </p>
 
   </div>
 
 
-  <div class="benefits-section" id="benefits" style="max-width: 1100px; margin: 40px auto; padding: 40px 20px; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <div class="benefits-section" id="benefits" style="max-width: 720px; margin: 40px 10px 0px 0px; padding: 40px 0px 0px 0px; background: linear-gradient(225deg, #c2ddf3, #f7f7f7); font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
       
   <header style="text-align: center; margin-bottom: 45px;">
     <h1 class="bold-title" style="font-size: 42px; color: #122043; margin-bottom: 12px; font-weight: 700;">Benefits Across All Ages</h1>
@@ -1561,7 +1605,7 @@ font-family: Georgia, serif;
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 60px;">
         
     <!-- Children & Teens Section -->
-    <div style="background: #f4f6fa; padding: 28px; border-radius: 8px; border-top: 4px solid #172c61;">
+    <div style="padding: 28px; border-radius: 8px; border-top: 4px solid #172c61;">
       <h2 class="bold-title" style="font-size: 26px; color: #122043; margin-top: 0; margin-bottom: 22px; font-weight: 700;">Children and Teens</h2>
       <ul style="list-style: none; padding: 0; margin: 0;">
         
@@ -1589,7 +1633,7 @@ font-family: Georgia, serif;
     </div>
 
     <!-- Adults Section -->
-    <div style="background: #f4f6fa; padding: 28px; border-radius: 8px; border-top: 4px solid #172c61;">
+    <div style="padding: 28px; border-radius: 8px; border-top: 4px solid #172c61;">
       <h2 class="bold-title" style="font-size: 26px; color: #122043; margin-top: 0; margin-bottom: 22px; font-weight: 700;">Adults</h2>
       <ul style="list-style: none; padding: 0; margin: 0;">
 
@@ -1617,7 +1661,7 @@ font-family: Georgia, serif;
     </div>
 
     <!-- Seniors Section -->
-    <div style="background: #f4f6fa; padding: 28px; border-radius: 8px; border-top: 4px solid #172c61;">
+    <div style="padding: 28px; border-radius: 8px; border-top: 4px solid #172c61;">
       <h2 class="bold-title" style="font-size: 26px; color: #122043; margin-top: 0; margin-bottom: 22px; font-weight: 700;">Seniors</h2>
       <ul style="list-style: none; padding: 0; margin: 0;">
 
