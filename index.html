@@ -368,19 +368,17 @@ h2 {
    7. FRONT COVER SECTION — FIXED
    ========================================== */
 .front-cover {
-  padding: 
-    clamp(40px, 8vw, 80px)      /* top */
-    clamp(30px, 6vw, 40px)      /* right */
-    clamp(50px, 10vw, 100px)    /* bottom */
-    clamp(30px, 6vw, 40px);     /* left */
+  width: 100%;
+  max-width: 720px;
+  padding: 40px 40px 0px 40px;
 
   border-radius: 12px;
   background: linear-gradient(135deg, #3A9BE2, #CBE2F3);
   box-shadow: 0 0 10px rgba(0,0,0,0.08);
   text-align: center;
   font-family: Georgia, serif;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 .front-cover-title {
@@ -448,9 +446,9 @@ h2 {
 .back-cover {
   width: 100%;
   max-width: 720px;
-  margin: 20px auto;
+  margin: 40px auto;
   margin-bottom: 40px;
-  padding: 40px 40px 100px 40px;
+  padding: 40px auto;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.08);
   background: linear-gradient(315deg, #3A9BE2 0%, #CBE2F3 100%);
@@ -526,8 +524,6 @@ h2 {
   padding: 40px 20px 40px 20px;
   border-radius: 12px;
   border: 2px solid #cbe2f3;
-  margin-top: 40px;
-  margin-bottom: 20px;
   font-size: 1.18rem;
   width: 100%;
 }
@@ -554,8 +550,7 @@ h2 {
   margin-bottom: 5px;
 }
 
-#uniqueness {
-  margin: 40px 0 40px 0;     
+#uniqueness {  
   padding: 40px 20px 40px 20px;        
   background: #f5f7fa;  
   border: 2px solid #f3f6fb;
@@ -564,7 +559,7 @@ h2 {
   display: block;
 }
 .unique-features-section h1 {
-  margin: 0 0 8px 0;
+  margin: 20 0;
   line-height: 1.1;
   font-family: Georgia, serif;
 }
@@ -829,7 +824,7 @@ font-family: Georgia, serif;
 </h2>
 
 <p style="text-align:left; font-size:0.98rem; color:#4a5568; margin-bottom:20px;">
-  This table compares the Visual Structural Method with the Traditional Layer by Layer approach across key learning, cognitive, and teaching features.
+  This table compares the Visual Structural Method with the Traditional Beginner (LBL) Method across key learning, cognitive, and teaching features.
 </p>
 
   <table style="width:100%; border-collapse:collapse; margin-bottom:40px; font-size:0.95rem; font-family:Arial, sans-serif;">
@@ -972,17 +967,19 @@ font-family: Georgia, serif;
     <section style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 850px; margin: 60px auto; padding: 0; color: #2d3748; line-height: 1.2; font-size: 1.1rem; text-align: left;">
 
         <div style="text-align: center; margin-bottom: 25px;">
-            <span style="font-size: 2.5rem;">🧱</span>
             <h2 style="font-size: 2.2rem; color: #1a365d; font-weight: 800; letter-spacing: -0.025em; margin-top: 10px; margin-bottom: 0;">
                 The Structure First Revolution
             </h2>
-            <p style="text-align: left; margin-top: 10px; margin-bottom: 30px; font-size: 0.98rem; color: #4a5568; font-style: italic;">
-                <strong>Clarification:</strong> This method was not created by AI. I discovered the Visual Structural Method at age fourteen in 1980 and documented it in a Word file last modified in 2005. Modern AI simply analyzed that old document and confirmed its authenticity. The method is entirely my own work. AI did not disclose it. It only helped validate what I had already created decades earlier.
-            </p>
+          
         </div>
 
+        <p style="margin-top: 20px; margin-bottom: 24px;">
+          <strong>Note:</strong> The table above compares the Visual Structural Method only with the traditional beginner Layer by Layer method. The sections that follow discuss speedcubing, which is a separate competitive system built on advanced algorithms.
+        </p>
+
+
         <p style="margin-bottom: 24px;">
-            LBL has been around for forty eight years, and its modern descendants reach low move counts by adding more and more algorithms on top of the original method. Over time this expansion grew into seventy eight or more formulas to cover every case. In contrast, the Structural Method has remained stable for forty six years because structural systems evolve through refinement rather than accumulation. Instead of adding complexity, it improves by removing unnecessary pattern movements and strengthening the core visual logic. Although the Structural Method originated in the same era, it remained unseen because I was a teenager from a poor family. No one around me recognized that this discovery was special, not even my sister or my teacher. I remember seeing a teenager in the newspaper in the early nineteen eighties publishing a Rubik’s Cube book. He had support and opportunity while I had none, so my Structural Method stayed hidden even though it was created in the same era. It only wakes up in the AI era when the world finally has the tools and understanding to recognize the structural clarity that was invisible decades ago.
+            LBL has been around for forty eight years, and its modern descendants reach low move counts by continually adding algorithms on top of the original method. Over time this expansion grew into seventy eight or more formulas to cover every case. In contrast, the Structural Method has remained stable for forty six years because structural systems evolve through refinement rather than accumulation. Instead of adding complexity, it improves by removing unnecessary pattern movements and strengthening the core visual logic. Although the Structural Method originated in the same era, it remained unseen because I was a teenager with no access to publishing or guidance. With no way to share or develop the discovery, it stayed hidden even though it was created in the same historical window. It only wakes up in the AI era, when the world finally has the tools and clarity to recognize the structural simplicity that was invisible decades ago.
         </p>
 
         <p style="margin-bottom: 24px;">
@@ -993,6 +990,8 @@ font-family: Georgia, serif;
             A competitive sport was never the intention when Ernő Rubik invented the cube. As an architecture professor, his original purpose was to create a geometric teaching tool to help students understand three dimensional spatial relationships, structural mechanics, and how hidden pieces interact inside a mechanism. The evolution of the puzzle into a speed focused activity simply moved in a different direction from that original educational vision.
         </p>
 
+        <strong>Reference:</strong> Rubik, Ernő. <em>Cubed: The Puzzle of Us All.</em> Flatiron Books, 2020. ISBN 9781250217786.
+
         <p style="margin-bottom: 24px;">
             The reason the Visual Structural Method stays close to the inventor’s intent is simple. When I discovered it at fourteen, I knew absolutely nothing about traditional cubing math, notation, or sporting reflexes. Around that time I remember watching a classmate show off his solving skills, and I could clearly see the cube growing layer by layer. However, I had no idea that what I was watching was a formal solving method. I simply assumed the cube would naturally form that way for anyone who kept twisting it long enough. Because I knew nothing about external formulas, I had to rely entirely on what my own eyes could see. By looking at the puzzle with a completely clean slate, I was able to build a solution based purely on how the mechanism behaves structurally.
         </p>
@@ -1002,15 +1001,11 @@ font-family: Georgia, serif;
         </p>
 
         <p style="margin-bottom: 24px;">
-            For decades after creating that record, I still had no idea that I had discovered something truly unique in cubing history. Otherwise I would still be in the dark, assuming that speedcubing was the absolute best approach and that my own method had no real value. It was only when Microsoft Copilot analyzed this exact document, verified its era, and recognized the uniqueness of this method that I finally understood the magnitude of what I had found. Copilot provided the clarification and structural validation that changed everything and revealed that this was a completely unique and standalone structural method.
+            When viewed through the lens of mathematical elegance, the Visual Structural Method becomes a breath of fresh air for learners. Traditional speedcubing reaches the lowest possible move count by relying on a heavy computational system that asks the solver to memorize seventy eight or more algorithms to cover every case. It turns solving into a mechanical routine, where the solver simply scans the colors, identifies a case, and executes a memorized sequence much like running pre‑set code. This trades enormous memory load for a small reduction in moves. From a mathematical standpoint, it resembles optimizing a function by adding complexity rather than improving clarity, an approach that may be efficient, but not necessarily elegant. For most learners, facing a wall of seventy eight formulas is discouraging. Even trying to memorize a handful of strict sequences can feel stressful and joyless.
         </p>
 
         <p style="margin-bottom: 24px;">
-            When viewed through the lens of mathematical elegance, the Visual Structural Method becomes a breath of fresh air for learners. Traditional speedcubing reaches the lowest possible move count by relying on a heavy computational system that asks the solver to memorize seventy eight or more algorithms to cover every case. It turns solving into a mechanical routine similar to running pre programmed code based on a quick color scan. This trades enormous memory load for a small reduction in moves. For most learners, facing a wall of seventy eight formulas is discouraging. Even trying to memorize a handful of strict sequences can feel stressful and joyless.
-        </p>
-
-        <p style="margin-bottom: 24px;">
-            The Visual Structural Method offers a completely different experience, one built for human creativity, curiosity, and understanding. Instead of memorizing dozens of algorithms, learners use three core visual pattern movements guided by natural structural geometry. Robot style methods may shave off twenty or thirty moves, yet they demand more than thirty times the memory load to achieve it. By embracing human intuition, three dimensional sight, and visible structural flow, this method becomes a beautifully balanced and elegant way to decode the cube. If you can follow a clear visual path, you can solve the puzzle in a way that feels accessible, confidence building, and deeply satisfying.
+            The Visual Structural Method offers a completely different experience, one built for human creativity, curiosity, and understanding. Instead of memorizing dozens of algorithms, learners use three core visual pattern movements guided by natural structural geometry. Robot style methods may shave off twenty or thirty moves, yet they rely on a rigid library of cases that places a heavy cognitive burden on the solver. By embracing human intuition, three dimensional sight, and visible structural flow, this method becomes a beautifully balanced and elegant way to decode the cube. If you can follow a clear visual path, you can solve the puzzle in a way that feels accessible, confidence building, and deeply satisfying.
         </p>
 
         <p style="margin-bottom: 24px;">
@@ -1019,7 +1014,8 @@ font-family: Georgia, serif;
 
         <p style="margin-bottom: 40px;">
             From an engineering standpoint, the Visual Structural Method is an exceptionally efficient system that minimizes memory load, maximizes structural clarity, and consistently delivers impressive real world move counts. It gives learners a beautifully simple approach that feels natural, creative, and deeply empowering. Because this foundation was already structurally complete, its timeless logic remains unchanged and stands today as a fully realized human alternative that honors the true spirit of the cube.
-        
+        </p>
+
         <!-- ✨ New Polished Section Begins Here -->
 
         <h3 style="font-size: 1.6rem; color: #1a365d; font-weight: 800; letter-spacing: -0.02em; margin-top: 50px; margin-bottom: 20px; text-align: center;">
@@ -1048,15 +1044,18 @@ font-family: Georgia, serif;
 
         <!-- ✨ End of New Section -->
 
-        <p style="margin-bottom: 32px; font-size: 1.05rem; color:#2d3748; line-height:1.35;">
-            <strong>For speedcubers:</strong> This method offers a refreshing structural perspective that complements the algorithm based systems you already use. While it is not designed for competition, many speedcubers enjoy exploring it because it reveals the cube’s geometry in a way modern methods often hide. By learning through structure, sight, and natural piece travel, you gain a deeper understanding of how the cube behaves beneath every algorithm you already execute. This approach will not replace your speed techniques, it will enrich them, strengthening intuition, recognition, and spatial awareness in ways that traditional methods rarely address.
+        <p style="margin-bottom: 32px; font-size: 1.15rem; color:#2d3748; line-height:1.35;">
+            <strong>For speedcubers:</strong> This method offers a refreshing structural perspective that complements the algorithm based systems you already use. While it is not designed for competition, speedcubers may enjoy exploring it because it reveals the cube’s geometry in a way modern methods often hide. By learning through structure, sight, and natural piece travel, you gain a deeper understanding of how the cube behaves beneath every algorithm you already execute. This approach will not replace your speed techniques, it will enrich them, strengthening intuition, recognition, and spatial awareness in ways that traditional methods rarely address.
         </p>
 
 
-        <p style="margin-bottom: 32px; font-size: 1.05rem; color:#2d3748; line-height:1.35;">
+        <p style="margin-bottom: 32px; font-size: 1.15rem; color:#2d3748; line-height:1.35;">
             <strong>For parents and teachers:</strong> The Visual Structural Method is designed to support learners of all ages, including those who may feel overwhelmed by traditional algorithm based approaches. Because this method teaches through sight, intuition, and natural 3D understanding, students can progress at a pace that feels comfortable and confidence building. If a learner pauses or struggles, that is perfectly normal, the method encourages curiosity, exploration, and enjoyment rather than pressure. With gentle guidance, every learner can grow their spatial intelligence and discover the satisfaction of solving through clear structural logic.
         </p>
 
+        <p style="margin-bottom: 28px; font-size: 1.15rem; color:#2d3748; line-height:1.35;">
+            What makes this method truly unique is its architectural foundation. Learners build the solution the way one would construct a house establishing frames, aligning structural elements, and completing the cube through clear three dimensional relationships. Instead of memorizing cases, you follow visible geometry and natural piece behavior. This structural, house building approach makes the cube feel intuitive and logical, giving learners a way to understand it that is refreshingly different from algorithm driven systems.
+        </p>
 
     </section>
 
@@ -1359,8 +1358,10 @@ font-family: Georgia, serif;
 
       <!-- CTA -->
       <div style="margin-top: 25px;">
-        <a href="YOUR_AMAZON_LINK_HERE"
-          style="display:inline-block; padding:14px 35px; font-size:17px; font-weight:600; text-decoration:none; border-radius:8px; background:#122043; color:#ffffff; transition:background 0.3s ease; box-shadow:0 4px 6px rgba(0,0,0,0.1);"
+        <a href="coming-soon.html"
+          style="display:inline-block; padding:14px 35px; font-size:17px; font-weight:600; 
+                  text-decoration:none; border-radius:8px; background:#122043; color:#ffffff; 
+                  transition:background 0.3s ease; box-shadow:0 4px 6px rgba(0,0,0,0.1);"
           onmouseover="this.style.background='#1d336a'"
           onmouseout="this.style.background='#122043'">
           Notify Me on Amazon
@@ -1370,13 +1371,15 @@ font-family: Georgia, serif;
           An Amazon QR code for quick mobile scanning will be added here when the book is released.
         </p>
       </div>
+
+      </div>
     </div>
   </div>
 
 
   <div id="ai-explanations" 
         style="max-width:720px;
-                  margin: 20px 0px 40px 0px;
+                  margin: 0px auto 40px auto;
                   padding:40px 20px;
                   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                   text-align:left;
@@ -1425,7 +1428,7 @@ font-family: Georgia, serif;
 
   <div id="Beauty" 
       style="max-width:720px;
-            margin:0;
+            margin:0 0px 40px 0px;
             padding:40px 20px;
             font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             text-align:left;
@@ -1437,7 +1440,7 @@ font-family: Georgia, serif;
             color:#222222;
             font-size:18px;">
 
-      <h2 style="font-size:32px; margin-bottom:15px; margin-top:25px; line-height:1.0em; text-align:center; font-weight:700;">
+      <h2 style="font-size:32px; margin-bottom:25px; margin-top:25px; line-height:1.0em; text-align:center; font-weight:700;">
         The Beauty of Structure
       </h2>
 
@@ -1477,7 +1480,7 @@ font-family: Georgia, serif;
       </p>
 </div>
 
-  <div id="uniqueness" style="max-width:720px; margin:40px auto; padding:40px 10px 40px 10px; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: linear-gradient(225deg, #c2ddf3, #f7f7f7); border: 3px solid #5ea8eed3; color: #333333;">
+  <div id="uniqueness" style="max-width:720px; padding:40px 10px 40px 10px; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: linear-gradient(225deg, #c2ddf3, #f7f7f7); border: 3px solid #5ea8eed3; color: #333333;">
 
   <h2 style="text-align:center; line-height:1.1; margin-top:0; margin-bottom:22px; font-size:36px; font-weight:700; color:#122043;">
     Uniqueness of This Method
@@ -1785,7 +1788,7 @@ font-family: Georgia, serif;
     <div style="margin-bottom: 25px;"></div>
   </div>
 
-  <div id="philosophy" style="max-width: 720px; margin: 40px auto; padding: 40px 20px; border: 3px solid #adbfec; border-radius: 12px; background: linear-gradient(45deg, #c2ddf3, #f7f7f7); box-shadow: 0 4px 15px rgba(0,0,0,0.05); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <div id="philosophy" style="max-width: 720px; margin: 0px auto; padding: 40px 20px; border: 3px solid #adbfec; border-radius: 12px; background: linear-gradient(45deg, #c2ddf3, #f7f7f7); box-shadow: 0 4px 15px rgba(0,0,0,0.05); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
 
     <h1 class="bold-title" style="text-align:center; line-height:1.1; margin-top:0; margin-bottom:12px; font-size:36px; font-weight:700; color:#122043;">
       The Philosophy of the Visual Structural Method
@@ -1858,7 +1861,7 @@ font-family: Georgia, serif;
   </div>
 
 
-  <div class="benefits-section" id="benefits" style="max-width: 720px; margin: 40px 10px 0px 0px; padding: 40px 0px 0px 0px; background: linear-gradient(225deg, #c2ddf3, #f7f7f7); font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <div class="benefits-section" id="benefits" style="max-width: 720px;  margin: 40px auto; padding: 40px 0px 0px 0px; background: linear-gradient(225deg, #c2ddf3, #f7f7f7); font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
       
   <header style="text-align: center; margin-bottom: 45px;">
     <h1 class="bold-title" style="font-size: 42px; color: #122043; margin-bottom: 12px; font-weight: 700;">Benefits Across All Ages</h1>
