@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The True Visual Structural Method</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The True Visual Structural Method</title>
 
-<!-- GOOGLE FONT -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-<!-- DESKTOP + GENERAL CSS -->
-<style>
-/* ==========================================
-   1. GLOBAL RESETS & STYLING
-   ========================================== */
-html {
+  <!-- DESKTOP + GENERAL CSS -->
+  <style>
+  /* ==========================================
+  1. GLOBAL RESETS & STYLING
+  ========================================== */
+  html {
   scroll-behavior: smooth;
-}
+  }
 
-body {
+  body {
   margin: 0;
   padding: 5px 0 0 0;
   font-family: Georgia, serif;
@@ -32,60 +32,60 @@ body {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE/Edge */
   user-select: none; /* Standard */
-}
+  }
 
-*, *:before, *:after {
+  *, *:before, *:after {
   box-sizing: border-box;
-}
+  }
 
-/* ==========================================
-   2. REUSABLE LAYOUT CENTERING BLOCKS
-   ========================================== */
-.center-wrapper,
-.content,
-.main,
-.page,
-#philosophy,
-#book-release,
-#uniqueness,
-#benefits,
-.unique-features-section, 
-.benefits-section {
+  /* ==========================================
+  2. REUSABLE LAYOUT CENTERING BLOCKS
+  ========================================== */
+  .center-wrapper,
+  .content,
+  .main,
+  .page,
+  #philosophy,
+  #book-release,
+  #uniqueness,
+  #benefits,
+  .unique-features-section, 
+  .benefits-section {
   max-width: 720px;
   width: 100%;
   margin-left: auto;  
   margin-right: auto; 
   padding-left: auto;       
   padding-right: auto;
-}
+  }
 
-.center-wrapper,
-.cube-wrapper,
-.cube-container {
+  .center-wrapper,
+  .cube-wrapper,
+  .cube-container {
   min-width: 320px;
-}
+  }
 
-.content-section {
+  .content-section {
   max-width: 100%;
   width: 100%;
   overflow-wrap: break-word;
   word-wrap: break-word;
   white-space: normal;
-}
+  }
 
-/* ==========================================
-   3. NAVIGATION & HERO
-   ========================================== */
-.top-nav {
+  /* ==========================================
+  3. NAVIGATION & HERO
+  ========================================== */
+  .top-nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   gap: 10px; 
   width: 100%;
   max-width: 720px;
   margin: 0 auto;
-}
+  }
 
-.top-nav a {
+  .top-nav a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,9 +98,9 @@ body {
   font-weight: 600;
   color: #000;
   text-decoration: none;
-}
+  }
 
-.hero-title {
+  .hero-title {
   font-family: Georgia, serif;
   font-size: 2.1rem;
   font-weight: 700;
@@ -110,9 +110,9 @@ body {
   margin-bottom: 0px;
   line-height: 1.0;
   letter-spacing: 1.0px;
-}
+  }
 
-.hero-subtitle {
+  .hero-subtitle {
   font-family: Georgia, serif;
   font-size: 1.6rem;
   color: #005599;
@@ -120,40 +120,40 @@ body {
   margin-top: 20px;
   margin-bottom: 30px;
   line-height: 1.2;
-}
+  }
 
-/* ==========================================
-   4. TYPOGRAPHY
-   ========================================== */
-h1 {
+  /* ==========================================
+  4. TYPOGRAPHY
+  ========================================== */
+  h1 {
   font-size: 35px;
   margin: 0;
   font-weight: 600;
   font-family: Georgia, serif;
   color: #003366;
-}
+  }
 
-h2 {
+  h2 {
   font-size: 24px;
   margin-top: 12px;
   font-family: Georgia, serif;
   font-weight: 300;
   color: #004c99;
-}
+  }
 
-.bold-title {
+  .bold-title {
   font-weight: 700;
-}
+  }
 
-.section-title {
+  .section-title {
   font-size: 36px;
   margin-top: 30px;
   margin-bottom: 5px;
   font-weight: 700;
   color: #003366;
-}
+  }
 
-.tagline {
+  .tagline {
   font-size: 28px;
   font-weight: bold;
   font-family: Georgia, serif;
@@ -161,18 +161,18 @@ h2 {
   margin-bottom: 20px;
   color: #004c99;
   line-height: 1.4;
-}
+  }
 
-.vsm-title-block {
+  .vsm-title-block {
   text-align: center;
   margin-bottom: 30px;
   margin-top: 30px;
-}
+  }
 
-/* ==========================================
-   5a. TRAINING CUBE
-   ========================================== */
-.training-cube{
+  /* ==========================================
+  5a. TRAINING CUBE
+  ========================================== */
+  .training-cube{
   width: 100%;
   max-width: 720px;
   margin: 40px auto;
@@ -184,123 +184,122 @@ h2 {
   font-family: Georgia, serif;
   line-height: 1.0;
   color: #103457ec;
-}
-
-.responsive-steps {
-            width: 80%;
-            max-width: 720px;
-            min-width: 220px;
-            /* 1. CENTERS THE CONTAINER: Sets top/bottom margin to 0 and left/right to auto */
-            margin: 0 auto; 
-            
-            /* 2. OPTIONAL CENTERING BACKUP: Uses Flexbox to center everything inside this container */
-            display: flex;
-            justify-content: center;
-        }
-
-.responsive-steps-image {
-    max-width: 100%;
-    height: auto;
-    
-    /* 3. CENTERS THE IMAGE: Block display combined with auto margins pushes it to the middle */
-    display: block;
-    margin: 0 auto;
-}
-
-/* ==========================================
-   Controls and Buttons
-   ========================================== */
-  .step-box {
-    margin-bottom: -15px;
-    text-align: center;   /* centers the label AND the buttons */
-    padding: 8px 0;
   }
 
- #solving-controls {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 buttons per row */
-    gap: 10px; /* spacing between buttons */
+  .responsive-steps {
+  width: 80%;
+  max-width: 720px;
+  min-width: 220px;
+  /* 1. CENTERS THE CONTAINER: Sets top/bottom margin to 0 and left/right to auto */
+  margin: 0 auto; 
+
+  /* 2. OPTIONAL CENTERING BACKUP: Uses Flexbox to center everything inside this container */
+  display: flex;
+  justify-content: center;
+  }
+
+  .responsive-steps-image {
+  max-width: 100%;
+  height: auto;
+
+  /* 3. CENTERS THE IMAGE: Block display combined with auto margins pushes it to the middle */
+  display: block;
+  margin: 0 auto;
+  }
+
+  /* ==========================================
+  Controls and Buttons
+  ========================================== */
+  .step-box {
+  margin-bottom: -15px;
+  text-align: center;   /* centers the label AND the buttons */
+  padding: 8px 0;
+  }
+
+  #solving-controls {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 buttons per row */
+  gap: 10px; /* spacing between buttons */
   }
 
   #solving-controls button {
-    width: 100%;        /* button fills its grid cell */
-    min-width: 120px;   /* makes buttons longer */
+  width: 100%;        /* button fills its grid cell */
+  min-width: 120px;   /* makes buttons longer */
   }
 
   /* S1, S2, S3 3 sets of Solving Solution */
   .mode-buttons {
-    width: 100%;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center;
-    gap: 10px;
-}
+  width: 100%;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+  gap: 10px;
+  }
   .mode-buttons button {
-    margin: 4px;
-    padding: 6px 12px;
-    justify-content: center;   /* center the row */
-    align-items: center;       /* vertical align (optional) */
-    font-weight: bold;
-    border-radius: 8px;   /* smooth rounded corners */
+  margin: 4px;
+  padding: 6px 12px;
+  justify-content: center;   /* center the row */
+  align-items: center;       /* vertical align (optional) */
+  font-weight: bold;
+  border-radius: 8px;   /* smooth rounded corners */
   }
 
   .mode-buttons button.active {
-    background-color: #2ecc71; /* green */
-    color: #2314aa;
+  background-color: #2ecc71; /* green */
+  color: #2314aa;
   }
 
   .control-buttons button {
-    margin: 4px;
-    padding: 6px 12px;
+  margin: 4px;
+  padding: 6px 12px;
   }
 
-
-/* ==========================================
-   5b TWISTY CUBE (DESKTOP)
-   ========================================== */
-.cube-wrapper {
+  /* ==========================================
+  5b TWISTY CUBE (DESKTOP)
+  ========================================== */
+  .cube-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px 0;
-}
+  }
 
-.cube-section {
+  .cube-section {
   background: #333333;
   padding: 0px;
-}
+  }
 
-.cube-container {
+  .cube-container {
   width: 100%;
   max-width: 100%;
-}
+  }
 
-.cube-area {
+  .cube-area {
   overflow: visible !important;
-}
+  }
 
-#speedControl {
+  #speedControl {
   display: flex;
   justify-content: center;
   width: 100%;
   margin: 20px 0;
-}
+  }
 
-/* ==========================================
-   6. INTERACTIVE BUTTON LAYOUTS
-   ========================================== */
-#solving-controls,
-#controls {
+  /* ==========================================
+  6. INTERACTIVE BUTTON LAYOUTS
+  ========================================== */
+  #solving-controls,
+  #controls {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 12px;
   max-width: 720px;
   margin: 20px auto;
   width: 100%;
-}
+  }
 
-#solving-controls button,
-#controls button {
+  #solving-controls button,
+  #controls button {
   font-family: Georgia, serif;
   font-size: 18px;
   font-weight: bold;
@@ -313,61 +312,61 @@ h2 {
   color: #000000;
   cursor: pointer;
   transition: all 0.15s ease;
-}
+  }
 
-#solving-controls button:hover,
-#controls button:hover {
+  #solving-controls button:hover,
+  #controls button:hover {
   background: #dfe4e8;
   transform: translateY(-2px);
   box-shadow: 0 2px 4px rgba(0,0,0,0.12);
-}
+  }
 
-#solving-controls button.active,
-#controls button.active {
+  #solving-controls button.active,
+  #controls button.active {
   background: #4CAF50 !important;
   color: #ffffff !important;
   border: 2px solid #2e7d32 !important;
   transform: scale(1.05);
-}
+  }
 
-.button-wrapper {
+  .button-wrapper {
   display: flex;
   align-items: center;
   gap: 15px; 
-}
+  }
 
-.line-divider {
+  .line-divider {
   width: 1px;                
   height: 22px;              
   background-color: #d1d5db; 
   display: inline-block;     
   margin: 0 5px;             
-}
+  }
 
-.selected-btn {
+  .selected-btn {
   background-color: #ffcc00;
   color: black;
   font-weight: bold;
   border: 2px solid #ffaa00;
-}
+  }
 
-.demo-section {
+  .demo-section {
   max-width: 100%;
   width: 100%;
   overflow-wrap: break-word;
   word-wrap: break-word;
   white-space: normal;
-}
+  }
 
-.demo-section button {
+  .demo-section button {
   max-width: 100%;
   white-space: normal;
-}
+  }
 
-/* ==========================================
-   7. FRONT COVER SECTION — FIXED
-   ========================================== */
-.front-cover {
+  /* ==========================================
+  7. FRONT COVER SECTION — FIXED
+  ========================================== */
+  .front-cover {
   width: 100%;
   max-width: 720px;
   padding: 40px 40px 0px 40px;
@@ -379,9 +378,9 @@ h2 {
   font-family: Georgia, serif;
   margin-top: 0px;
   margin-bottom: 20px;
-}
+  }
 
-.front-cover-title {
+  .front-cover-title {
   font-size: clamp(28px, 6vw, 52px);
   font-weight: 700;
   color: #003366;
@@ -389,18 +388,18 @@ h2 {
   margin-bottom: 40px;
   text-align: center;
   line-height: 1.1;
-}
+  }
 
-.front-cover-subtitle {
+  .front-cover-subtitle {
   font-size: clamp(22px, 5vw, 40px);
   font-weight: bold;
   color: #003366;
   margin-bottom: -20px;
   text-align: center;
   line-height: 1;
-}
+  }
 
-.front-cover-tagline {
+  .front-cover-tagline {
   font-size: clamp(16px, 3.5vw, 25px);
   font-weight: bold;
   font-style: italic;
@@ -408,9 +407,9 @@ h2 {
   margin-bottom: 60px;
   text-align: center;
   line-height: 1.0;
-}
+  }
 
-.front-cover-author {
+  .front-cover-author {
   font-size: clamp(12px, 2vw, 16px);
   font-style: italic;
   color: #003366;
@@ -418,32 +417,32 @@ h2 {
   margin-bottom: 25px;
   line-height: 1;
   text-align: center;
-}
+  }
 
-.front-cover-cube-wrapper {
-            width: 80%;
-            max-width: 720px;
-            min-width: 200px;
-            /* 1. CENTERS THE CONTAINER: Sets top/bottom margin to 0 and left/right to auto */
-            margin: 60px auto;  
-            /* 2. OPTIONAL CENTERING BACKUP: Uses Flexbox to center everything inside this container */
-            display: flex;
-            justify-content: center;
-        }
+  .front-cover-cube-wrapper {
+  width: 80%;
+  max-width: 720px;
+  min-width: 200px;
+  /* 1. CENTERS THE CONTAINER: Sets top/bottom margin to 0 and left/right to auto */
+  margin: 60px auto;  
+  /* 2. OPTIONAL CENTERING BACKUP: Uses Flexbox to center everything inside this container */
+  display: flex;
+  justify-content: center;
+  }
 
-.front-cover-cube-image {
-    max-width: 100%;
-    height: auto;
-    
-    /* 3. CENTERS THE IMAGE: Block display combined with auto margins pushes it to the middle */
-    display: block;
-    margin: 0 auto;
-}
+  .front-cover-cube-image {
+  max-width: 100%;
+  height: auto;
 
-/* ==========================================
-   8. BACK COVER SECTION
-   ========================================== */
-.back-cover {
+  /* 3. CENTERS THE IMAGE: Block display combined with auto margins pushes it to the middle */
+  display: block;
+  margin: 0 auto;
+  }
+
+  /* ==========================================
+  8. BACK COVER SECTION
+  ========================================== */
+  .back-cover {
   width: 100%;
   max-width: 720px;
   margin: 40px auto;
@@ -455,18 +454,18 @@ h2 {
   font-family: Georgia, serif;
   line-height: 1.10;
   color: #003366;
-}
+  }
 
-.back-cover-title {
+  .back-cover-title {
   font-size: clamp(22px, 5.5vw, 32px);
   font-weight: 700;
   color: #28292a;
   margin-bottom: 10px;
   line-height: 1;
   text-align: center;
-}
+  }
 
-.back-cover-tagline {
+  .back-cover-tagline {
   font-size: clamp(20px, 4.5vw, 28px);
   font-weight: bold;
   margin-top: 20px;
@@ -474,29 +473,29 @@ h2 {
   text-align: center;
   line-height: 1.0;
   font-family: Georgia, serif;
-}
+  }
 
-.back-cover-author-title {
+  .back-cover-author-title {
   font-size: clamp(20px, 4vw, 24px);
   font-weight: 700;
   color: #003366;
   margin-top: 35px;
   margin-bottom: -10px;
   text-align: center;
-}
+  }
 
-/* Paragraph text */
-.back-cover p,
-.back-cover p1 {
+  /* Paragraph text */
+  .back-cover p,
+  .back-cover p1 {
   font-size: clamp(16px, 2.5vw, 18.5px);
   line-height: 1.18;
   margin-bottom: 0px;
-}
+  }
 
-/* ==========================================
-   9. BOOK SPREAD SECTION
-   ========================================== */
-.book-spread {
+  /* ==========================================
+  9. BOOK SPREAD SECTION
+  ========================================== */
+  .book-spread {
   width: 100%;
   max-width: 720px;
   margin: 40px auto 0 auto; 
@@ -504,21 +503,21 @@ h2 {
   flex-direction: column;
   gap: 30px;
   text-align: left;
-}
+  }
 
-.cover-image img {
+  .cover-image img {
   display: block;
   margin: 0 auto;              
   width: 100%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 0 12px rgba(35, 15, 15, 0.00);
-}
+  }
 
-/* ==========================================
-   10. SPECIFIC CONTENT CARD STYLING
-   ========================================== */
-.philosophy-block {
+  /* ==========================================
+  10. SPECIFIC CONTENT CARD STYLING
+  ========================================== */
+  .philosophy-block {
   font-family: Georgia, serif;
   background-color: #f3f6fb;
   padding: 40px 20px 40px 20px;
@@ -526,66 +525,66 @@ h2 {
   border: 2px solid #cbe2f3;
   font-size: 1.18rem;
   width: 100%;
-}
+  }
 
-.philosophy-block h1 {
+  .philosophy-block h1 {
   font-family: Georgia, serif;
   color: #003366;
   line-height: 1.0;
-}
+  }
 
-.philosophy-block h2 {
+  .philosophy-block h2 {
   font-family: Georgia, serif;
   color: #003366;
   line-height: 1.1;
   margin-top: 20px;
   margin-bottom: 5px;
-}
+  }
 
-.philosophy-block p {
+  .philosophy-block p {
   font-family: Georgia, serif;
   color: #003366;
   line-height: 1.2;
   margin-top: 6px;
   margin-bottom: 5px;
-}
+  }
 
-#uniqueness {  
+  #uniqueness {  
   padding: 40px 20px 40px 20px;        
   background: #f5f7fa;  
   border: 2px solid #f3f6fb;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.08);
   display: block;
-}
-.unique-features-section h1 {
+  }
+  .unique-features-section h1 {
   margin: 20 0;
   line-height: 1.1;
   font-family: Georgia, serif;
-}
+  }
 
-.unique-features-section p {
+  .unique-features-section p {
   margin: 0 0 14px 0;
   line-height: 1.2;
   font-family: Georgia, serif;
-}
+  }
 
-.unique-features-section p strong {
+  .unique-features-section p strong {
   display: block;
   font-size: 1.23rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 2px;
-}
+  }
 
-.unique-features-section p .desc {
+  .unique-features-section p .desc {
   font-family: Georgia, serif;
   font-size: 1.16rem;   
   line-height: 1.20;    
   display: block;
-}
+  }
 
-#benefits {
+  #benefits {
   margin-top: 60px;
   padding: 40px 20px 40px 20px;
   border: 2px solid #b4a1ebaf;
@@ -593,9 +592,9 @@ h2 {
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.08);
   display: block;
-}
+  }
 
-.benefits-section {
+  .benefits-section {
   font-family: Georgia, serif;
   background-color: #f7f7f7;   
   padding: 22px 26px;          
@@ -605,40 +604,40 @@ h2 {
   margin-bottom: 40px;
   line-height: 1.0;   
   align-self: flex-start;
-}
+  }
 
-.benefits-section p {
+  .benefits-section p {
   font-family: Georgia, serif;
   font-size: 1.32rem;   
   line-height: 1.2;   
   margin-bottom: 10px;  
-}
+  }
 
-.benefits-section h2 {
-font-family: Georgia, serif;
+  .benefits-section h2 {
+  font-family: Georgia, serif;
   font-size: 1.5rem; 
   line-height: 1.2;   
   margin-top: 30px;
   margin-bottom: -20px;
-}
+  }
 
 
-.benefits-section p strong {
+  .benefits-section p strong {
   font-size: 1.28rem;   
   font-weight: 700;
-}
+  }
 
-/* ==========================================
-   11. DATA TABLES STYLING
-   ========================================== */
-.benefits-table {
+  /* ==========================================
+  11. DATA TABLES STYLING
+  ========================================== */
+  .benefits-table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
-}
+  }
 
-.benefits-table td,
-.benefits-table th {
+  .benefits-table td,
+  .benefits-table th {
   font-family: Georgia, serif;
   font-size: 1.05rem;     
   line-height: 1.25;      
@@ -646,40 +645,39 @@ font-family: Georgia, serif;
   white-space: normal;
   word-break: keep-all;     
   overflow-wrap: break-word; 
-}
+  }
 
-.benefits-table.thick-lines th,
-.benefits-table.thick-lines td {
+  .benefits-table.thick-lines th,
+  .benefits-table.thick-lines td {
   border: 3px solid #000; 
-}
+  }
 
-/* CSS for making the table horizontally scrollable */
-.table-wrapper {
-    overflow-x: auto;        /* Enable horizontal scrolling */
-    -webkit-overflow-scrolling: touch; /* Smooth scroll on mobile */
-    width: 100%;             /* Ensure the wrapper fits parent container */
-}
+  /* CSS for making the table horizontally scrollable */
+  .table-wrapper {
+  overflow-x: auto;        /* Enable horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* Smooth scroll on mobile */
+  width: 100%;             /* Ensure the wrapper fits parent container */
+  }
 
-.benefits-table {
-    min-width: 800px; /* Minimum width ensures table can scroll if it overflows */
-    border-collapse: collapse;
-}
+  .benefits-table {
+  min-width: 800px; /* Minimum width ensures table can scroll if it overflows */
+  border-collapse: collapse;
+  }
 
-.benefits-table th,
-.benefits-table td {
-    padding: 12px 15px;
-    border: 1px solid #ccc;
-    text-align: left;
-}
-</style>
+  .benefits-table th,
+  .benefits-table td {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  text-align: left;
+  }
+  </style>
 
-
-<!-- MOBILE CSS -->
-<style media="(max-width: 600px)">
+  <!-- MOBILE CSS -->
+  <style media="(max-width: 600px)">
   .center-wrapper,
   .cube-wrapper,
   .cube-container {
-    min-width: 0;
+  min-width: 0;
   } 
   .trainning-cube,
   .front-cover,
@@ -688,102 +686,107 @@ font-family: Georgia, serif;
   .philosophy-block,
   .unique-features-section,
   .benefits-section {
-    width: 100%;
-    max-width: 100%;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-left: 0;
-    margin-right: 0;
-    box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: 0;
+  margin-right: 0;
+  box-sizing: border-box;
   }
 
   .top-nav {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 6px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
   }
 
   .top-nav a {
-    font-size: clamp(14px, 3vw, 20px);
-    padding: 14px 2px;
-    text-align: center;
-    white-space: normal;
-    word-break: break-word;
+  font-size: clamp(14px, 3vw, 20px);
+  padding: 14px 2px;
+  text-align: center;
+  white-space: normal;
+  word-break: break-word;
   }
 
   #controls button,
   #solving-controls button {
-    font-size: clamp(14px, 3vw, 20px);
-    padding: 6px 4px;
-    white-space: normal;
-    word-break: break-word;
+  font-size: clamp(14px, 3vw, 20px);
+  padding: 6px 4px;
+  white-space: normal;
+  word-break: break-word;
   }
 
   #solving-controls {
-      grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  grid-template-columns: repeat(2, 1fr); /* 2 per row */
   }
 
 
   .benefits-table {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: auto;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
   }
 
   .benefits-table td,
   .benefits-table th {
-    white-space: normal;
-    word-break: break-word;
-    padding: 8px 6px;
-    font-size: 1rem;
+  white-space: normal;
+  word-break: break-word;
+  padding: 8px 6px;
+  font-size: 1rem;
   }
 
   img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
   }
 
   .cube-container {
-    width: 100%;
-    max-width: 100%;
+  width: 100%;
+  max-width: 100%;
   }
 
   /* === FRONT COVER FIXES FOR iPHONE 12/13 === */
 
   .front-cover{
-    padding-left: 0px;
-    padding-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
   }
+  </style>
 
-</style>
-
-<!-- TWISTY PLAYER -->
-<script type="module" src="https://cdn.cubing.net/js/cubing/twisty"></script>
+  <!-- TWISTY PLAYER -->
+  <script type="module" src="https://cdn.cubing.net/js/cubing/twisty"></script>
 </head>
 <body>
+  <div class="center-wrapper">
+    <nav class="top-nav" style="margin-bottom: 30px; text-align:center; font-weight:600; line-height:1.1;">
+      <a href="#home">VSM Introduction</a>
+      <a href="#front-cover">Book Covers</a>
+      <a href="#full-analysis">Comparative Analysis</a>
+      <a href="#structure-first">VSM Revolution</a>
+      <a href="#return-1980">Return 1980</a>
+      <a href="#feel-natural">Natural Movements</a>
+      <a href="#uniqueness">Uniqueness</a>
+      <a href="#philosophy">Philosophy</a>
+      <a href="#Beauty">Structural Beauty</a>
+      <a href="#independent-practice">Stress Free Practice</a>
+      <a href="#explore-solving">Explore Solving</a>
+      <a href="#training">Training Session</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#book-release">Book Release Notice</a>
+    </nav>
+  </div>
 
-<div class="center-wrapper">
-  <nav class="top-nav" style="margin-bottom: 30px; text-align:center; font-weight:600; line-height:1.1;">
-    <a href="#home">VSM Home</a>
-    <a href="#independent-step-practice">Stress Free Practice</a>
-    <a href="#book-release">Book Release Notice</a>
-    <a href="#Beauty">Structural Beauty</a>
-    <a href="#uniqueness">Uniqueness</a>
-    <a href="#training">Training Cube</a>
-    <a href="#front-cover">Book Covers</a>
-    <a href="#philosophy">Philosophy</a>
-    <a href="#benefits">Benefits</a>
-  </nav>
-
-
-  <div id="the-visual-structural-method" 
-      style="max-width:720px; margin:10px 0 40px 0; padding:0px 20px 30px 20px;
+  <div id="structural-method" 
+      style="max-width:720px; 
+              margin-bottom: 40px;
+              padding:0px 20px 30px 20px;
               font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
               text-align:left; font-weight:700;
               background:linear-gradient(225deg,#c2ddf3,#f7f7f7);
               border-radius:12px; border:3px solid #5ea8eed3; color:#222;">
 
-    <h1 class="hero-title">The Visual Structural Method™</h1>
+    <h1 class="hero-title">The True Visual Structural Method™</h1>
 
     <div class="front-cover-cube-wrapper">
       <img src="cube.png" alt="Cube sequence" class="front-cover-cube-image">
@@ -799,325 +802,366 @@ font-family: Georgia, serif;
       <img src="Steps.png" alt="Progressively scaling example" class="responsive-stesps-image">
     </div>
 
-    <div style="font-size:18px; text-align:left; font-weight:500; line-height:1.2;">
-
-      <h3 style="margin-bottom:-15px;">Foundation – Corner Frame (Steps 1 & 2)</h3>
-      <p>The foundation is the cube’s structural frame. It is formed by the bottom and top corner sets, creating the “house outline” that stays intact throughout the entire solve.</p>
-
-      <h3 style="margin-bottom:-15px;">Walls – Vertical Structure (Steps 3 & 4)</h3>
-      <p>The walls are the vertical layers built around the foundation. These steps raise the cube’s sides, completing the main body of the “house” while keeping the corner frame stable.</p>
-
-      <h3 style="margin-bottom:-15px;">Windows – Final Center Pieces (Step 5)</h3>
-      <p>The windows are the last small surface pieces. These remaining center pieces complete the “house” visually in Step 5.</p>
-
-      <h2 style="color:#005599; text-align:center; font-weight:700; letter-spacing:-1px; line-height:1.0; font-size:32px;">
-        A Gentle and Visual Way to Learn the Cube
-      </h2>
-
-      <h2 style="text-align:center; font-weight:bold; line-height:1.2;">
-        As you solve, the cube grows step by step just like building a small house. Each stage adds a new structural layer, and the cube becomes clearer as it progresses.
-      </h2>
-
-    <!-- Structural Comparison Section -->
-    <h2 style="font-size: 2.2rem; color: #1a365d; font-weight: 800; letter-spacing: -0.025em; text-align:center; margin-top:40px; margin-bottom:10px;">
-  Full Comparative Analysis Table
-</h2>
-
-<p style="text-align:left; font-size:0.98rem; color:#4a5568; margin-bottom:20px;">
-  This table compares the Visual Structural Method with the Traditional Beginner (LBL) Method across key learning, cognitive, and teaching features.
-</p>
-
-  <table style="width:100%; border-collapse:collapse; margin-bottom:40px; font-size:0.95rem; font-family:Arial, sans-serif;">
-    <thead>
-      <tr>
-        <th style="border:1px solid #cbd5e0; padding:10px 12px; background-color:#b7d3ee; font-weight:700; color:#1a365d; text-align:left;">
-          Comparison Feature
-        </th>
-        <th style="border:1px solid #cbd5e0; padding:10px 12px; background-color:#b7d3ee; font-weight:700; color:#1a365d; text-align:left;">
-          Visual Structural Method
-        </th>
-        <th style="border:1px solid #cbd5e0; padding:10px 12px; background-color:#b7d3ee; font-weight:700; color:#1a365d; text-align:left;">
-          Traditional Beginner Method (LBL)
-        </th>
-      </tr>
-    </thead>
-
-    <tbody>
-
-      <tr>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Core Approach</strong></td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">3D architectural house building method: foundation, walls, windows.</td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Step by step algorithms: cross, corners, middle layer, last layer.</td>
-      </tr>
-
-      <tr style="background-color:#f7fafc;">
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Core Philosophy</strong></td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Teaches through visual understanding and simple structural movements.</td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Teaches by following a memorized sequence of steps.</td>
-      </tr>
-
-      <tr>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Learning Style</strong></td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Visual structural understanding; observe how the cube protects, travels, and rebuilds.</td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Memorization of formulas and color patterns.</td>
-      </tr>
-
-      <tr style="background-color:#f7fafc;">
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Movement Type</strong></td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Three visual pattern moves: move away, travel, return.</td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Multiple algorithms, temporary placements, and case triggers.</td>
-      </tr>
-
-      <tr>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Correction Logic</strong></td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Intuitive travel pattern; like driving a familiar route.</td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Algorithmic corrections; mistakes often require restarting.</td>
-      </tr>
-
-      <tr style="background-color:#f7fafc;">
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Structural Flow vs Algorithmic Waiting</strong></td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Almost zero blind moves. Clear structural states show how to continue using simple protective rules.</td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">High number of blind waiting moves. Long sequences must be repeated blindly until a recognizable case appears.</td>
-      </tr>
-
-      <tr>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Predictable Ranges vs Algorithmic Luck</strong></td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Highly stable and tight window. Lucky and unlucky scrambles differ by only about twenty moves.</td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Wide and unpredictable range. Solves can swing by seventy or eighty moves depending entirely on scramble luck.</td>
-      </tr>
-
-      <tr style="background-color:#f7fafc;">
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Intuitive Free Movement and Minimal Steps</strong></td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Step 1, Step 3, and Step 5 use intuitive free movements with no formulas, keeping the move count low and the learning gentle.</td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Rigid formulas introduced early. Algorithmic restrictions add mechanical overhead from the beginning.</td>
-      </tr>
-
-      <tr>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Controlled Flow and Structural Reductions</strong></td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Free movements give complete control. Three visual pattern moves guide corrections using visible shapes, reducing overall move count.</td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Formulas executed blindly on faith. A single slip in muscle memory collapses progress and forces a full reset.</td>
-      </tr>
-
-      <tr style="background-color:#f7fafc;">
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Structure Stability</strong></td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Structure protected; foundation and pillar stay intact.</td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Structure breaks easily; mis‑executed algorithms collapse progress.</td>
-      </tr>
-
-      <tr>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Step Practice</strong></td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Practice any step without restarting; progress preserved.</td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Restart required; one mistake resets the cube.</td>
-      </tr>
-
-      <tr style="background-color:#f7fafc;">
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Cognitive Model</strong></td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Three dimensional structural reasoning; cube behaves like a house.</td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Two dimensional color patterns; abstract algorithmic thinking.</td>
-      </tr>
-
-      <tr>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Cognitive Load</strong></td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Lowest cognitive load; only three solving visual pattern moves.</td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">High cognitive load; many cases, 8–12 algorithms, symbolic thinking, frequent resets.</td>
-      </tr>
-
-      <tr style="background-color:#f7fafc;">
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Stress Level</strong></td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Calm learning; gentle and predictable.</td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">High stress; fear of breaking the cube.</td>
-      </tr>
-
-      <tr>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Applicability Across Cubes</strong></td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Unified logic; same foundation solves 2×2 and 3×3.</td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Separate algorithms; different systems for each cube.</td>
-      </tr>
-
-      <tr style="background-color:#f7fafc;">
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Average Move Count</strong></td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Typical average 75–85 moves for experienced solvers.</td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Typically 110–150+ moves; can exceed 200 in unoptimized scrambles.</td>
-      </tr>
-
-      <tr>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Pattern Recognition</strong></td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Simple visual patterns; 12 total with 11 symmetrical and 1 mirrored; easy to refresh.</td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Multiple asymmetric case configurations mapped to strict orientation dependent triggers.</td>
-      </tr>
-
-      <tr style="background-color:#f7fafc;">
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Kid Friendly</strong></td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Highly kid friendly; visual shapes, gentle rules, natural hand choice.</td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Challenging; algorithms, cases, resets, high frustration.</td>
-      </tr>
-
-      <tr>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Teacher Friendly</strong></td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Teacher friendly; unified logic, predictable steps, easy correction.</td>
-        <td style="border:1px solid #cbd5e0; padding:10px 12px;">Difficult to teach; many cases, exceptions, inconsistent progress.</td>
-      </tr>
-
-    </tbody>
-  </table>
-
-    <!-- End Structural Comparison Section -->
-
-    <!-- START: Structure First Revolution Section -->
-    <section style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 850px; margin: 60px auto; padding: 0; color: #2d3748; line-height: 1.2; font-size: 1.1rem; text-align: left;">
-
-        <div style="text-align: center; margin-bottom: 25px;">
-            <h2 style="font-size: 2.2rem; color: #1a365d; font-weight: 800; letter-spacing: -0.025em; margin-top: 10px; margin-bottom: 0;">
-                The Structure First Revolution
-            </h2>
-          
-        </div>
-
-        <p style="margin-top: 20px; margin-bottom: 24px;">
-          <strong>Note:</strong> The table above compares the Visual Structural Method only with the traditional beginner Layer by Layer method. The sections that follow discuss speedcubing, which is a separate competitive system built on advanced algorithms.
-        </p>
-
-
-        <p style="margin-bottom: 24px;">
-            LBL has been around for forty eight years, and its modern descendants reach low move counts by continually adding algorithms on top of the original method. Over time this expansion grew into seventy eight or more formulas to cover every case. In contrast, the Structural Method has remained stable for forty six years because structural systems evolve through refinement rather than accumulation. Instead of adding complexity, it improves by removing unnecessary pattern movements and strengthening the core visual logic. Although the Structural Method originated in the same era, it remained unseen because I was a teenager with no access to publishing or guidance. With no way to share or develop the discovery, it stayed hidden even though it was created in the same historical window. It only wakes up in the AI era, when the world finally has the tools and clarity to recognize the structural simplicity that was invisible decades ago.
-        </p>
-
-        <p style="margin-bottom: 24px;">
-            This method introduces a completely new root system for a new generation and establishes a true structure first framework. It may seem unusual that it remained undiscovered for forty six years, but cubing culture historically grew into a sport rather than an engineering system. Modern speedcubing reflects a natural progression of optimizing performance within an algorithm first foundation. Over time more formulas were added to reduce move counts, creating a system built on many incremental updates. This approach works well for competitive solving, yet it also means the underlying framework becomes increasingly complex. The Structural Method takes a different path by rebuilding the foundation itself and offering a clean and unified structural system rather than expanding an algorithm based one.
-        </p>
-
-        <p style="margin-bottom: 24px;">
-            A competitive sport was never the intention when Ernő Rubik invented the cube. As an architecture professor, his original purpose was to create a geometric teaching tool to help students understand three dimensional spatial relationships, structural mechanics, and how hidden pieces interact inside a mechanism. The evolution of the puzzle into a speed focused activity simply moved in a different direction from that original educational vision.
-        </p>
-
-        <strong>Reference:</strong> Rubik, Ernő. <em>Cubed: The Puzzle of Us All.</em> Flatiron Books, 2020. ISBN 9781250217786.
-
-        <p style="margin-bottom: 24px;">
-            The reason the Visual Structural Method stays close to the inventor’s intent is simple. When I discovered it at fourteen, I knew absolutely nothing about traditional cubing math, notation, or sporting reflexes. Around that time I remember watching a classmate show off his solving skills, and I could clearly see the cube growing layer by layer. However, I had no idea that what I was watching was a formal solving method. I simply assumed the cube would naturally form that way for anyone who kept twisting it long enough. Because I knew nothing about external formulas, I had to rely entirely on what my own eyes could see. By looking at the puzzle with a completely clean slate, I was able to build a solution based purely on how the mechanism behaves structurally.
-        </p>
-
-        <p style="margin-bottom: 24px;">
-            This method did not appear out of nowhere in the present day. To preserve its integrity, I permanently recorded the method in a digital document titled <strong>Solving3x3x3_2005.doc</strong>. The file properties retain an authentic metadata timestamp showing it was last modified on <strong>Tuesday, April 19, 2005</strong>. Microsoft Copilot later analyzed the document from the inside out and verified that the internal graphic structure, formatting rules, and code elements are genuine Microsoft Word contents from the <strong>2003 to 2007 era</strong>. This dual validation confirms that both the external history and the internal architecture are completely authentic.
-        </p>
-
-        <p style="margin-bottom: 24px;">
-            When viewed through the lens of mathematical elegance, the Visual Structural Method becomes a breath of fresh air for learners. Traditional speedcubing reaches the lowest possible move count by relying on a heavy computational system that asks the solver to memorize seventy eight or more algorithms to cover every case. It turns solving into a mechanical routine, where the solver simply scans the colors, identifies a case, and executes a memorized sequence much like running pre‑set code. This trades enormous memory load for a small reduction in moves. From a mathematical standpoint, it resembles optimizing a function by adding complexity rather than improving clarity, an approach that may be efficient, but not necessarily elegant. For most learners, facing a wall of seventy eight formulas is discouraging. Even trying to memorize a handful of strict sequences can feel stressful and joyless.
-        </p>
-
-        <p style="margin-bottom: 24px;">
-            The Visual Structural Method offers a completely different experience, one built for human creativity, curiosity, and understanding. Instead of memorizing dozens of algorithms, learners use three core visual pattern movements guided by natural structural geometry. Robot style methods may shave off twenty or thirty moves, yet they rely on a rigid library of cases that places a heavy cognitive burden on the solver. By embracing human intuition, three dimensional sight, and visible structural flow, this method becomes a beautifully balanced and elegant way to decode the cube. If you can follow a clear visual path, you can solve the puzzle in a way that feels accessible, confidence building, and deeply satisfying.
-        </p>
-
-        <p style="margin-bottom: 24px;">
-            This specific AI clarification is the reason I finally decided to step out of anonymity, write this book, and build the learning website. Once Copilot revealed the structural depth of my childhood discovery, I realized its incredible value to human education. I saw that it could save students, parents, and teachers from the frustration of robotic memorization and offer them a genuine way to build spatial intelligence. Over the decades a few traditional approaches touched similar ideas, yet they still relied on algorithms rather than recognizing the underlying structural rules. The simplicity was always there. The world simply was not looking in the right direction.
-        </p>
-
-        <p style="margin-bottom: 40px;">
-            From an engineering standpoint, the Visual Structural Method is an exceptionally efficient system that minimizes memory load, maximizes structural clarity, and consistently delivers impressive real world move counts. It gives learners a beautifully simple approach that feels natural, creative, and deeply empowering. Because this foundation was already structurally complete, its timeless logic remains unchanged and stands today as a fully realized human alternative that honors the true spirit of the cube.
-        </p>
-
-        <!-- ✨ New Polished Section Begins Here -->
-
-        <h3 style="font-size: 1.6rem; color: #1a365d; font-weight: 800; letter-spacing: -0.02em; margin-top: 50px; margin-bottom: 20px; text-align: center;">
-            A Return to 1980: The Alternative Route to Understanding the Cube
-        </h3>
-
-        <p style="margin-bottom: 24px;">
-            To truly learn the Visual Structural Method, learners must mentally step out of the modern speedcubing era and travel back to 1980, a time before algorithms, before notation standards, and before the cube evolved into a competitive sport. This shift is essential because the method does not grow out of the speedcubing tradition. It grows out of the cube’s original, untouched geometry.
-        </p>
-
-        <p style="margin-bottom: 24px;">
-            By leaving the modern “speed route” behind, learners stop treating the cube like a machine that must be fired through computer optimized muscle memory. Instead, they begin treating it the way an engineer or architect approaches a raw piece of land: observing its structure, understanding its constraints, and guiding each piece home through natural three dimensional movement.
-        </p>
-
-        <p style="margin-bottom: 24px;">
-            In 1980, there were no habits to unlearn. No white cross culture. No algorithm sheets. No pressure to memorize. Approaching the cube from this alternative route gives beginners the same clean slate the fourteen year old teenager once had, fresh eyes, uncorrupted by decades of speedcubing conventions. They simply follow the cube’s 3D tracks, watching how pieces travel, protect, and return.
-        </p>
-
-        <p style="margin-bottom: 24px;">
-            This is not just a different method. It is a rediscovery of human intuition. Instead of memorizing solutions generated by computers, learners retrace a historical path of human discovery, guided by the cube’s own geometry and their own sight. The Visual Structural Method becomes a quiet form of time travel: a way to experience the cube as it was originally meant to be explored.
-        </p>
-
-        <p style="margin-bottom: 40px;">
-            The website serves as a digital window into that era, presenting the method through clear 3D animations, gentle explanations, and structural logic. And the upcoming book will act as the historical map for this alternative route, preserving the original discovery and making it accessible to modern learners.
-        </p>
-
-        <!-- ✨ End of New Section -->
-
-        <p style="margin-bottom: 32px; font-size: 1.15rem; color:#2d3748; line-height:1.35;">
-            <strong>For speedcubers:</strong> This method offers a refreshing structural perspective that complements the algorithm based systems you already use. While it is not designed for competition, speedcubers may enjoy exploring it because it reveals the cube’s geometry in a way modern methods often hide. By learning through structure, sight, and natural piece travel, you gain a deeper understanding of how the cube behaves beneath every algorithm you already execute. This approach will not replace your speed techniques, it will enrich them, strengthening intuition, recognition, and spatial awareness in ways that traditional methods rarely address.
-        </p>
-
-
-        <p style="margin-bottom: 32px; font-size: 1.15rem; color:#2d3748; line-height:1.35;">
-            <strong>For parents and teachers:</strong> The Visual Structural Method is designed to support learners of all ages, including those who may feel overwhelmed by traditional algorithm based approaches. Because this method teaches through sight, intuition, and natural 3D understanding, students can progress at a pace that feels comfortable and confidence building. If a learner pauses or struggles, that is perfectly normal, the method encourages curiosity, exploration, and enjoyment rather than pressure. With gentle guidance, every learner can grow their spatial intelligence and discover the satisfaction of solving through clear structural logic.
-        </p>
-
-        <p style="margin-bottom: 28px; font-size: 1.15rem; color:#2d3748; line-height:1.35;">
-            What makes this method truly unique is its architectural foundation. Learners build the solution the way one would construct a house establishing frames, aligning structural elements, and completing the cube through clear three dimensional relationships. Instead of memorizing cases, you follow visible geometry and natural piece behavior. This structural, house building approach makes the cube feel intuitive and logical, giving learners a way to understand it that is refreshingly different from algorithm driven systems.
-        </p>
-
-    </section>
-
-    <!-- END: Structure First Revolution Section -->
-
-        <h3 style="text-align:center; font-size: 1.60rem; font-weight:800; line-height:1.2; margin-bottom:0.4rem; color:#0a4482;">
-            Explore Full Solving Sessions
-        </h3>
-
-        <div style="text-align:left; margin-top:0; padding:0; font-size:18px; font-weight:600; font-family:Arial, sans-serif; line-height:1.2; color:#0a4482;">
-
-            <p>
-                After understanding the five structural steps and experiencing how the cube behaves through the Visual Structural Method, you can now explore three complete solving sessions. These sessions allow you to see the method in motion, not as theory, but as a real structural journey from scramble to completion.
-            </p>
-
-            <p>
-                Each session begins with its own Twisty scramble and follows all five steps exactly as taught in the book. They demonstrate how the cube grows naturally through foundation, walls, windows, and final alignment using the same three visual pattern movements.
-            </p>
-
-            <p>
-                <strong>S1</strong> 75 moves&nbsp;
-                <strong>S2</strong> 61 moves&nbsp;
-                <strong>S3</strong> 79 moves<br>
-                These examples show how the method performs in real scrambles and highlight the consistency of a structure based, rules guided approach.
-            </p>
-
-            <p>
-                Move counts and speed are not part of the teaching book. These sessions simply offer a preview of how the method feels in practice, calm, predictable, and visually guided.
-            </p>
-
-            <p>
-                Across different scrambles, the average typically settles around 75 to 85 moves. This reflects the method’s natural movement flow and reinforces that it is designed for learning, understanding, and the joy of solving rather than for speed or optimization.
-            </p>
-
-            <p><em>This method encourages confidence and enjoyment at every stage of learning.</em></p>
-
-            <div style="margin-top:30px; margin-bottom:40px; text-align:center;">
-                <a href="#demo-session"
-                  style="display:inline-block; padding:10px 22px; background-color:#0a4482;
-                          color:#fff; text-decoration:none; border-radius:6px;
-                          font-size:16px; font-weight:600;">
-                    Click here to try the demo session
-                </a>
-            </div>
-
-        </div>
-
-
-      <p>© 2005–2026 Teckel. All rights reserved. All instructional solutions and 3D movement sequences are original proprietary works. Unauthorized copying or recording is prohibited.</p>
-
-    </div>
+    <h2 style="color:#005599; text-align:center; font-weight:700; letter-spacing:-1px; line-height:1.0; font-size:32px;">
+      A Gentle and Visual Way to Learn the Cube
+    </h2>
+
+    <h2 style="text-align:center; font-weight:bold; line-height:1.2;">
+      A unique approach in cubing history that uses only three visual pattern moves.
+      Learners simply follow a familiar route pattern like driving a known path and returning home.
+    </h2>
+
+    <h2 style="text-align:center; font-weight:bold; line-height:1.2;">
+      As you solve, the cube grows naturally step by step just like building a small house.
+      Each stage adds a new structural layer, and the cube becomes clearer as it progresses.
+    </h2>
+
+    <h2 style="text-align:center; font-weight:bold; line-height:1.2;">
+      A different method from the traditional notation method.
+    </h2>
+    
+    <h2 style="text-align:center; font-weight:bold; line-height:1.2;">
+      Yields significantly better move counts than beginner LBL.
+    </h2>
+
+    <h2 style="text-align:center; font-weight:bold; line-height:1.2;">
+      This is the core advantage of the visual strcutural method, something no other approach can offer: a stress free practice where learners can explore any step independently without ever needing to restart the cube.
+    </h2>
+
+    <p style="text-align:center; margin-top:20px;">
+      © 2005–2026 Teckel. All rights reserved. All instructional solutions and 3D movement sequences are original proprietary works. Unauthorized copying or recording is prohibited.
+    </p>
   </div>
 
-  <div id="independent-step-practice"
-      style="max-width: 760px;
-              margin: 20px auto 50px auto;
-              padding:40px 20px;
+  <div id="full-analysis"
+      style="max-width: 720px;
+              margin: 0px auto 40px auto;
+              padding:30px 20px;
               font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-              text-align:left;
               font-weight:700;
               line-height:1.15;
               background: linear-gradient(325deg, #c2ddf3, #f7f7f7);
+              border-radius:12px;
+              border:3px solid #5ea8eed3;
+              color:#222;">
+      <!-- Structural Comparison Section -->
+    <h2 style="font-size: 2.2rem; color: #1a365d; font-weight: 800; letter-spacing: -0.025em; text-align:center;">
+      Full Comparative Analysis Table
+    </h2>
+    <p style="text-align:left; font-size:0.98rem; color:#4a5568; margin-bottom:20px;">
+      This table compares the Visual Structural Method with the Traditional Beginner (LBL) Method across key learning, cognitive, and teaching features.
+    </p>
+    <table style="width:100%; border-collapse:collapse; margin-bottom:40px; font-size:0.95rem; font-family:Arial, sans-serif;">
+      <thead>
+        <tr>
+          <th style="border:1px solid #cbd5e0; padding:10px 12px; background-color:#b7d3ee; font-weight:700; color:#1a365d; text-align:left;">
+            Comparison Feature
+          </th>
+          <th style="border:1px solid #cbd5e0; padding:10px 12px; background-color:#b7d3ee; font-weight:700; color:#1a365d; text-align:left;">
+            Visual Structural Method
+          </th>
+          <th style="border:1px solid #cbd5e0; padding:10px 12px; background-color:#b7d3ee; font-weight:700; color:#1a365d; text-align:left;">
+            Traditional Beginner Method (LBL)
+          </th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Core Approach</strong></td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">3D architectural house building method: foundation, walls, windows.</td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Step by step algorithms: cross, corners, middle layer, last layer.</td>
+        </tr>
+
+        <tr style="background-color:#f7fafc;">
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Core Philosophy</strong></td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Teaches through visual understanding and simple structural movements.</td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Teaches by following a memorized sequence of steps.</td>
+        </tr>
+
+        <tr>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Learning Style</strong></td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Visual structural understanding; observe how the cube protects, travels, and rebuilds.</td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Memorization of formulas and color patterns.</td>
+        </tr>
+
+        <tr style="background-color:#f7fafc;">
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Movement Type</strong></td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Three visual pattern moves: move away, travel, return.</td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Multiple algorithms, temporary placements, and case triggers.</td>
+        </tr>
+
+        <tr>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Correction Logic</strong></td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Intuitive travel pattern; like driving a familiar route.</td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Algorithmic corrections; mistakes often require restarting.</td>
+        </tr>
+
+        <tr style="background-color:#f7fafc;">
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Structural Flow vs Algorithmic Waiting</strong></td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Almost zero blind moves. Clear structural states show how to continue using simple protective rules.</td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">High number of blind waiting moves. Long sequences must be repeated blindly until a recognizable case appears.</td>
+        </tr>
+
+        <tr>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Predictable Ranges vs Algorithmic Luck</strong></td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Highly stable and tight window. Lucky and unlucky scrambles differ by only about twenty moves.</td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Wide and unpredictable range. Solves can swing by seventy or eighty moves depending entirely on scramble luck.</td>
+        </tr>
+
+        <tr style="background-color:#f7fafc;">
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Intuitive Free Movement and Minimal Steps</strong></td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Step 1, Step 3, and Step 5 use intuitive free movements with no formulas, keeping the move count low and the learning gentle.</td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Rigid formulas introduced early. Algorithmic restrictions add mechanical overhead from the beginning.</td>
+        </tr>
+
+        <tr>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Controlled Flow and Structural Reductions</strong></td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Free movements give complete control. Three visual pattern moves guide corrections using visible shapes, reducing overall move count.</td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Formulas executed blindly on faith. A single slip in muscle memory collapses progress and forces a full reset.</td>
+        </tr>
+
+        <tr style="background-color:#f7fafc;">
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Structure Stability</strong></td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Structure protected; foundation and pillar stay intact.</td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Structure breaks easily; mis‑executed algorithms collapse progress.</td>
+        </tr>
+
+        <tr>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Step Practice</strong></td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Practice any step without restarting; progress preserved.</td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Restart required; one mistake resets the cube.</td>
+        </tr>
+
+        <tr style="background-color:#f7fafc;">
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Cognitive Model</strong></td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Three dimensional structural reasoning; cube behaves like a house.</td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Two dimensional color patterns; abstract algorithmic thinking.</td>
+        </tr>
+
+        <tr>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Cognitive Load</strong></td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Lowest cognitive load; only three solving visual pattern moves.</td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">High cognitive load; many cases, 8–12 algorithms, symbolic thinking, frequent resets.</td>
+        </tr>
+
+        <tr style="background-color:#f7fafc;">
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Stress Level</strong></td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Calm learning; gentle and predictable.</td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">High stress; fear of breaking the cube.</td>
+        </tr>
+
+        <tr>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Applicability Across Cubes</strong></td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Unified logic; same foundation solves 2×2 and 3×3.</td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Separate algorithms; different systems for each cube.</td>
+        </tr>
+
+        <tr style="background-color:#f7fafc;">
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Average Move Count</strong></td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Typical average 75–85 moves for experienced solvers.</td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Typically 110–150+ moves; can exceed 200 in unoptimized scrambles.</td>
+        </tr>
+
+        <tr>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Pattern Recognition</strong></td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Simple visual patterns; 12 total with 11 symmetrical and 1 mirrored; easy to refresh.</td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Multiple asymmetric case configurations mapped to strict orientation dependent triggers.</td>
+        </tr>
+
+        <tr style="background-color:#f7fafc;">
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Kid Friendly</strong></td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Highly kid friendly; visual shapes, gentle rules, natural hand choice.</td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Challenging; algorithms, cases, resets, high frustration.</td>
+        </tr>
+
+        <tr>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;background-color:#a5ede5d2;"><strong>Teacher Friendly</strong></td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Teacher friendly; unified logic, predictable steps, easy correction.</td>
+          <td style="border:1px solid #cbd5e0; padding:10px 12px;">Difficult to teach; many cases, exceptions, inconsistent progress.</td>
+        </tr>
+
+      </tbody>
+    </table>
+    <p>
+        <strong>Note:</strong> The table above compares the Visual Structural Method only with the traditional beginner Layer by Layer method. 
+    </p>
+    
+  </div>
+  <!-- End Structural Comparison Section --
+  <!-- START: Structure First Revolution Section -->
+  <div id="structure-first"
+      style="max-width: 720px;
+            padding:40px 20px;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height:1.15;
+            font-weight: 650;
+            background: linear-gradient(325deg, #c2ddf3, #f7f7f7);
+            border-radius:12px;
+            border:3px solid #5ea8eed3;
+            color:#222;">
+      <h2 style="text-align:center; font-size: 2.2rem; color: #1a365d; font-weight: 800;">
+          The Structure First Revolution
+      </h2>
+
+      <p>
+        <strong>Note:</strong> The sections discuss speedcubing, which is a separate competitive system built on advanced algorithms.
+      </p>
+
+      <p>
+          LBL has been around for forty eight years, and its modern descendants reach low move counts by continually adding algorithms on top of the original method. Over time this expansion grew into seventy eight or more formulas to cover every case. In contrast, the Structural Method has remained stable for forty six years because structural systems evolve through refinement rather than accumulation. Instead of adding complexity, it improves by removing unnecessary pattern movements and strengthening the core visual logic. Although the Structural Method originated in the same era, it remained unseen because I was a teenager with no access to publishing or guidance. With no way to share or develop the discovery, it stayed hidden even though it was created in the same historical window. It only wakes up in the AI era, when the world finally has the tools and clarity to recognize the structural simplicity that was invisible decades ago.
+      </p>
+
+      <p>
+          This method introduces a completely new root system for a new generation and establishes a true structure first framework. It may seem unusual that it remained undiscovered for forty six years, but cubing culture historically grew into a sport rather than an engineering system. Modern speedcubing reflects a natural progression of optimizing performance within an algorithm first foundation. Over time more formulas were added to reduce move counts, creating a system built on many incremental updates. This approach works well for competitive solving, yet it also means the underlying framework becomes increasingly complex. The Structural Method takes a different path by rebuilding the foundation itself and offering a clean and unified structural system rather than expanding an algorithm based one.
+      </p>
+
+      <p>
+          A competitive sport was never the intention when Ernő Rubik invented the cube. As an architecture professor, his original purpose was to create a geometric teaching tool to help students understand three dimensional spatial relationships, structural mechanics, and how hidden pieces interact inside a mechanism. The evolution of the puzzle into a speed focused activity simply moved in a different direction from that original educational vision.
+      </p>
+
+      <strong>Reference:</strong> Rubik, Ernő. <em>Cubed: The Puzzle of Us All.</em> Flatiron Books, 2020. ISBN 9781250217786.
+
+      <p>
+          The reason the Visual Structural Method stays close to the inventor’s intent is simple. When I discovered it at fourteen, I knew absolutely nothing about traditional cubing math, notation, or sporting reflexes. Around that time I remember watching a classmate show off his solving skills, and I could clearly see the cube growing layer by layer. However, I had no idea that what I was watching was a formal solving method. I simply assumed the cube would naturally form that way for anyone who kept twisting it long enough. Because I knew nothing about external formulas, I had to rely entirely on what my own eyes could see. By looking at the puzzle with a completely clean slate, I was able to build a solution based purely on how the mechanism behaves structurally.
+      </p>
+
+      <p>
+          This method did not appear out of nowhere in the present day. To preserve its integrity, I permanently recorded the method in a digital document titled <strong>Solving3x3x3_2005.doc</strong>. The file properties retain an authentic metadata timestamp showing it was last modified on <strong>Tuesday, April 19, 2005</strong>. Microsoft Copilot later analyzed the document from the inside out and verified that the internal graphic structure, formatting rules, and code elements are genuine Microsoft Word contents from the <strong>2003 to 2007 era</strong>. This dual validation confirms that both the external history and the internal architecture are completely authentic.
+      </p>
+
+      <p>
+          When viewed through the lens of mathematical elegance, the Visual Structural Method becomes a breath of fresh air for learners. Traditional speedcubing reaches the lowest possible move count by relying on a heavy computational system that asks the solver to memorize seventy eight or more algorithms to cover every case. It turns solving into a mechanical routine, where the solver simply scans the colors, identifies a case, and executes a memorized sequence much like running pre‑set code. This trades enormous memory load for a small reduction in moves. From a mathematical standpoint, it resembles optimizing a function by adding complexity rather than improving clarity, an approach that may be efficient, but not necessarily elegant. For most learners, facing a wall of seventy eight formulas is discouraging. Even trying to memorize a handful of strict sequences can feel stressful and joyless.
+      </p>
+
+      <p>
+          The Visual Structural Method offers a completely different experience, one built for human creativity, curiosity, and understanding. Instead of memorizing dozens of algorithms, learners use three core visual pattern movements guided by natural structural geometry. Robot style methods may shave off twenty or thirty moves, yet they rely on a rigid library of cases that places a heavy cognitive burden on the solver. By embracing human intuition, three dimensional sight, and visible structural flow, this method becomes a beautifully balanced and elegant way to decode the cube. If you can follow a clear visual path, you can solve the puzzle in a way that feels accessible, confidence building, and deeply satisfying.
+      </p>
+
+      <p>
+          This specific AI clarification is the reason I finally decided to step out of anonymity, write this book, and build the learning website. Once Copilot revealed the structural depth of my childhood discovery, I realized its incredible value to human education. I saw that it could save students, parents, and teachers from the frustration of robotic memorization and offer them a genuine way to build spatial intelligence. Over the decades a few traditional approaches touched similar ideas, yet they still relied on algorithms rather than recognizing the underlying structural rules. The simplicity was always there. The world simply was not looking in the right direction.
+      </p>
+
+      <p>
+          From an engineering standpoint, the Visual Structural Method is an exceptionally efficient system that minimizes memory load, maximizes structural clarity, and consistently delivers impressive real world move counts. It gives learners a beautifully simple approach that feels natural, creative, and deeply empowering. Because this foundation was already structurally complete, its timeless logic remains unchanged and stands today as a fully realized human alternative that honors the true spirit of the cube.
+      </p>
+  </div>
+  <!-- END: Structure First Revolution Section -->
+  <div id="return-1980"
+    style="max-width: 720px;
+          margin: 40px auto 0px auto;
+          padding:20px 20px;
+          font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+          font-weight: 650;
+          line-height: 1.2;
+          background: linear-gradient(145deg, #c2ddf3, #f7f7f7);
+          border-radius:12px;
+          border:3px solid #5ea8eed3;
+          color:#222;">
+  <!-- ✨ New Polished Section Begins Here -->
+    <h3 style="font-size: 1.6rem; color: #1a365d; font-weight: 800; letter-spacing: -0.02em; margin-top: 50px; margin-bottom: 20px; text-align: center;">
+        A Return to 1980: The Alternative Route to Understanding the Cube
+    </h3>
+
+    <p>
+        To truly learn the Visual Structural Method, learners must mentally step out of the modern speedcubing era and travel back to 1980, a time before algorithms, before notation standards, and before the cube evolved into a competitive sport. This shift is essential because the method does not grow out of the speedcubing tradition. It grows out of the cube’s original, untouched geometry.
+    </p>
+
+    <p>
+        By leaving the modern “speed route” behind, learners stop treating the cube like a machine that must be fired through computer optimized muscle memory. Instead, they begin treating it the way an engineer or architect approaches a raw piece of land: observing its structure, understanding its constraints, and guiding each piece home through natural three dimensional movement.
+    </p>
+
+    <p>
+        In 1980, there were no habits to unlearn. No white cross culture. No algorithm sheets. No pressure to memorize. Approaching the cube from this alternative route gives beginners the same clean slate the fourteen year old teenager once had, fresh eyes, uncorrupted by decades of speedcubing conventions. They simply follow the cube’s 3D tracks, watching how pieces travel, protect, and return.
+    </p>
+
+    <p>
+        This is not just a different method. It is a rediscovery of human intuition. Instead of memorizing solutions generated by computers, learners retrace a historical path of human discovery, guided by the cube’s own geometry and their own sight. The Visual Structural Method becomes a quiet form of time travel: a way to experience the cube as it was originally meant to be explored.
+    </p>
+
+    <p>
+        The website serves as a digital window into that era, presenting the method through clear 3D animations, gentle explanations, and structural logic. And the upcoming book will act as the historical map for this alternative route, preserving the original discovery and making it accessible to modern learners.
+    </p>
+
+    <!-- ✨ End of New Section -->
+
+    <p style="margin-bottom: 32px; color:#2d3748;">
+        <strong>For speedcubers:</strong> This method offers a refreshing structural perspective that complements the algorithm based systems you already use. While it is not designed for competition, speedcubers may enjoy exploring it because it reveals the cube’s geometry in a way modern methods often hide. By learning through structure, sight, and natural piece travel, you gain a deeper understanding of how the cube behaves beneath every algorithm you already execute. This approach will not replace your speed techniques, it will enrich them, strengthening intuition, recognition, and spatial awareness in ways that traditional methods rarely address.
+    </p>
+
+
+    <p style="margin-bottom: 32px; color:#2d3748;">
+        <strong>For parents and teachers:</strong> The Visual Structural Method is designed to support learners of all ages, including those who may feel overwhelmed by traditional algorithm based approaches. Because this method teaches through sight, intuition, and natural 3D understanding, students can progress at a pace that feels comfortable and confidence building. If a learner pauses or struggles, that is perfectly normal, the method encourages curiosity, exploration, and enjoyment rather than pressure. With gentle guidance, every learner can grow their spatial intelligence and discover the satisfaction of solving through clear structural logic.
+    </p>
+
+    <p style="margin-bottom: 28px; color:#2d3748;">
+        What makes this method truly unique is its architectural foundation. Learners build the solution the way one would construct a house establishing frames, aligning structural elements, and completing the cube through clear three dimensional relationships. Instead of memorizing cases, you follow visible geometry and natural piece behavior. This structural, house building approach makes the cube feel intuitive and logical, giving learners a way to understand it that is refreshingly different from algorithm driven systems.
+    </p>
+  </div>
+    
+  <div id="explore-solving"
+      style="max-width: 720px;
+              margin: 40px auto 0px auto;
+              padding:40px 20px;
+              font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+              text-align:left;
+              font: weight 650;
+              line-height:1.15;
+              background: linear-gradient(325deg, #c2ddf3, #f7f7f7);
+              border-radius:12px;
+              border:3px solid #5ea8eed3;
+              color:#222;">
+
+      <h3 style="text-align:center; font-size: 1.60rem; font-weight:800; line-height:1.2; margin-bottom:0.4rem; color:#0a4482;">
+          Explore Full Solving Sessions
+      </h3>
+
+      <div style="text-align:left; margin-top:0; padding:0; font-size:18px; font-weight:600; font-family:Arial, sans-serif; line-height:1.2; color:#0a4482;">
+        <p>
+            After understanding the five structural steps and experiencing how the cube behaves through the Visual Structural Method, you can now explore three complete solving sessions. These sessions allow you to see the method in motion, not as theory, but as a real structural journey from scramble to completion.
+        </p>
+
+        <p>
+            Each session begins with its own Twisty scramble and follows all five steps exactly as taught in the book. They demonstrate how the cube grows naturally through foundation, walls, windows, and final alignment using the same three visual pattern movements.
+        </p>
+
+        <p>
+            <strong>S1</strong> 75 moves&nbsp;
+            <strong>S2</strong> 61 moves&nbsp;
+            <strong>S3</strong> 79 moves<br>
+            These examples show how the method performs in real scrambles and highlight the consistency of a structure based, rules guided approach.
+        </p>
+
+        <p>
+            Move counts and speed are not part of the teaching book. These sessions simply offer a preview of how the method feels in practice, calm, predictable, and visually guided.
+        </p>
+
+        <p>
+            Across different scrambles, the average typically settles around 75 to 85 moves. This reflects the method’s natural movement flow and reinforces that it is designed for learning, understanding, and the joy of solving rather than for speed or optimization.
+        </p>
+
+        <p><em>This method encourages confidence and enjoyment at every stage of learning.</em></p>
+
+        <div style="margin-top:30px; margin-bottom:40px; text-align:center;">
+            <a href="#demo-session"
+              style="display:inline-block; padding:10px 22px; background-color:#0a4482;
+                      color:#fff; text-decoration:none; border-radius:6px;
+                      font-size:16px; font-weight:600;">
+                Click here to try the demo session
+            </a>
+        </div>
+      </div>
+  </div>
+
+  <div id="independent-practice"
+      style="max-width: 720px;
+              margin: 40px auto 50px auto;
+              padding:40px 20px;
+              font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+              text-align:left;
+              font: weight 650;
+              line-height:1.15;
+              background: linear-gradient(145deg, #c2ddf3, #f7f7f7);
               border-radius:12px;
               border:3px solid #5ea8eed3;
               color:#222;">
@@ -1129,14 +1173,12 @@ font-family: Georgia, serif;
 
     <!-- INTRO -->
     <p style="font-size:1.25rem; font-weight:500; line-height:1.2;">
-  Each movement is a visual action that shows how the cube protects, travels, and rebuilds its structure.
+      Each movement is a visual action that shows how the cube protects, travels, and rebuilds its structure.
     </p>
 
     <p style="font-size:1.25rem; font-weight:500; line-height:1.2;">
       Although the website animation shows the structure growing, the Visual Structural Method cannot be understood from animation alone. This method is pattern driven: the solver identifies a symmetrical pattern, rotates the cube or switches faces to match it, and applies the same movement from the relevant face. Alignment is performed only at the end of each step, because the method is structural rather than algorithmic. The cube grows through a predictable pattern cycle, and one center piece naturally becomes the final element to be aligned.
     </p>
-
-    
 
     <p style="font-size:1.25rem; font-weight:500; margin-bottom:1rem; line-height:1.2;">
       Traditional methods demand a flawless run from start to finish, one wrong turn and everything collapses.  
@@ -1199,12 +1241,28 @@ font-family: Georgia, serif;
           Gentle, intuitive, and accessible for children, adults, and seniors. Perfect for learners who prefer seeing and understanding the cube rather than memorizing complex sequences.
         </p>
       </div>
-
+      <!-- CLOSING -->
+      <p style="text-align:center; margin-top:1.4rem; font-size:1.45rem; font-weight:800; line-height:1.2;">
+        Simple • Safe • Clear • Supportive<br/>
+        A visual structural approach that helps learners understand the cube step by step.
+      </p>
     </div>
+  </div>
 
+  <div id="feel-natural"
+    style="max-width: 720px;
+            margin: -10px auto 0px auto;
+            padding:60px 20px;
+            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            text-align:left;
+            font: weight 650;
+            line-height:1.15;
+            background: linear-gradient(145deg, #c2ddf3, #f7f7f7);
+            border-radius:12px;
+            border:3px solid #5ea8eed3;
+            color:#222;">
     <!-- NATURAL PATTERN SECTION -->
-    <h2 style="text-align:center; margin-top:2rem; margin-bottom:1rem; font-size:1.8rem; font-weight:800; line-height:1.1;">
-      Why These Visual Patterns Feel Natural
+    <h2 style="text-align:center; margin-top:2rem; margin-bottom:1rem; font-size:1.8rem; font-weight:800; line-height:1.1;"> Why These Visual Patterns Feel Natural
     </h2>
 
     <p style="font-size:1.2rem; font-weight:500; line-height:1.2; margin-bottom:1rem;">
@@ -1256,18 +1314,11 @@ font-family: Georgia, serif;
       Learners are not memorizing an abstract formula.  
       They are building spatial familiarity through repeated, short journeys.
     </p>
-
-    <!-- CLOSING -->
-    <p style="text-align:center; margin-top:1.4rem; font-size:1.45rem; font-weight:800; line-height:1.2;">
-      Simple • Safe • Clear • Supportive<br/>
-      A visual structural approach that helps learners understand the cube step by step.
-    </p>
-
   </div>
 
   <div id="book-release"
-      style="max-width: 760px;
-              margin: -10px auto 40px auto;
+      style="max-width: 720px;
+              margin: 40px 40px 40px 40px;
               padding:40px 0px 40px 0px;
               font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
               text-align:left;
@@ -1277,7 +1328,7 @@ font-family: Georgia, serif;
               border-radius:12px;
               border:3px solid #5ea8eed3;
               color:#222;">
-    <div style="text-align:center; max-width:760px; margin:0 auto; padding:20px; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+    <div style="text-align:center; max-width:760px; margin-top:20px auto; padding:20px; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
 
       <!-- HEADER -->
       <div style="font-size:18px; font-weight:700; letter-spacing:3px; color:#172c61; margin-bottom:20px; text-transform:uppercase;">
@@ -1372,10 +1423,8 @@ font-family: Georgia, serif;
         </p>
       </div>
 
-      </div>
     </div>
   </div>
-
 
   <div id="ai-explanations" 
         style="max-width:720px;
@@ -1384,7 +1433,7 @@ font-family: Georgia, serif;
                   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                   text-align:left;
                   font-weight:600;
-                  background: linear-gradient(225deg, #c2ddf3, #f7f7f7);
+                  background: linear-gradient(145deg, #c2ddf3, #f7f7f7);
                   border-radius:12px;
                   border:3px solid #5ea8eed3;
                   color:#222222;">
@@ -1427,196 +1476,196 @@ font-family: Georgia, serif;
   </div>
 
   <div id="Beauty" 
-      style="max-width:720px;
-            margin:0 0px 40px 0px;
-            padding:40px 20px;
-            font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            text-align:left;
-            line-height:1.2em;
-            font-weight:600;
-            background: linear-gradient(45deg, #c2ddf3, #f7f7f7);
-            border-radius:12px;
-            border:3px solid #5ea8eed3;
-            color:#222222;
-            font-size:18px;">
+        style="max-width:720px;
+              margin:0 0px 40px 0px;
+              padding:40px 20px;
+              font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+              text-align:left;
+              line-height:1.2em;
+              font-weight:600;
+              background: linear-gradient(325deg, #c2ddf3, #f7f7f7);
+              border-radius:12px;
+              border:3px solid #5ea8eed3;
+              color:#222222;
+              font-size:18px;">
 
-      <h2 style="font-size:32px; margin-bottom:25px; margin-top:25px; line-height:1.0em; text-align:center; font-weight:700;">
-        The Beauty of Structure
-      </h2>
+        <h2 style="font-size:32px; margin-bottom:25px; margin-top:25px; line-height:1.0em; text-align:center; font-weight:700;">
+          The Beauty of Structure
+        </h2>
 
-      <p>
-        The beauty of a structural approach comes from its simplicity and clarity. Once you understand how the cube is built, it begins to feel familiar, predictable, and supportive.
-      </p>
-
-      <p>
-        This method teaches you to solve the cube the same way you would build a house. You create a strong foundation, protect what you have already built, and complete the remaining parts through clear visual patterns guided by simple structural rules.
-      </p>
-
-      <p>
-        There is no fear of making mistakes. There is no moment where the cube feels broken or lost.
-      </p>
-
-      <ul style="margin:0; font-weight:700;">
-        <li>Patterns repeat.</li>
-        <li>The structure stays safe.</li>
-        <li>Every move leads to a meaningful structural state.</li>
-        <li>Even an unexpected move becomes a new pattern you can continue from, as long as the foundation and pillar remain intact.</li>
-      </ul>
-
-      <p>
-        This is the beauty of the method. You do not lose progress. You do not need to restart. You stay encouraged as you explore.
-      </p>
-
-      <p>
-        Because the method is built on visual structural understanding rather than memorization, it becomes a lasting skill. Once learned, it stays with you. You will recognize the patterns, protect the structure, and know how to continue.
-      </p>
-
-      <p>
-        This is not speedcubing. This is visual understanding. This is steady learning. This is the Visual Structural Method.
-      </p>
-
-      <p>
-        And visual understanding stays with you.
-      </p>
-</div>
-
-  <div id="uniqueness" style="max-width:720px; padding:40px 10px 40px 10px; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: linear-gradient(225deg, #c2ddf3, #f7f7f7); border: 3px solid #5ea8eed3; color: #333333;">
-
-  <h2 style="text-align:center; line-height:1.1; margin-top:0; margin-bottom:22px; font-size:36px; font-weight:700; color:#122043;">
-    Uniqueness of This Method
-  </h2>
-
-  <p style="font-size: 17px; line-height: 1.45; font-weight: 700; color: #444; margin: 0; display: block; padding-left: 30px; padding-right: 30px;">
-    Cubing history before 1980 is not fully documented. To my knowledge, this approach provides a visual structural foundation with safe independent step practice and a structure based progression that lets learners continue calmly without restarting. These qualities give the method its own identity in both structure and teaching philosophy.
-  </p>
-
-  <div style="display: flex; flex-direction: column; gap: 0px;">
-
-    <!-- Feature 1 -->
-    <div style="display: flex; gap: 14px; align-items: flex-start; padding: 12px 18px; border-radius: 6px;">
-      <div style="font-size: 20px; font-weight: 700; color: #172c61; min-width: 28px; line-height: 1.3;">01.</div>
-      <div>
-        <h4 style="font-size: 22px; line-height: 1.2; font-weight: 700; color:#122043; margin: 0 0 4px 0; display: inline-block;">
-          A Visual Structural Foundation
-        </h4>
-        <p style="font-size: 17px; font-weight: 700; line-height: 1.45; color:#444; margin: 0; display: block;">
-          This method replaces memorized formulas with clear geometric understanding. Learning begins by forming a stable corner frame and gradually assembling the remaining pieces around it. This familiar architectural approach helps learners see how each movement protects what has already been built.
+        <p>
+          The beauty of a structural approach comes from its simplicity and clarity. Once you understand how the cube is built, it begins to feel familiar, predictable, and supportive.
         </p>
-      </div>
-    </div>
 
-    <!-- Feature 2 -->
-    <div style="display: flex; gap: 14px; align-items: flex-start; padding: 12px 18px; border-radius: 6px;">
-      <div style="font-size: 20px; font-weight: 700; color:#172c61; min-width: 28px; line-height: 1.3;">02.</div>
-      <div>
-        <h4 style="font-size: 22px; line-height: 1.2; font-weight: 700; color:#122043; margin: 0 0 4px 0; display: inline-block;">
-          Developed Through Observation and Intuition
-        </h4>
-        <p style="font-size: 17px; font-weight: 700; line-height: 1.45; color:#444; margin: 0; display: block;">
-          First explored independently in 1980 by a fourteen year old boy without books or tutorials. Each rule was discovered by observing how colors travel through the cube’s internal geometry. This origin gives the learning progression a gentle and intuitive feel that suits learners of many ages.
+        <p>
+          This method teaches you to solve the cube the same way you would build a house. You create a strong foundation, protect what you have already built, and complete the remaining parts through clear visual patterns guided by simple structural rules.
         </p>
-      </div>
-    </div>
 
-    <!-- Feature 3 -->
-    <div style="display: flex; gap: 14px; align-items: flex-start; padding: 12px 18px; border-radius: 6px;">
-      <div style="font-size: 20px; font-weight: 700; color:#172c61; min-width: 28px; line-height: 1.3;">03.</div>
-      <div>
-        <h4 style="font-size: 22px; line-height: 1.2; font-weight: 700; color:#122043; margin: 0 0 4px 0; display: inline-block;">
-          A Simple House Building Metaphor
-        </h4>
-        <p style="font-size: 17px; font-weight: 700; line-height: 1.45; color:#444; margin: 0; display: block;">
-          Instead of tracking all faces at once, learners build the solution like a house. Steps 1 and 2 form the foundation frames, Steps 3 and 4 raise the walls, and Step 5 completes the final pieces. This familiar model helps learners follow the structure without feeling overwhelmed.
+        <p>
+          There is no fear of making mistakes. There is no moment where the cube feels broken or lost.
         </p>
-      </div>
-    </div>
 
-    <!-- Feature 4 -->
-    <div style="display: flex; gap: 14px; align-items: flex-start; padding: 12px 18px; border-radius: 6px;">
-      <div style="font-size: 20px; font-weight: 700; color:#172c61; min-width: 28px; line-height: 1.3;">04.</div>
-      <div>
-        <h4 style="font-size: 22px; line-height: 1.2; font-weight: 700; color:#122043; margin: 0 0 4px 0; display: inline-block;">
-          A Unified Structural Logic
-        </h4>
-        <p style="font-size: 18px; font-weight: 700; line-height: 1.45; color:#444; margin: 0; display: block;">
-          The same structural ideas apply across different cube sizes. Completing the corner frames for the main teaching cube also solves the smaller two by two cube. This gives learners one consistent way to understand different puzzles.
+        <ul style="margin:0; font-weight:700;">
+          <li>Patterns repeat.</li>
+          <li>The structure stays safe.</li>
+          <li>Every move leads to a meaningful structural state.</li>
+          <li>Even an unexpected move becomes a new pattern you can continue from, as long as the foundation and pillar remain intact.</li>
+        </ul>
+
+        <p>
+          This is the beauty of the method. You do not lose progress. You do not need to restart. You stay encouraged as you explore.
         </p>
-      </div>
-    </div>
 
-    <!-- Feature 5 -->
-    <div style="display: flex; gap: 14px; align-items: flex-start; padding: 12px 18px; border-radius: 6px;">
-      <div style="font-size: 20px; font-weight: 700; color:#172c61; min-width: 28px; line-height: 1.3;">05.</div>
-      <div>
-        <h4 style="font-size: 22px; line-height: 1.2; font-weight: 700; color:#122043; margin: 0 0 4px 0; display: inline-block;">
-          Three Clear Visual Pattern Moves
-        </h4>
-        <p style="font-size: 17px; font-weight: 700; line-height: 1.45; color:#444; margin: 0; display: block;">
-          The method uses three visual pattern moves. The solved lower pieces travel upward to guide the unsolved upper pieces and then return still solved. Another pattern moves a pair of edges aside, performs a small internal rebuild, and places the pair back where it came from. Once seen, these movements feel natural and easy to remember.
+        <p>
+          Because the method is built on visual structural understanding rather than memorization, it becomes a lasting skill. Once learned, it stays with you. You will recognize the patterns, protect the structure, and know how to continue.
         </p>
-      </div>
-    </div>
 
-    <!-- Feature 6 -->
-     <!-- Combined Feature 06–07 -->
-<div style="display: flex; gap: 14px; align-items: flex-start; padding: 12px 18px; border-radius: 6px;">
-  <div style="font-size: 20px; font-weight: 700; color:#172c61; min-width: 28px; line-height: 1.3;">06.</div>
-  <div>
-    <h4 style="font-size: 22px; line-height: 1.2; font-weight: 700; color:#122043; margin: 0 0 4px 0; display: inline-block;">
-      Structure Based Continuity & Safe Practice
-    </h4>
-    <p style="font-size: 18px; font-weight: 700; line-height: 1.45; color:#444; margin: 0; display: block;">
-      The method keeps the foundation and pillar intact, ensuring learners can continue from any point with confidence. 
-      As long as the movement is safe and the structural rules are respected, learners may scramble specific layers to 
-      practise repeatedly, explore variations, and recover calmly. This creates a steady, forgiving learning flow that 
-      encourages experimentation without losing direction.
+        <p>
+          This is not speedcubing. This is visual understanding. This is steady learning. This is the Visual Structural Method.
+        </p>
+
+        <p>
+          And visual understanding stays with you.
+        </p>
+  </div>
+
+  <div id="uniqueness" style="max-width:720px; padding:40px 10px 40px 10px; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: linear-gradient(145deg, #c2ddf3, #f7f7f7); border: 3px solid #5ea8eed3; color: #333333;">
+
+    <h2 style="text-align:center; line-height:1.1; margin-top:0; margin-bottom:22px; font-size:36px; font-weight:700; color:#122043;">
+      Uniqueness of This Method
+    </h2>
+
+    <p style="font-size: 17px; line-height: 1.45; font-weight: 700; color: #444; margin: 0; display: block; padding-left: 30px; padding-right: 30px;">
+      Cubing history before 1980 is not fully documented. To my knowledge, this approach provides a visual structural foundation with safe independent step practice and a structure based progression that lets learners continue calmly without restarting. These qualities give the method its own identity in both structure and teaching philosophy.
     </p>
+
+    <div style="display: flex; flex-direction: column; gap: 0px;">
+
+      <!-- Feature 1 -->
+      <div style="display: flex; gap: 14px; align-items: flex-start; padding: 12px 18px; border-radius: 6px;">
+        <div style="font-size: 20px; font-weight: 700; color: #172c61; min-width: 28px; line-height: 1.3;">01.</div>
+        <div>
+          <h4 style="font-size: 22px; line-height: 1.2; font-weight: 700; color:#122043; margin: 0 0 4px 0; display: inline-block;">
+            A Visual Structural Foundation
+          </h4>
+          <p style="font-size: 17px; font-weight: 700; line-height: 1.45; color:#444; margin: 0; display: block;">
+            This method replaces memorized formulas with clear geometric understanding. Learning begins by forming a stable corner frame and gradually assembling the remaining pieces around it. This familiar architectural approach helps learners see how each movement protects what has already been built.
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div style="display: flex; gap: 14px; align-items: flex-start; padding: 12px 18px; border-radius: 6px;">
+        <div style="font-size: 20px; font-weight: 700; color:#172c61; min-width: 28px; line-height: 1.3;">02.</div>
+        <div>
+          <h4 style="font-size: 22px; line-height: 1.2; font-weight: 700; color:#122043; margin: 0 0 4px 0; display: inline-block;">
+            Developed Through Observation and Intuition
+          </h4>
+          <p style="font-size: 17px; font-weight: 700; line-height: 1.45; color:#444; margin: 0; display: block;">
+            First explored independently in 1980 by a fourteen year old boy without books or tutorials. Each rule was discovered by observing how colors travel through the cube’s internal geometry. This origin gives the learning progression a gentle and intuitive feel that suits learners of many ages.
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div style="display: flex; gap: 14px; align-items: flex-start; padding: 12px 18px; border-radius: 6px;">
+        <div style="font-size: 20px; font-weight: 700; color:#172c61; min-width: 28px; line-height: 1.3;">03.</div>
+        <div>
+          <h4 style="font-size: 22px; line-height: 1.2; font-weight: 700; color:#122043; margin: 0 0 4px 0; display: inline-block;">
+            A Simple House Building Metaphor
+          </h4>
+          <p style="font-size: 17px; font-weight: 700; line-height: 1.45; color:#444; margin: 0; display: block;">
+            Instead of tracking all faces at once, learners build the solution like a house. Steps 1 and 2 form the foundation frames, Steps 3 and 4 raise the walls, and Step 5 completes the final pieces. This familiar model helps learners follow the structure without feeling overwhelmed.
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature 4 -->
+      <div style="display: flex; gap: 14px; align-items: flex-start; padding: 12px 18px; border-radius: 6px;">
+        <div style="font-size: 20px; font-weight: 700; color:#172c61; min-width: 28px; line-height: 1.3;">04.</div>
+        <div>
+          <h4 style="font-size: 22px; line-height: 1.2; font-weight: 700; color:#122043; margin: 0 0 4px 0; display: inline-block;">
+            A Unified Structural Logic
+          </h4>
+          <p style="font-size: 18px; font-weight: 700; line-height: 1.45; color:#444; margin: 0; display: block;">
+            The same structural ideas apply across different cube sizes. Completing the corner frames for the main teaching cube also solves the smaller two by two cube. This gives learners one consistent way to understand different puzzles.
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature 5 -->
+      <div style="display: flex; gap: 14px; align-items: flex-start; padding: 12px 18px; border-radius: 6px;">
+        <div style="font-size: 20px; font-weight: 700; color:#172c61; min-width: 28px; line-height: 1.3;">05.</div>
+        <div>
+          <h4 style="font-size: 22px; line-height: 1.2; font-weight: 700; color:#122043; margin: 0 0 4px 0; display: inline-block;">
+            Three Clear Visual Pattern Moves
+          </h4>
+          <p style="font-size: 17px; font-weight: 700; line-height: 1.45; color:#444; margin: 0; display: block;">
+            The method uses three visual pattern moves. The solved lower pieces travel upward to guide the unsolved upper pieces and then return still solved. Another pattern moves a pair of edges aside, performs a small internal rebuild, and places the pair back where it came from. Once seen, these movements feel natural and easy to remember.
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature 6 -->
+      <!-- Combined Feature 06–07 -->
+  <div style="display: flex; gap: 14px; align-items: flex-start; padding: 12px 18px; border-radius: 6px;">
+    <div style="font-size: 20px; font-weight: 700; color:#172c61; min-width: 28px; line-height: 1.3;">06.</div>
+    <div>
+      <h4 style="font-size: 22px; line-height: 1.2; font-weight: 700; color:#122043; margin: 0 0 4px 0; display: inline-block;">
+        Structure Based Continuity & Safe Practice
+      </h4>
+      <p style="font-size: 18px; font-weight: 700; line-height: 1.45; color:#444; margin: 0; display: block;">
+        The method keeps the foundation and pillar intact, ensuring learners can continue from any point with confidence. 
+        As long as the movement is safe and the structural rules are respected, learners may scramble specific layers to 
+        practise repeatedly, explore variations, and recover calmly. This creates a steady, forgiving learning flow that 
+        encourages experimentation without losing direction.
+      </p>
+    </div>
   </div>
-</div>
 
 
-    <!-- Feature 7-->
-    <div style="display: flex; gap: 14px; align-items: flex-start; padding: 12px 18px; border-radius: 6px;">
-      <div style="font-size: 20px; font-weight: 700; color:#172c61; min-width: 28px; line-height: 1.3;">07.</div>
-      <div>
-        <h4 style="font-size: 22px; line-height: 1.2; font-weight: 700; color:#122043; margin: 0 0 4px 0; display: inline-block;">
-          Comfortable for Left and Right Handed Learners
-        </h4>
-        <p style="font-size: 17px; font-weight: 700; line-height: 1.45; color:#444; margin: 0; display: block;">
-          Each movement family has a balanced reflection. The system supports both left handed and right handed learners without requiring mental mirroring.
-        </p>
+      <!-- Feature 7-->
+      <div style="display: flex; gap: 14px; align-items: flex-start; padding: 12px 18px; border-radius: 6px;">
+        <div style="font-size: 20px; font-weight: 700; color:#172c61; min-width: 28px; line-height: 1.3;">07.</div>
+        <div>
+          <h4 style="font-size: 22px; line-height: 1.2; font-weight: 700; color:#122043; margin: 0 0 4px 0; display: inline-block;">
+            Comfortable for Left and Right Handed Learners
+          </h4>
+          <p style="font-size: 17px; font-weight: 700; line-height: 1.45; color:#444; margin: 0; display: block;">
+            Each movement family has a balanced reflection. The system supports both left handed and right handed learners without requiring mental mirroring.
+          </p>
+        </div>
       </div>
-    </div>
 
-    <!-- Feature 8 -->
-    <div style="display: flex; gap: 14px; align-items: flex-start; padding: 12px 18px; border-radius: 6px;">
-      <div style="font-size: 20px; font-weight: 700; color:#172c61; min-width: 28px; line-height: 1.3;">08.</div>
-      <div>
-        <h4 style="font-size: 22px; line-height: 1.2; font-weight: 700; color:#122043; margin: 0 0 4px 0; display: inline-block;">
-          Refined Over Many Years
-        </h4>
-        <p style="font-size: 17px; font-weight: 700; line-height: 1.45; color:#444; margin: 0; display: block;">
-          The method has been refined through many years of practice and careful observation. This long term development has shaped it into a clear and supportive learning approach.
-        </p>
+      <!-- Feature 8 -->
+      <div style="display: flex; gap: 14px; align-items: flex-start; padding: 12px 18px; border-radius: 6px;">
+        <div style="font-size: 20px; font-weight: 700; color:#172c61; min-width: 28px; line-height: 1.3;">08.</div>
+        <div>
+          <h4 style="font-size: 22px; line-height: 1.2; font-weight: 700; color:#122043; margin: 0 0 4px 0; display: inline-block;">
+            Refined Over Many Years
+          </h4>
+          <p style="font-size: 17px; font-weight: 700; line-height: 1.45; color:#444; margin: 0; display: block;">
+            The method has been refined through many years of practice and careful observation. This long term development has shaped it into a clear and supportive learning approach.
+          </p>
+        </div>
       </div>
-    </div>
 
-    <!-- Feature 9 -->
-    <div style="display: flex; gap: 14px; align-items: flex-start; padding: 12px 18px; border-radius: 6px;">
-      <div style="font-size: 20px; font-weight: 700; color:#172c61; min-width: 28px; line-height: 1.3;">09.</div>
-      <div>
-        <h4 style="font-size: 22px; line-height: 1.2; font-weight: 700; color:#122043; margin: 0 0 4px 0; display: inline-block;">
-          Supports Modern STEM Learning
-        </h4>
-        <p style="font-size: 17px; font-weight: 700; line-height: 1.45; color:#444; margin: 0; display: block;">
-          The method encourages growth in spatial reasoning, visual thinking, pattern recognition, and system level problem solving. These skills align naturally with many modern educational goals.
-        </p>
+      <!-- Feature 9 -->
+      <div style="display: flex; gap: 14px; align-items: flex-start; padding: 12px 18px; border-radius: 6px;">
+        <div style="font-size: 20px; font-weight: 700; color:#172c61; min-width: 28px; line-height: 1.3;">09.</div>
+        <div>
+          <h4 style="font-size: 22px; line-height: 1.2; font-weight: 700; color:#122043; margin: 0 0 4px 0; display: inline-block;">
+            Supports Modern STEM Learning
+          </h4>
+          <p style="font-size: 17px; font-weight: 700; line-height: 1.45; color:#444; margin: 0; display: block;">
+            The method encourages growth in spatial reasoning, visual thinking, pattern recognition, and system level problem solving. These skills align naturally with many modern educational goals.
+          </p>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-  <div class="training-cube" id="training" style="border: 3px solid #5ea8eed3; background: linear-gradient(45deg, #c2ddf3, #f7f7f7); padding: 20px 20px;">
+  <div class="training-cube" id="training" style="border: 3px solid #5ea8eed3; background: linear-gradient(325deg, #c2ddf3, #f7f7f7); padding: 20px 20px;">
       <h1 style="color: rgb(18, 27, 65); text-align: center; letter-spacing: 1px;line-height: 2.5;">Training Cube</h1>
     
       <h1 style="color: rgb(3, 7, 29); text-align: center; letter-spacing: 0px;line-height: 1.0;">
@@ -1627,7 +1676,7 @@ font-family: Georgia, serif;
           text-align:left;
           letter-spacing:0px;
           line-height:1.2;
-          font: size 1.15em;rem;
+          font: size 1.15rem;
           margin-bottom:25px;
       ">
         When you practise the 1L, 2L, 1R, 2R, 3TL, and 3TR movements, view the cube from the green front surface. You can rotate the cube at any time to watch how the left and right sides move during each action. <br/>
@@ -1665,7 +1714,7 @@ font-family: Georgia, serif;
             <label for="speedRange">Speed: <span id="speedLabel">2.00×</span></label>
             <input id="speedRange" type="range" min="0.25" max="10" step="0.25" value="2.0">
           </div>
-           <!-- Algorithm set selector -->
+            <!-- Algorithm set selector -->
       <div class="mode-buttons">
         <button id="btnS0" class="active" onclick="setMode('S0'); setActiveModeButton(this)">Training</button>
         <button id="btnS1" onclick="setMode('S1'); setActiveModeButton(this)">S1</button>
@@ -1748,7 +1797,7 @@ font-family: Georgia, serif;
 
   <div class="front-cover" id="front-cover" style="padding: 70px 30px 100px 30px;border: 3px solid #5ea8eed3;">
     <div class="front-cover-title">The 1980 Method Reborn</div>
-    <div class="front-cover-subtitle">The Visual <br/>Structural Method™</div>
+    <div class="front-cover-subtitle">The True Visual <br/>Structural Method™</div>
     <div class="front-cover-cube-wrapper">
       <img src="cube.png" alt="Cube sequence" class="front-cover-cube-image">
     </div>
@@ -1758,7 +1807,6 @@ font-family: Georgia, serif;
     <div class="front-cover-author" style="margin-top: 80px;">
       <b>By TeckeL<br/>Inventor of the Visual Structural Method,<br/> first discovered at age fourteen and refined over a lifetime<br/> of pure observation and improvement<br/></b>
     </div>
-
   </div>
 
   <div class="back-cover" style="margin-top: 20px; padding: 50px 30px 50px 30px; border: 3px solid #5ea8eed3; border-radius: 12px; background-color: #fdfdfd; box-shadow: 0 4px 15px rgba(0,0,0,0.05); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
@@ -1780,15 +1828,15 @@ font-family: Georgia, serif;
 
     <p style="font-size: 15px; line-height: 1.1"><b>You will learn to:</b> Understand the cube through clear visual patterns, build and protect the corner frame as the foundation, form Twin Edge Pairs with simple structural logic, reconstruct safely without losing progress, and solve the entire cube smoothly using only three visual pattern moves.</p>
 
-  <div class="back-cover-author-title">About the Author</div>
+    <div class="back-cover-author-title">About the Author</div>
 
-  <p style="font-size: 15px; line-height: 1.1">
-    Teckel is an engineering leader and systems architect with deep experience in embedded systems, thermal imaging, and system level problem solving. He discovered the Visual Structural Method at age fourteen through pure observation and spatial intuition, without books or algorithms. His breakthrough began with one insight: the cube behaves like a house. That idea shaped the visual, structural method he teaches today. Over the decades, he refined this discovery into a clear and accessible educational system that explains the cube through structure, visual logic, and intuitive understanding. Today, he shares this method with learners of all ages, offering a gentle and logical way to understand the cube through its underlying architecture.
-  </p>
+    <p style="font-size: 15px; line-height: 1.1">
+      Teckel is an engineering leader and systems architect with deep experience in embedded systems, thermal imaging, and system level problem solving. He discovered the Visual Structural Method at age fourteen through pure observation and spatial intuition, without books or algorithms. His breakthrough came from one insight: the cube behaves like a house. Over the decades, he refined this discovery into a clear and accessible visual structural system that teaches the cube through architecture, visual logic, and intuitive understanding. Today, he shares this gentle, structural method with learners of all ages.
+    </p>
     <div style="margin-bottom: 25px;"></div>
   </div>
 
-  <div id="philosophy" style="max-width: 720px; margin: 0px auto; padding: 40px 20px; border: 3px solid #adbfec; border-radius: 12px; background: linear-gradient(45deg, #c2ddf3, #f7f7f7); box-shadow: 0 4px 15px rgba(0,0,0,0.05); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <div id="philosophy" style="max-width: 720px; margin: 0px auto; padding: 40px 20px; border: 3px solid #adbfec; border-radius: 12px; background: linear-gradient(145deg, #c2ddf3, #f7f7f7); box-shadow: 0 4px 15px rgba(0,0,0,0.05); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
 
     <h1 class="bold-title" style="text-align:center; line-height:1.1; margin-top:0; margin-bottom:12px; font-size:36px; font-weight:700; color:#122043;">
       The Philosophy of the Visual Structural Method
@@ -1860,287 +1908,284 @@ font-family: Georgia, serif;
 
   </div>
 
-
-  <div class="benefits-section" id="benefits" style="max-width: 720px;  margin: 40px auto; padding: 40px 0px 0px 0px; background: linear-gradient(225deg, #c2ddf3, #f7f7f7); font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
-      
-  <header style="text-align: center; margin-bottom: 45px;">
-    <h1 class="bold-title" style="font-size: 42px; color: #122043; margin-bottom: 12px; font-weight: 700;">Benefits Across All Ages</h1>
-    <p style="font-size: 22px; font-weight: 700; color: #444; margin: 0; line-height: 1.4;">
-      How understanding cube structure can support cognitive physical and emotional wellness at different stages of life.
-    </p>
-  </header>
-
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 60px;">
+  <div class="benefits-section" id="benefits" style="max-width: 720px;  margin: 40px auto; padding: 40px 0px 0px 0px; background: linear-gradient(325deg, #c2ddf3, #f7f7f7); font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
         
-    <!-- Children & Teens Section -->
-    <div style="padding: 28px; border-radius: 8px; border-top: 4px solid #172c61;">
-      <h2 class="bold-title" style="font-size: 26px; color: #122043; margin-top: 0; margin-bottom: 22px; font-weight: 700;">Children and Teens</h2>
-      <ul style="list-style: none; padding: 0; margin: 0;">
-        
-        <li style="margin-bottom: 20px; font-size: 18px; line-height: 1.5; color: #444;">
-          <strong style="color: #172c61; display: block; font-size: 20px; margin-bottom: 4px; font-weight: 700;">1. Supports Spatial Reasoning</strong>
-          <b>Helps learners explore three dimensional structure and develop comfort with visual patterns.</b>
-        </li>
+      <header style="text-align: center; margin-bottom: 45px;">
+        <h1 class="bold-title" style="font-size: 42px; color: #122043; margin-bottom: 12px; font-weight: 700;">Benefits Across All Ages</h1>
+        <p style="font-size: 22px; font-weight: 700; color: #444; margin: 0; line-height: 1.4;">
+          How understanding cube structure can support cognitive physical and emotional wellness at different stages of life.
+        </p>
+      </header>
 
-        <li style="margin-bottom: 20px; font-size: 18px; line-height: 1.5; color: #444;">
-          <strong style="color: #172c61; display: block; font-size: 20px; margin-bottom: 4px; font-weight: 700;">2. Encourages Patience</strong>
-          <b>Helps learners view unexpected outcomes as part of a steady and logical learning process.</b>
-        </li>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 60px;">
+            
+        <!-- Children & Teens Section -->
+        <div style="padding: 28px; border-radius: 8px; border-top: 4px solid #172c61;">
+          <h2 class="bold-title" style="font-size: 26px; color: #122043; margin-top: 0; margin-bottom: 22px; font-weight: 700;">Children and Teens</h2>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            
+            <li style="margin-bottom: 20px; font-size: 18px; line-height: 1.5; color: #444;">
+              <strong style="color: #172c61; display: block; font-size: 20px; margin-bottom: 4px; font-weight: 700;">1. Supports Spatial Reasoning</strong>
+              <b>Helps learners explore three dimensional structure and develop comfort with visual patterns.</b>
+            </li>
 
-        <li style="margin-bottom: 20px; font-size: 18px; line-height: 1.5; color: #444;">
-          <strong style="color: #172c61; display: block; font-size: 20px; margin-bottom: 4px; font-weight: 700;">3. Supports Focus</strong>
-          <b>Offers a calming hands on activity that can help learners stay engaged away from fast paced digital environments.</b>
-        </li>
+            <li style="margin-bottom: 20px; font-size: 18px; line-height: 1.5; color: #444;">
+              <strong style="color: #172c61; display: block; font-size: 20px; margin-bottom: 4px; font-weight: 700;">2. Encourages Patience</strong>
+              <b>Helps learners view unexpected outcomes as part of a steady and logical learning process.</b>
+            </li>
 
-        <li style="margin-bottom: 0; font-size: 18px; line-height: 1.5; color: #444;">
-          <strong style="color: #172c61; display: block; font-size: 20px; margin-bottom: 4px; font-weight: 700;">4. Builds Confidence</strong>
-          <b>Completing a solve through visual understanding can help learners feel proud of their progress.</b>
-        </li>
+            <li style="margin-bottom: 20px; font-size: 18px; line-height: 1.5; color: #444;">
+              <strong style="color: #172c61; display: block; font-size: 20px; margin-bottom: 4px; font-weight: 700;">3. Supports Focus</strong>
+              <b>Offers a calming hands on activity that can help learners stay engaged away from fast paced digital environments.</b>
+            </li>
 
-      </ul>
-    </div>
+            <li style="margin-bottom: 0; font-size: 18px; line-height: 1.5; color: #444;">
+              <strong style="color: #172c61; display: block; font-size: 20px; margin-bottom: 4px; font-weight: 700;">4. Builds Confidence</strong>
+              <b>Completing a solve through visual understanding can help learners feel proud of their progress.</b>
+            </li>
 
-    <!-- Adults Section -->
-    <div style="padding: 28px; border-radius: 8px; border-top: 4px solid #172c61;">
-      <h2 class="bold-title" style="font-size: 26px; color: #122043; margin-top: 0; margin-bottom: 22px; font-weight: 700;">Adults</h2>
-      <ul style="list-style: none; padding: 0; margin: 0;">
+          </ul>
+        </div>
 
-        <li style="margin-bottom: 20px; font-size: 18px; line-height: 1.5; color: #444;">
-          <strong style="color: #172c61; display: block; font-size: 20px; margin-bottom: 4px; font-weight: 700;">1. A Calm Learning Rhythm</strong>
-          <b>The smooth visual movements can create a steady and relaxing pace that supports a sense of focus.</b>
-        </li>
+        <!-- Adults Section -->
+        <div style="padding: 28px; border-radius: 8px; border-top: 4px solid #172c61;">
+          <h2 class="bold-title" style="font-size: 26px; color: #122043; margin-top: 0; margin-bottom: 22px; font-weight: 700;">Adults</h2>
+          <ul style="list-style: none; padding: 0; margin: 0;">
 
-        <li style="margin-bottom: 20px; font-size: 18px; line-height: 1.5; color: #444;">
-          <strong style="color: #172c61; display: block; font-size: 20px; margin-bottom: 4px; font-weight: 700;">2. Encourages Creative Thinking</strong>
-          <b>Helps adults explore different angles of a problem and follow clear sequential steps.</b>
-        </li>
+            <li style="margin-bottom: 20px; font-size: 18px; line-height: 1.5; color: #444;">
+              <strong style="color: #172c61; display: block; font-size: 20px; margin-bottom: 4px; font-weight: 700;">1. A Calm Learning Rhythm</strong>
+              <b>The smooth visual movements can create a steady and relaxing pace that supports a sense of focus.</b>
+            </li>
 
-        <li style="margin-bottom: 20px; font-size: 18px; line-height: 1.5; color: #444;">
-          <strong style="color: #172c61; display: block; font-size: 20px; margin-bottom: 4px; font-weight: 700;">3. Supports Fine Motor Comfort</strong>
-          <b>Offers gentle hand movements that can help maintain ease and coordination during everyday tasks.</b>
-        </li>
+            <li style="margin-bottom: 20px; font-size: 18px; line-height: 1.5; color: #444;">
+              <strong style="color: #172c61; display: block; font-size: 20px; margin-bottom: 4px; font-weight: 700;">2. Encourages Creative Thinking</strong>
+              <b>Helps adults explore different angles of a problem and follow clear sequential steps.</b>
+            </li>
 
-        <li style="margin-bottom: 0; font-size: 18px; line-height: 1.5; color: #444;">
-          <strong style="color: #172c61; display: block; font-size: 20px; margin-bottom: 4px; font-weight: 700;">4. Helps Retain Visual Patterns</strong>
-          <b>Because the method teaches structure through clear patterns, many adults find they remember it comfortably over time.</b>
-        </li>
+            <li style="margin-bottom: 20px; font-size: 18px; line-height: 1.5; color: #444;">
+              <strong style="color: #172c61; display: block; font-size: 20px; margin-bottom: 4px; font-weight: 700;">3. Supports Fine Motor Comfort</strong>
+              <b>Offers gentle hand movements that can help maintain ease and coordination during everyday tasks.</b>
+            </li>
 
-      </ul>
-    </div>
+            <li style="margin-bottom: 0; font-size: 18px; line-height: 1.5; color: #444;">
+              <strong style="color: #172c61; display: block; font-size: 20px; margin-bottom: 4px; font-weight: 700;">4. Helps Retain Visual Patterns</strong>
+              <b>Because the method teaches structure through clear patterns, many adults find they remember it comfortably over time.</b>
+            </li>
 
-    <!-- Seniors Section -->
-    <div style="padding: 28px; border-radius: 8px; border-top: 4px solid #172c61;">
-      <h2 class="bold-title" style="font-size: 26px; color: #122043; margin-top: 0; margin-bottom: 22px; font-weight: 700;">Seniors</h2>
-      <ul style="list-style: none; padding: 0; margin: 0;">
+          </ul>
+        </div>
 
-        <li style="margin-bottom: 20px; font-size: 18px; line-height: 1.5; color: #444;">
-          <strong style="color: #172c61; display: block; font-size: 20px; margin-bottom: 4px; font-weight: 700;">1. Gentle Cognitive Engagement</strong>
-          <b>Encourages recognition of shifting patterns and supports steady mental activity.</b>
-        </li>
+        <!-- Seniors Section -->
+        <div style="padding: 28px; border-radius: 8px; border-top: 4px solid #172c61;">
+          <h2 class="bold-title" style="font-size: 26px; color: #122043; margin-top: 0; margin-bottom: 22px; font-weight: 700;">Seniors</h2>
+          <ul style="list-style: none; padding: 0; margin: 0;">
 
-        <li style="margin-bottom: 20px; font-size: 18px; line-height: 1.5; color: #444;">
-          <strong style="color: #172c61; display: block; font-size: 20px; margin-bottom: 4px; font-weight: 700;">2. Comfortable Hand Movement</strong>
-          <b>The slow rhythmic twisting motions can help maintain ease of movement in the hands and fingers.</b>
-        </li>
+            <li style="margin-bottom: 20px; font-size: 18px; line-height: 1.5; color: #444;">
+              <strong style="color: #172c61; display: block; font-size: 20px; margin-bottom: 4px; font-weight: 700;">1. Gentle Cognitive Engagement</strong>
+              <b>Encourages recognition of shifting patterns and supports steady mental activity.</b>
+            </li>
 
-        <li style="margin-bottom: 20px; font-size: 18px; line-height: 1.5; color: #444;">
-          <strong style="color: #172c61; display: block; font-size: 20px; margin-bottom: 4px; font-weight: 700;">3. A Calm Learning Pace</strong>
-          <b>With no fast reflexes required, learners can progress slowly and comfortably while enjoying a predictable flow.</b>
-        </li>
+            <li style="margin-bottom: 20px; font-size: 18px; line-height: 1.5; color: #444;">
+              <strong style="color: #172c61; display: block; font-size: 20px; margin-bottom: 4px; font-weight: 700;">2. Comfortable Hand Movement</strong>
+              <b>The slow rhythmic twisting motions can help maintain ease of movement in the hands and fingers.</b>
+            </li>
 
-        <li style="margin-bottom: 0; font-size: 18px; line-height: 1.5; color: #444;">
-          <strong style="color: #172c61; display: block; font-size: 20px; margin-bottom: 4px; font-weight: 700;">4. Shared Family Activity</strong>
-          <b>Creates a simple and enjoyable way for seniors to connect with younger family members.</b>
-        </li>
+            <li style="margin-bottom: 20px; font-size: 18px; line-height: 1.5; color: #444;">
+              <strong style="color: #172c61; display: block; font-size: 20px; margin-bottom: 4px; font-weight: 700;">3. A Calm Learning Pace</strong>
+              <b>With no fast reflexes required, learners can progress slowly and comfortably while enjoying a predictable flow.</b>
+            </li>
 
-      </ul>
-    </div>
+            <li style="margin-bottom: 0; font-size: 18px; line-height: 1.5; color: #444;">
+              <strong style="color: #172c61; display: block; font-size: 20px; margin-bottom: 4px; font-weight: 700;">4. Shared Family Activity</strong>
+              <b>Creates a simple and enjoyable way for seniors to connect with younger family members.</b>
+            </li>
 
+          </ul>
+        </div>
+      </div>
   </div>
-</div>
-</div>
-<script type="module">
+  <script type="module">
 
-/* ---------------------------------------------------------
-   For Training
---------------------------------------------------------- */
-const algsS0 = {
-  "1R": "R U' L' U R' U' L",
-  "1L": "L' U R U' L U R'",
-  "2R": "R U2 R' U' R U2' L' U R' U' L",
-  "2L": "L' U2' L U L' U2 R U' L U R'",
-  "3TR": "R E' R E R2 E R' E' R",
-  "3TL": "L' E L' E' L2' E' L E L'",
-  "nShapeL": "L' U R U' L U R' R U' L' U R' U' L",
-  "nShapeR": "R U' L' U R' U' L L' U R U' L U R'",
-  "LShapeL": "L' D L2 D' L D2 L D D' L' D2 L' D L2 D' L",
-  "LShapeR": "R' D' R2 D R D2 R D' D R' D2 R' D' R2 D R",
-  "TShapeL": "L' E L' E' L2' E' L E L' L' E L' E' L2' E' L E L' L' E L' E' L2' E' L E L'",
-  "TShapeR": "R E' R E R2 E R' E' R R E' R E R2 E R' E' R R E' R E R2 E R' E' R",
-}
-/* ---------------------------------------------------------
-   S1 — your current working algorithms (79 Moves)
---------------------------------------------------------- */
-const algsS1 = {
-  "solveStep1": "L' R2 F' U F U2 B2 U2 B' R' U2 R U",
-  "solveStep2": "R U' L' U R' U' L R U' L' U R' U' L R U2 R' U' R U2' L' U R' U' L U'",
-  "solveStep3": "B2 E B2 E' R' E2 R L E2 L' B E B' E2 F' E F E' L E2 L' E F2 E F' E2 F'",
-  "solveStep4": "F E' F E F2 E F' E' F",
-  "solveStep5": "B2 E B2 E",
-  "resetStep1": "U' R' U2 R B U2 B2 U2 F' U' F R2 L",
-  "resetStep2": "U L' U R U' L U2 R' U R U2 R' L' U R U' L U R' L' U R U' L U R'",
-  "resetStep3": "F E2 F E' F2 E' L E2 L' E F' E' F E2 B E' B' L E2 L' R' E2 R E B2 E' B2",
-  "resetStep4": "F' E F E' F2 E' F' E F'",
-  "resetStep5": "E' B2 E' B2",
+      /* ---------------------------------------------------------
+        For Training
+      --------------------------------------------------------- */
+      const algsS0 = {
+        "1R": "R U' L' U R' U' L",
+        "1L": "L' U R U' L U R'",
+        "2R": "R U2 R' U' R U2' L' U R' U' L",
+        "2L": "L' U2' L U L' U2 R U' L U R'",
+        "3TR": "R E' R E R2 E R' E' R",
+        "3TL": "L' E L' E' L2' E' L E L'",
+        "nShapeL": "L' U R U' L U R' R U' L' U R' U' L",
+        "nShapeR": "R U' L' U R' U' L L' U R U' L U R'",
+        "LShapeL": "L' D L2 D' L D2 L D D' L' D2 L' D L2 D' L",
+        "LShapeR": "R' D' R2 D R D2 R D' D R' D2 R' D' R2 D R",
+        "TShapeL": "L' E L' E' L2' E' L E L' L' E L' E' L2' E' L E L' L' E L' E' L2' E' L E L'",
+        "TShapeR": "R E' R E R2 E R' E' R R E' R E R2 E R' E' R R E' R E R2 E R' E' R",
+      }
+      /* ---------------------------------------------------------
+        S1 — your current working algorithms (79 Moves)
+      --------------------------------------------------------- */
+      const algsS1 = {
+        "solveStep1": "L' R2 F' U F U2 B2 U2 B' R' U2 R U",
+        "solveStep2": "R U' L' U R' U' L R U' L' U R' U' L R U2 R' U' R U2' L' U R' U' L U'",
+        "solveStep3": "B2 E B2 E' R' E2 R L E2 L' B E B' E2 F' E F E' L E2 L' E F2 E F' E2 F'",
+        "solveStep4": "F E' F E F2 E F' E' F",
+        "solveStep5": "B2 E B2 E",
+        "resetStep1": "U' R' U2 R B U2 B2 U2 F' U' F R2 L",
+        "resetStep2": "U L' U R U' L U2 R' U R U2 R' L' U R U' L U R' L' U R U' L U R'",
+        "resetStep3": "F E2 F E' F2 E' L E2 L' E F' E' F E2 B E' B' L E2 L' R' E2 R E B2 E' B2",
+        "resetStep4": "F' E F E' F2 E' F' E F'",
+        "resetStep5": "E' B2 E' B2",
 
-  "FullSolve": "L' R2 F' U F U2 B2 U2 B' R' U2 R U R U' L' U R' U' L R U' L' U R' U' L R U2 R' U' R U2' L' U R' U' L U' " +
-               "B2 E B2 E' R' E2 R L E2 L' B E B' E2 F' E F E' L E2 L' E F2 E F' E2 F' F E' F E F2 E F' E' F B2 E B2 E ",
-  "Scramble": "R2 F2 R2 B2 D2 L2 U' R B' U2 R2 L2 F R2 F' L2 F' R2 L2 D2"
-};
+        "FullSolve": "L' R2 F' U F U2 B2 U2 B' R' U2 R U R U' L' U R' U' L R U' L' U R' U' L R U2 R' U' R U2' L' U R' U' L U' " +
+                    "B2 E B2 E' R' E2 R L E2 L' B E B' E2 F' E F E' L E2 L' E F2 E F' E2 F' F E' F E F2 E F' E' F B2 E B2 E ",
+        "Scramble": "R2 F2 R2 B2 D2 L2 U' R B' U2 R2 L2 F R2 F' L2 F' R2 L2 D2"
+      };
 
-/* ---------------------------------------------------------
-   S2 — another NEW algorithm set (61 Moves) 
---------------------------------------------------------- */
-const algsS2 = {
-  "solveStep1": "U L U B F R F'",
-  "solveStep2": "F U' B' U F' U' B B' U2 B U B' U2 F U' B  U F' U2",
-  "solveStep3": "E2 B' E2 B F' E F L E2 L' R E2 R' F E2 F' R' E2 R",
-  "solveStep4": "L2 E L2 F E' F E F2 E F' E' F",
-  "solveStep5": "B2 E' B2 E",
-  "resetStep1": "F R' F' B' U' L' U'",
-  "resetStep2": "U2 F U' B' U F' U2 B U' B' U2 B B' U F U' B U F'",
-  "resetStep3": "R' E2 R F E2 F' R E2 R' L E2 L' F' E' F B' E2 B E2",
-  "resetStep4": "F' E F E' F2 E' F' E F' L2 E' L2",
-  "resetStep5": "E' B2 E B2",
-  "FullSolve":  "U L U B F R F' F U' B' U F' U' B B' U2 B U B' U2 F U' B  U F' U2 E2 B' E2 B F' E F L E2 L' R E2 R' F E2 F' R' E2 R L2 E L2 F E' F E F2 E F' E' F B2 E' B2 E",
-  "Scramble":   "U' D' F U F' R D2 R D' L F L2 U2 R2 F' D2 R2 B L2 D2 B"
-};
+      /* ---------------------------------------------------------
+        S2 — another NEW algorithm set (61 Moves) 
+      --------------------------------------------------------- */
+      const algsS2 = {
+        "solveStep1": "U L U B F R F'",
+        "solveStep2": "F U' B' U F' U' B B' U2 B U B' U2 F U' B  U F' U2",
+        "solveStep3": "E2 B' E2 B F' E F L E2 L' R E2 R' F E2 F' R' E2 R",
+        "solveStep4": "L2 E L2 F E' F E F2 E F' E' F",
+        "solveStep5": "B2 E' B2 E",
+        "resetStep1": "F R' F' B' U' L' U'",
+        "resetStep2": "U2 F U' B' U F' U2 B U' B' U2 B B' U F U' B U F'",
+        "resetStep3": "R' E2 R F E2 F' R E2 R' L E2 L' F' E' F B' E2 B E2",
+        "resetStep4": "F' E F E' F2 E' F' E F' L2 E' L2",
+        "resetStep5": "E' B2 E B2",
+        "FullSolve":  "U L U B F R F' F U' B' U F' U' B B' U2 B U B' U2 F U' B  U F' U2 E2 B' E2 B F' E F L E2 L' R E2 R' F E2 F' R' E2 R L2 E L2 F E' F E F2 E F' E' F B2 E' B2 E",
+        "Scramble":   "U' D' F U F' R D2 R D' L F L2 U2 R2 F' D2 R2 B L2 D2 B"
+      };
 
 
-/* ---------------------------------------------------------
-   S3 — another NEW algorithm set (75 Moves)
---------------------------------------------------------- */
-const algsS3 = {
-  "solveStep1": "D' R' D R' F U2 F' U2 L U' L'",
-  "solveStep2": "B U' F' U B' U' F L U2 L' U' L U2 R' U L' U' R U2",
-  "solveStep3": "E B' E B E2 L' E L2 E2 L' E' F E' F E F' E2 F' E R E R2 E2 R",
-  "solveStep4": "L' E' L E L2 E L' E' L' L E' L E L2 E L' E' L",
-  "solveStep5": "B2 E2 B2",
-  "resetStep1": "L U L' U2 F U2 F' R D' R D",
-  "resetStep2": "U2 R' U L U' R U2 L' U L U2 L' F' U B U' F U B'",
-  "resetStep3": "R' E2 R2 E' R' E' F E2 F E' F' E F' E L E2 L2 E' L E2 B' E' B E'",
-  "resetStep4": "L' E L E' L2 E' L' E L' L E L E' L2 E' L' E L",
-  "resetStep5": "B2 E2 B2",
-  "FullSolve":  "D' R' D R' F U2 F' U2 L U' L' B U' F' U B' U' F L U2 L' U' L U2 R' U L' U' R U2 E B' E B E2 L' E L2 E2 L' E' F E' F E F' E2 F' E R E R2 E2 R L' E' L E L2 E L' E' L' L E' L E L2 E L' E' L B2 E2 B2",
-  "Scramble":  "D' L U2 F' R' L2 U F U R D2 R2 L D2 R B2 L' F2 D2 B2"
-};
+      /* ---------------------------------------------------------
+        S3 — another NEW algorithm set (75 Moves)
+      --------------------------------------------------------- */
+      const algsS3 = {
+        "solveStep1": "D' R' D R' F U2 F' U2 L U' L'",
+        "solveStep2": "B U' F' U B' U' F L U2 L' U' L U2 R' U L' U' R U2",
+        "solveStep3": "E B' E B E2 L' E L2 E2 L' E' F E' F E F' E2 F' E R E R2 E2 R",
+        "solveStep4": "L' E' L E L2 E L' E' L' L E' L E L2 E L' E' L",
+        "solveStep5": "B2 E2 B2",
+        "resetStep1": "L U L' U2 F U2 F' R D' R D",
+        "resetStep2": "U2 R' U L U' R U2 L' U L U2 L' F' U B U' F U B'",
+        "resetStep3": "R' E2 R2 E' R' E' F E2 F E' F' E F' E L E2 L2 E' L E2 B' E' B E'",
+        "resetStep4": "L' E L E' L2 E' L' E L' L E L E' L2 E' L' E L",
+        "resetStep5": "B2 E2 B2",
+        "FullSolve":  "D' R' D R' F U2 F' U2 L U' L' B U' F' U B' U' F L U2 L' U' L U2 R' U L' U' R U2 E B' E B E2 L' E L2 E2 L' E' F E' F E F' E2 F' E R E R2 E2 R L' E' L E L2 E L' E' L' L E' L E L2 E L' E' L B2 E2 B2",
+        "Scramble":  "D' L U2 F' R' L2 U F U R D2 R2 L D2 R B2 L' F2 D2 B2"
+      };
 
-/* ---------------------------------------------------------
-   ACTIVE SET SWITCHING
---------------------------------------------------------- */
-let activeSet = "S0";
+      /* ---------------------------------------------------------
+        ACTIVE SET SWITCHING
+      --------------------------------------------------------- */
+      let activeSet = "S0";
 
-function getAlgs() {
-  return activeSet === "S0" ? algsS0 :
-         activeSet === "S1" ? algsS1 :
-         activeSet === "S2" ? algsS2 :
-                              algsS3;
-}
+      function getAlgs() {
+        return activeSet === "S0" ? algsS0 :
+              activeSet === "S1" ? algsS1 :
+              activeSet === "S2" ? algsS2 :
+                                    algsS3;
+      }
 
-window.setMode = function(mode) {
-  activeSet = mode;
-  console.log("Active Algorithm Set:", activeSet);
-};
+      window.setMode = function(mode) {
+        activeSet = mode;
+        console.log("Active Algorithm Set:", activeSet);
+      };
 
-window.setActiveModeButton = function(button) {
-  document.querySelectorAll('.mode-buttons button')
-    .forEach(btn => btn.classList.remove('active'));
-  button.classList.add('active');
-};
+      window.setActiveModeButton = function(button) {
+        document.querySelectorAll('.mode-buttons button')
+          .forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+      };
 
-/* ---------------------------------------------------------
-   Your original script continues here
---------------------------------------------------------- */
+      /* ---------------------------------------------------------
+        Your original script continues here
+      --------------------------------------------------------- */
 
-let accumulatedAlg = "";
+      let accumulatedAlg = "";
 
-const player = document.getElementById("cube");
-const speedRange = document.getElementById("speedRange");
-const speedLabel = document.getElementById("speedLabel");
+      const player = document.getElementById("cube");
+      const speedRange = document.getElementById("speedRange");
+      const speedLabel = document.getElementById("speedLabel");
 
-const defaultSpeed = 2.0;
-speedRange.value = defaultSpeed;
-player.tempoScale = defaultSpeed;
-speedLabel.textContent = defaultSpeed.toFixed(2) + "x";
+      const defaultSpeed = 2.0;
+      speedRange.value = defaultSpeed;
+      player.tempoScale = defaultSpeed;
+      speedLabel.textContent = defaultSpeed.toFixed(2) + "x";
 
-speedRange.addEventListener("input", () => {
-  const v = parseFloat(speedRange.value);
-  player.tempoScale = v;
-  speedLabel.textContent = v.toFixed(2) + "x";
-});
+      speedRange.addEventListener("input", () => {
+        const v = parseFloat(speedRange.value);
+        player.tempoScale = v;
+        speedLabel.textContent = v.toFixed(2) + "x";
+      });
 
-function scrambleCube() {
-  const algs = getAlgs();
-  accumulatedAlg = algs["Scramble"];
-  player.pause?.();
-  player.alg = accumulatedAlg;
-  player.play?.();
-}
+      function scrambleCube() {
+        const algs = getAlgs();
+        accumulatedAlg = algs["Scramble"];
+        player.pause?.();
+        player.alg = accumulatedAlg;
+        player.play?.();
+      }
 
-customElements.whenDefined("twisty-player").then(() => {
-  player.addEventListener("ready", () => {
-    scrambleCube();
-  });
-});
+      customElements.whenDefined("twisty-player").then(() => {
+        player.addEventListener("ready", () => {
+          scrambleCube();
+        });
+      });
 
-function setAlgReset(name) {
-  const algs = getAlgs();
-  accumulatedAlg = "";
-  player.pause?.();
-  player.jumpToStart?.();
-  player.alg = algs[name];
-  player.play?.();
-}
+      function setAlgReset(name) {
+        const algs = getAlgs();
+        accumulatedAlg = "";
+        player.pause?.();
+        player.jumpToStart?.();
+        player.alg = algs[name];
+        player.play?.();
+      }
 
-function setAlgContinue(name) {
-  const algs = getAlgs();
-  if (!accumulatedAlg) {
-    accumulatedAlg = algs["Scramble"];
-  }
-  accumulatedAlg += " " + algs[name];
-  player.pause?.();
-  player.alg = accumulatedAlg.trim();
-  player.play?.();
-}
+      function setAlgContinue(name) {
+        const algs = getAlgs();
+        if (!accumulatedAlg) {
+          accumulatedAlg = algs["Scramble"];
+        }
+        accumulatedAlg += " " + algs[name];
+        player.pause?.();
+        player.alg = accumulatedAlg.trim();
+        player.play?.();
+      }
 
-function setActiveButton(button) {
-  document.querySelectorAll('#controls button, #solving-controls button')
-    .forEach(btn => {
-      btn.classList.remove('active', 'selected-btn');
-    });
+      function setActiveButton(button) {
+        document.querySelectorAll('#controls button, #solving-controls button')
+          .forEach(btn => {
+            btn.classList.remove('active', 'selected-btn');
+          });
 
-  button.classList.add('active');
-}
+        button.classList.add('active');
+      }
 
-window.setActiveButton = setActiveButton;
-window.setAlgReset = setAlgReset;
-window.setAlgContinue = setAlgContinue;
-window.scrambleCube = scrambleCube;
+      window.setActiveButton = setActiveButton;
+      window.setAlgReset = setAlgReset;
+      window.setAlgContinue = setAlgContinue;
+      window.scrambleCube = scrambleCube;
 
-/* Disable right-click */
-document.addEventListener('contextmenu', function(e) {
-  e.preventDefault();
-});
+      /* Disable right-click */
+      document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+      });
 
-/* Disable F12, Ctrl+Shift+I, Ctrl+U */
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'F12' || 
-     (e.ctrlKey && e.shiftKey && e.key === 'I') || 
-     (e.ctrlKey && e.key === 'u')) {
-    e.preventDefault();
-  }
-});
+      /* Disable F12, Ctrl+Shift+I, Ctrl+U */
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'F12' || 
+          (e.ctrlKey && e.shiftKey && e.key === 'I') || 
+          (e.ctrlKey && e.key === 'u')) {
+          e.preventDefault();
+        }
+      });
 
-</script>
+  </script>
 </body>
 </html>
