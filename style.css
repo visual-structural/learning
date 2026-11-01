@@ -1,0 +1,755 @@
+<!-- DESKTOP + GENERAL CSS -->
+<style>
+
+.visually-hidden {
+position: absolute;
+left: -9999px;
+top: auto;
+width: 1px;
+height: 1px;
+overflow: hidden;
+}
+/* ==========================================
+1. GLOBAL RESETS & STYLING
+========================================== */
+html {
+scroll-behavior: smooth;
+}
+
+body {
+margin: 0;
+padding: 5px 0 0 0;
+font-family: Georgia, serif;
+background: linear-gradient(90deg, #d1e8f9, #f8fdfd);
+color: #222;
+line-height: 1.6;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+align-items: center; 
+-webkit-user-select: none; /* Safari */
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE/Edge */
+user-select: none; /* Standard */
+}
+
+*, *:before, *:after {
+box-sizing: border-box;
+}
+
+/* ==========================================
+2. REUSABLE LAYOUT CENTERING BLOCKS
+========================================== */
+.center-wrapper,
+.content,
+.main,
+.page,
+#philosophy,
+#book-release,
+#uniqueness,
+#benefits,
+.unique-features-section, 
+.benefits-section {
+max-width: 720px;
+width: 100%;
+margin-left: auto;  
+margin-right: auto; 
+padding-left: auto;       
+padding-right: auto;
+}
+
+.center-wrapper,
+.cube-wrapper,
+.cube-container {
+min-width: 320px;
+}
+
+.content-section {
+max-width: 100%;
+width: 100%;
+overflow-wrap: break-word;
+word-wrap: break-word;
+white-space: normal;
+}
+
+/* ==========================================
+3. NAVIGATION & HERO
+========================================== */
+.top-nav {
+display: grid;
+grid-template-columns: repeat(3, 1fr); 
+gap: 10px; 
+width: 100%;
+max-width: 720px;
+margin: 0 auto;
+}
+
+.top-nav a {
+display: flex;
+justify-content: center;
+align-items: center;
+line-height: 1.0;
+padding: 12px 0;
+background: linear-gradient(135deg, #2cc3f1, #f7f7f7);
+border: 1px solid #ccc;
+border-radius: 6px;
+font-size: 20px;
+font-weight: 600;
+color: #000;
+text-decoration: none;
+}
+
+.hero-title {
+font-family: Georgia, serif;
+font-size: 2.2rem;
+font-weight: 700;
+color: #003366;
+text-align: center;
+margin-top: 60px;
+margin-bottom: 0px;
+line-height: 1.0;
+letter-spacing: 1.0px;
+}
+
+.hero-subtitle {
+font-family: Georgia, serif;
+font-size: 1.8rem;
+font-weight: 700;
+color: #005599;
+text-align: center;
+margin-top: 20px;
+margin-bottom: 30px;
+line-height: 1.2;
+}
+
+/* ==========================================
+4. TYPOGRAPHY
+========================================== */
+h1 {
+font-size: 35px;
+margin: 0;
+font-weight: 600;
+font-family: Georgia, serif;
+color: #003366;
+}
+
+h2 {
+font-size: 24px;
+margin-top: 12px;
+font-family: Georgia, serif;
+font-weight: 300;
+color: #004c99;
+}
+
+.bold-title {
+font-weight: 700;
+}
+
+.section-title {
+font-size: 36px;
+margin-top: 30px;
+margin-bottom: 5px;
+font-weight: 700;
+color: #003366;
+}
+
+.tagline {
+font-size: 28px;
+font-weight: bold;
+font-family: Georgia, serif;
+margin-top: 5px;
+margin-bottom: 20px;
+color: #004c99;
+line-height: 1.4;
+}
+
+.vsm-title-block {
+text-align: center;
+margin-bottom: 30px;
+margin-top: 30px;
+}
+
+/* ==========================================
+5a. TRAINING CUBE
+========================================== */
+.training-cube{
+width: 100%;
+max-width: 720px;
+margin: 40px auto;
+padding: 45px 20px 45px 20px;
+border-radius: 12px;
+border: 1px solid #dcdcdc;
+box-shadow: 0 0 10px rgba(97, 156, 237, 0.08);
+background: linear-gradient(315deg, #f3f6fb 0%, #e9edf3 100%);
+font-family: Georgia, serif;
+line-height: 1.0;
+color: #103457ec;
+}
+
+.responsive-steps {
+width: 80%;
+max-width: 720px;
+min-width: 220px;
+/* 1. CENTERS THE CONTAINER: Sets top/bottom margin to 0 and left/right to auto */
+margin: 0 auto; 
+
+/* 2. OPTIONAL CENTERING BACKUP: Uses Flexbox to center everything inside this container */
+display: flex;
+justify-content: center;
+}
+
+.responsive-steps-image {
+max-width: 100%;
+height: auto;
+
+/* 3. CENTERS THE IMAGE: Block display combined with auto margins pushes it to the middle */
+display: block;
+margin: 0 auto;
+}
+
+/* ==========================================
+Controls and Buttons
+========================================== */
+.step-box {
+margin-bottom: -15px;
+text-align: center;   /* centers the label AND the buttons */
+padding: 8px 0;
+}
+
+#solving-controls {
+display: grid;
+grid-template-columns: repeat(3, 1fr); /* 3 buttons per row */
+gap: 10px; /* spacing between buttons */
+}
+
+#solving-controls button {
+width: 100%;        /* button fills its grid cell */
+min-width: 120px;   /* makes buttons longer */
+}
+
+/* S1, S2, S3 3 sets of Solving Solution */
+.mode-buttons {
+width: 100%;
+display: flex !important;
+justify-content: center !important;
+align-items: center;
+gap: 10px;
+}
+.mode-buttons button {
+margin: 4px;
+padding: 6px 12px;
+justify-content: center;   /* center the row */
+align-items: center;       /* vertical align (optional) */
+font-weight: bold;
+border-radius: 8px;   /* smooth rounded corners */
+}
+
+.mode-buttons button.active {
+background-color: #2ecc71; /* green */
+color: #2314aa;
+}
+
+.control-buttons button {
+margin: 4px;
+padding: 6px 12px;
+}
+
+/* ==========================================
+5b TWISTY CUBE (DESKTOP)
+========================================== */
+.cube-wrapper {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 10px 0;
+}
+
+.cube-section {
+background: #333333;
+padding: 0px;
+}
+
+.cube-container {
+width: 100%;
+max-width: 100%;
+}
+
+.cube-area {
+overflow: visible !important;
+}
+
+#speedControl {
+display: flex;
+justify-content: center;
+width: 100%;
+margin: 20px 0;
+}
+
+/* ==========================================
+6. INTERACTIVE BUTTON LAYOUTS
+========================================== */
+#solving-controls,
+#controls {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 12px;
+max-width: 720px;
+margin: 20px auto;
+width: 100%;
+}
+
+#solving-controls button,
+#controls button {
+font-family: Georgia, serif;
+font-size: 18px;
+font-weight: bold;
+padding: 10px;
+line-height: 1.2;
+text-align: center;
+border-radius: 10px;
+border: 1px solid #b8bec4;
+background: linear-gradient(#f0f7f0, #e0ede0);
+color: #000000;
+cursor: pointer;
+transition: all 0.15s ease;
+}
+
+#solving-controls button:hover,
+#controls button:hover {
+background: #dfe4e8;
+transform: translateY(-2px);
+box-shadow: 0 2px 4px rgba(0,0,0,0.12);
+}
+
+#solving-controls button.active,
+#controls button.active {
+background: #4CAF50 !important;
+color: #ffffff !important;
+border: 2px solid #2e7d32 !important;
+transform: scale(1.05);
+}
+
+.button-wrapper {
+display: flex;
+align-items: center;
+gap: 15px; 
+}
+
+.line-divider {
+width: 1px;                
+height: 22px;              
+background-color: #d1d5db; 
+display: inline-block;     
+margin: 0 5px;             
+}
+
+.selected-btn {
+background-color: #ffcc00;
+color: black;
+font-weight: bold;
+border: 2px solid #ffaa00;
+}
+
+.demo-section {
+max-width: 100%;
+width: 100%;
+overflow-wrap: break-word;
+word-wrap: break-word;
+white-space: normal;
+}
+
+.demo-section button {
+max-width: 100%;
+white-space: normal;
+}
+
+/* ==========================================
+7. FRONT COVER SECTION — FIXED
+========================================== */
+.front-cover {
+width: 100%;
+max-width: 720px;
+padding: 40px 40px 0px 40px;
+
+border-radius: 12px;
+background: linear-gradient(135deg, #3A9BE2, #CBE2F3);
+box-shadow: 0 0 10px rgba(0,0,0,0.08);
+text-align: center;
+font-family: Georgia, serif;
+margin-top: 0px;
+margin-bottom: 20px;
+}
+
+.front-cover-title {
+font-size: clamp(28px, 6vw, 52px);
+font-weight: 700;
+color: #003366;
+margin-top: 30px;
+margin-bottom: 40px;
+text-align: center;
+line-height: 1.1;
+}
+
+.front-cover-subtitle {
+font-size: clamp(22px, 5vw, 40px);
+font-weight: bold;
+color: #003366;
+margin-bottom: -20px;
+text-align: center;
+line-height: 1;
+}
+
+.front-cover-tagline {
+font-size: clamp(16px, 3.5vw, 25px);
+font-weight: bold;
+font-style: italic;
+color: #003366;
+margin-bottom: 60px;
+text-align: center;
+line-height: 1.0;
+}
+
+.front-cover-author {
+font-size: clamp(12px, 2vw, 16px);
+font-style: italic;
+color: #003366;
+opacity: 0.9;
+margin-bottom: 25px;
+line-height: 1;
+text-align: center;
+}
+
+.front-cover-cube-wrapper {
+width: 80%;
+max-width: 720px;
+min-width: 200px;
+/* 1. CENTERS THE CONTAINER: Sets top/bottom margin to 0 and left/right to auto */
+margin: 60px auto;  
+/* 2. OPTIONAL CENTERING BACKUP: Uses Flexbox to center everything inside this container */
+display: flex;
+justify-content: center;
+}
+
+.front-cover-cube-image {
+max-width: 100%;
+height: auto;
+
+/* 3. CENTERS THE IMAGE: Block display combined with auto margins pushes it to the middle */
+display: block;
+margin: 0 auto;
+}
+
+/* ==========================================
+8. BACK COVER SECTION
+========================================== */
+.back-cover {
+width: 100%;
+max-width: 720px;
+margin: 40px auto;
+margin-bottom: 40px;
+padding: 40px auto;
+border-radius: 12px;
+box-shadow: 0 0 10px rgba(0,0,0,0.08);
+background: linear-gradient(315deg, #3A9BE2 0%, #CBE2F3 100%);
+font-family: Georgia, serif;
+line-height: 1.10;
+color: #003366;
+}
+
+.back-cover-title {
+font-size: clamp(22px, 5.5vw, 32px);
+font-weight: 700;
+color: #28292a;
+margin-bottom: 10px;
+line-height: 1;
+text-align: center;
+}
+
+.back-cover-tagline {
+font-size: clamp(20px, 4.5vw, 32px);
+font-weight: bold;
+margin-top: 20px;
+margin-bottom: 5px;
+text-align: center;
+line-height: 1.0;
+font-family: Georgia, serif;
+}
+
+.back-cover-author-title {
+font-size: clamp(20px, 4vw, 24px);
+font-weight: 700;
+color: #003366;
+margin-top: 35px;
+margin-bottom: -10px;
+text-align: center;
+}
+
+/* Paragraph text */
+.back-cover p,
+.back-cover p1 {
+font-size: clamp(16px, 2.5vw, 18.5px);
+line-height: 1.18;
+margin-bottom: 0px;
+}
+
+/* ==========================================
+9. BOOK SPREAD SECTION
+========================================== */
+.book-spread {
+width: 100%;
+max-width: 720px;
+margin: 40px auto 0 auto; 
+display: flex;
+flex-direction: column;
+gap: 30px;
+text-align: left;
+}
+
+.cover-image img {
+display: block;
+margin: 0 auto;              
+width: 100%;
+height: auto;
+border-radius: 10px;
+box-shadow: 0 0 12px rgba(35, 15, 15, 0.00);
+}
+
+/* ==========================================
+10. SPECIFIC CONTENT CARD STYLING
+========================================== */
+.philosophy-block {
+font-family: Georgia, serif;
+background-color: #f3f6fb;
+padding: 40px 20px 40px 20px;
+border-radius: 12px;
+border: 2px solid #cbe2f3;
+font-size: 1.18rem;
+width: 100%;
+}
+
+.philosophy-block h1 {
+font-family: Georgia, serif;
+color: #003366;
+line-height: 1.0;
+}
+
+.philosophy-block h2 {
+font-family: Georgia, serif;
+color: #003366;
+line-height: 1.1;
+margin-top: 20px;
+margin-bottom: 5px;
+}
+
+.philosophy-block p {
+font-family: Georgia, serif;
+color: #003366;
+line-height: 1.2;
+margin-top: 6px;
+margin-bottom: 5px;
+}
+
+#uniqueness {  
+padding: 40px 20px 40px 20px;        
+background: #f5f7fa;  
+border: 2px solid #f3f6fb;
+border-radius: 12px;
+box-shadow: 0 0 10px rgba(0,0,0,0.08);
+display: block;
+}
+.unique-features-section h1 {
+margin: 20 0;
+line-height: 1.1;
+font-family: Georgia, serif;
+}
+
+.unique-features-section p {
+margin: 0 0 14px 0;
+line-height: 1.2;
+font-family: Georgia, serif;
+}
+
+.unique-features-section p strong {
+display: block;
+font-size: 1.23rem;
+font-weight: 700;
+line-height: 1.2;
+margin-bottom: 2px;
+}
+
+.unique-features-section p .desc {
+font-family: Georgia, serif;
+font-size: 1.16rem;   
+line-height: 1.20;    
+display: block;
+}
+
+#benefits {
+margin-top: 60px;
+padding: 40px 20px 40px 20px;
+border: 2px solid #b4a1ebaf;
+background: #f5f7fa;
+border-radius: 12px;
+box-shadow: 0 0 10px rgba(0,0,0,0.08);
+display: block;
+}
+
+.benefits-section {
+font-family: Georgia, serif;
+background-color: #f7f7f7;   
+padding: 22px 26px;          
+border-radius: 12px;         
+border: 1px solid #dcdcdc;   
+margin-top: 30px;
+margin-bottom: 40px;
+line-height: 1.0;   
+align-self: flex-start;
+}
+
+.benefits-section p {
+font-family: Georgia, serif;
+font-size: 1.32rem;   
+line-height: 1.2;   
+margin-bottom: 10px;  
+}
+
+.benefits-section h2 {
+font-family: Georgia, serif;
+font-size: 1.5rem; 
+line-height: 1.2;   
+margin-top: 30px;
+margin-bottom: -20px;
+}
+
+
+.benefits-section p strong {
+font-size: 1.28rem;   
+font-weight: 700;
+}
+
+/* ==========================================
+11. DATA TABLES STYLING
+========================================== */
+.benefits-table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+
+.benefits-table td,
+.benefits-table th {
+font-family: Georgia, serif;
+font-size: 1.05rem;     
+line-height: 1.25;      
+padding: 8px 10px;      
+white-space: normal;
+word-break: keep-all;     
+overflow-wrap: break-word; 
+}
+
+.benefits-table.thick-lines th,
+.benefits-table.thick-lines td {
+border: 3px solid #000; 
+}
+
+/* CSS for making the table horizontally scrollable */
+.table-wrapper {
+overflow-x: auto;        /* Enable horizontal scrolling */
+-webkit-overflow-scrolling: touch; /* Smooth scroll on mobile */
+width: 100%;             /* Ensure the wrapper fits parent container */
+}
+
+.benefits-table {
+min-width: 800px; /* Minimum width ensures table can scroll if it overflows */
+border-collapse: collapse;
+}
+
+.benefits-table th,
+.benefits-table td {
+padding: 12px 15px;
+border: 1px solid #ccc;
+text-align: left;
+}
+</style>
+
+<!-- MOBILE CSS -->
+<style media="(max-width: 600px)">
+.center-wrapper,
+.cube-wrapper,
+.cube-container {
+min-width: 0;
+} 
+.trainning-cube,
+.front-cover,
+.back-cover,
+#book-release,
+.philosophy-block,
+.unique-features-section,
+.benefits-section {
+width: 100%;
+max-width: 100%;
+padding-left: 25px;
+padding-right: 25px;
+margin-left: 0;
+margin-right: 0;
+box-sizing: border-box;
+}
+
+.top-nav {
+grid-template-columns: repeat(3, 1fr);
+gap: 6px;
+}
+
+.top-nav a {
+font-size: clamp(14px, 3vw, 20px);
+padding: 14px 2px;
+text-align: center;
+white-space: normal;
+word-break: break-word;
+}
+
+#controls button,
+#solving-controls button {
+font-size: clamp(14px, 3vw, 20px);
+padding: 6px 4px;
+white-space: normal;
+word-break: break-word;
+}
+
+#solving-controls {
+grid-template-columns: repeat(2, 1fr); /* 2 per row */
+}
+
+
+.benefits-table {
+width: 100%;
+max-width: 100%;
+overflow-x: auto;
+}
+
+.benefits-table td,
+.benefits-table th {
+white-space: normal;
+word-break: break-word;
+padding: 8px 6px;
+font-size: 1rem;
+}
+
+img {
+max-width: 100%;
+height: auto;
+display: block;
+}
+
+.cube-container {
+width: 100%;
+max-width: 100%;
+}
+
+/* === FRONT COVER FIXES FOR iPHONE 12/13 === */
+
+.front-cover{
+padding-left: 0px;
+padding-right: 0px;
+}
+</style>

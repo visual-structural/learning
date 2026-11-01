@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <!-- TWISTY PLAYER -->
+  <script type="module" src="https://cdn.cubing.net/js/cubing/twisty"></script>
+  <title>The Visual Structural Method</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="training-cube" id="training" style="border: 4px solid #5ea8eed3; background: linear-gradient(325deg, #c2ddf3, #f7f7f7); padding: 40px 20px; margin: 0px 0px;">
+  <h1 style="color: rgb(18, 27, 65); text-align: center; letter-spacing: 1px;line-height: 2.5;">Training Cube</h1>
+
+  <h1 style="color: rgb(3, 7, 29); text-align: center; letter-spacing: 0px;line-height: 1.0;">
+    Visual Training Session
+  </h1>
+  <h3 style="
+        color:#3a6f3a;
+        text-align:left;
+        letter-spacing:0px;
+        line-height:1.2;
+        font-size:1.15rem;
+        margin-bottom:25px;
+    ">
+      When practicing the 1L, 2L, 1R, 2R, 3TL, and 3TR movements, always start with the green face at the front. You may rotate the cube at any time to observe how the left and right sides move during each action and to better understand the visual travel path of the movement.
+      <br/><br/>
+
+      To begin, press the <strong>Training</strong> button and set the cube speed to a level that feels comfortable. Then select any movement button to see the action demonstrated. Use the cube controls to replay the movement as many times as needed. You can adjust the playback speed at any time during practice to match your learning pace.
+      <br/><br/>
+
+      Focus on how the structure moves, travels, and returns. The goal is not simply to watch the turns, but to recognize the visual pattern and understand how the movement affects the cube's structure.
+  </h3>
+
+  <div id="controls">
+    <button onclick="setAlgReset('1L'); setActiveButton(this)" id="btn-1L">1L</button>
+    <button onclick="setAlgReset('2L'); setActiveButton(this)" id="btn-2L">2L</button> 
+    <button onclick="setAlgReset('3TL'); setActiveButton(this)" id="btn-3TL">3TL</button> 
+    <button onclick="setAlgReset('1R'); setActiveButton(this)" id="btn-1R">1R</button>
+    <button onclick="setAlgReset('2R'); setActiveButton(this)" id="btn-2R">2R</button>
+    <button onclick="setAlgReset('3TR'); setActiveButton(this)" id="btn-3TR">3TR</button>
+  </div>
+  <div id="demo-session" style="padding:20px; background:#f5f7fa; border-radius:12px;">
+    <div class="cube-area">
+        <div class="cube-wrapper">
+          <div class="cube-section">
+            <twisty-player
+              id="cube"
+              alg=""
+              back-view="true"
+              control-panel="bottom"
+              viewer-link="none"
+              hint-facelets="none"
+              background="000000"
+              style="display: block; width: 405px; height: 270px; margin: 0 auto; background:#4d4949cf;"
+            ></twisty-player>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div id="speedControl">
+    <label for="speedRange">Speed: <span id="speedLabel">2.00×</span></label>
+    <input id="speedRange" type="range" min="0.25" max="10" step="0.25" value="2.0">
+  </div>
+        <!-- Algorithm set selector -->
+  <div class="mode-buttons">
+    <button id="btnS0" class="active" onclick="setMode('S0'); setActiveModeButton(this)">Training</button>
+    <button id="btnS1" onclick="setMode('S1'); setActiveModeButton(this)">S1</button>
+    <button id="btnS2" onclick="setMode('S2'); setActiveModeButton(this)">S2</button>
+    <button id="btnS3" onclick="setMode('S3'); setActiveModeButton(this)">S3</button>
+  </div>
+
+  <hr style="height: 4px; border: none; background-color: rgb(31, 41, 187);">
+  <div id="solving-controls">
+
+    <div class="step-box">
+      <button onclick="setAlgContinue('solveStep1'); setActiveButton(this)" id="btn-Step1">Solve Step1</button>
+      <button onclick="setAlgContinue('resetStep1'); setActiveButton(this)" id="btn-Step1_Inv">Reset Step1</button>
+    </div>
+
+    <div class="step-box">
+      <button onclick="setAlgContinue('solveStep2'); setActiveButton(this)" id="btn-Step2">Solve Step2</button>
+      <button onclick="setAlgContinue('resetStep2'); setActiveButton(this)" id="btn-Step2_Inv">Reset Step2</button>
+    </div>
+
+    <div class="step-box">
+      <button onclick="setAlgContinue('solveStep3'); setActiveButton(this)" id="btn-Step3">Solve Step3</button>
+      <button onclick="setAlgContinue('resetStep3'); setActiveButton(this)" id="btn-Step3_Inv">Reset Step3</button>
+    </div>
+
+    <div class="step-box">
+      <button onclick="setAlgContinue('solveStep4'); setActiveButton(this)" id="btn-Step4">Solve Step4</button>
+      <button onclick="setAlgContinue('resetStep4'); setActiveButton(this)" id="btn-Step4_Inv">Reset Step4</button>
+    </div>
+
+    <div class="step-box">
+      <button onclick="setAlgContinue('solveStep5'); setActiveButton(this)" id="btn-Step5">Solve Step5</button>
+      <button onclick="setAlgContinue('resetStep5'); setActiveButton(this)" id="btn-Step5_Inv">Reset Step5</button>
+    </div>
+
+    <div class="step-box">
+      <button onclick="setAlgContinue('FullSolve'); setActiveButton(this)" id="btn-FullSolve">FULL SOLVE</button>
+      <button onclick="scrambleCube(); setActiveButton(this)" id="btn-Scramble">Scramble</button>
+    </div>
+
+  </div>
+  
+  <div style="max-width:720px; margin:0 auto; padding:0px 0px;">
+
+    <h1 style="color:#041402; text-align:center; font-size:36px; margin-bottom:10px;">
+      Demo Sessions
+    </h1>
+
+    <div style="color:#041402; font-size:18px; line-height:1.5; letter-spacing:0px;">
+
+      <p>
+        S1, S2, and S3 each present a complete solving session. Every session begins with a unique scramble generated using Twizzle tools within the cubing.js ecosystem and progresses through all five steps of the Visual Structural Method. Although each solve follows a different path, the same structural principles are applied throughout.
+      </p>
+
+      <p>
+        These sessions demonstrate the method in action. Select S1, S2, or S3 until the button turns green. Set playback to the highest speed and press <b>Scramble</b>. Once the scramble is complete, adjust the playback speed to a comfortable pace and play Steps 1 through 5 in sequence.
+      </p>
+
+      <p>
+        Each step can be replayed as often as needed. Use the Step Reset button to practise a specific stage, or switch to Cube Control mode to pause, play, and examine the solve one movement at a time.
+      </p>
+
+      <p>
+        The demo follows the same structural progression used by the Visual Structural Method and must be viewed in sequence. Learners cannot jump directly between steps. For example, if you are currently at Step 3 and wish to return to Step 1, you must first reset Step 3, then reset Step 2, and finally reset Step 1. Each step depends on the structural state created by the previous step, so resets must follow the reverse order of construction. This preserves the integrity of the solve and allows learners to observe how the structure develops from Foundation to Walls to Windows.
+      </p>
+
+      <p>
+        As you move through the five steps, observe how the cube develops through <b>Foundation → Walls → Windows</b>. The structure grows progressively, making it easy to see what has been completed, what remains to be built, and what comes next.
+      </p>
+
+      <p>
+        The demo solves the cube in the same way the method is taught: like building a small house, one section at a time. Learners follow visible structural changes and visual pattern moves that guide the solve from start to finish.
+      </p>
+
+      <p>
+        Step 5 normally completes the final window alignment using the center pieces. In some solves, Step 4 may naturally complete one or more windows before Step 5 begins. For demonstration consistency, S1 and S2 intentionally leave the final alignment for Step 5.
+      </p>
+      <p style="color:#003366; font-size: 1.5rem; margin-bottom: -10px;">
+        <b>About Step 1 in the Solved Examples</b>
+      </p>
+      <p>The solved examples on this website use a free movement approach for Step 1. The result is exactly the same: the yellow corner frame is completed and the solve continues normally. The book teaches a more structured Step 1 approach that was developed through years of testing and refinement, helping learners focus on a smaller working area and making Step 1 easier to learn and practice. These solved examples are provided to demonstrate how the Visual Structural Method solves real scrambles from start to finish, while the book provides the <b>complete learning system</b> and the recommended learning path for new learners.</p>
+    </div>
+
+  </div>
+  <div style="text-align:center; margin-top:20px;">
+      <a href="index.html"
+        style="display:inline-block; padding:6px 14px; font-size:14px;
+                font-weight:600; color:#effaa7; background:#6c95ed;
+                border-radius:6px; text-decoration:none;">
+        ← Back to Home
+      </a>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
