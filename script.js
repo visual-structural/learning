@@ -23,12 +23,12 @@
       "solveStep2": "R U' L' U R' U' L R U' L' U R' U' L R U2 R' U' R U2' L' U R' U' L U'",
       "solveStep3": "B2 E B2 E' R' E2 R L E2 L' B E B' E2 F' E F E' L E2 L' E F2 E F' E2 F'",
       "solveStep4": "F E' F E F2 E F' E' F",
-      "solveStep5": "B2 E B2 E",
+      "solveStep5": "B2 E B2",
       "resetStep1": "U' R' U2 R B U2 B2 U2 F' U' F R2 L",
       "resetStep2": "U L' U R U' L U2 R' U R U2 R' L' U R U' L U R' L' U R U' L U R'",
       "resetStep3": "F E2 F E' F2 E' L E2 L' E F' E' F E2 B E' B' L E2 L' R' E2 R E B2 E' B2",
       "resetStep4": "F' E F E' F2 E' F' E F'",
-      "resetStep5": "E' B2 E' B2",
+      "resetStep5": "B2 E' B2",
 
       "FullSolve": "L' R2 F' U F U2 B2 U2 B' R' U2 R U R U' L' U R' U' L R U' L' U R' U' L R U2 R' U' R U2' L' U R' U' L U' " +
                   "B2 E B2 E' R' E2 R L E2 L' B E B' E2 F' E F E' L E2 L' E F2 E F' E2 F' F E' F E F2 E F' E' F B2 E B2 E ",
@@ -53,7 +53,6 @@
       "Scramble":   "U' D' F U F' R D2 R D' L F L2 U2 R2 F' D2 R2 B L2 D2 B"
     };
 
-
     /* ---------------------------------------------------------
       S3 — another NEW algorithm set (75 Moves)
     --------------------------------------------------------- */
@@ -61,13 +60,13 @@
       "solveStep1": "D' R' D R' F U2 F' U2 L U' L'",
       "solveStep2": "B U' F' U B' U' F L U2 L' U' L U2 R' U L' U' R U2",
       "solveStep3": "E B' E B E2 L' E L2 E2 L' E' F E' F E F' E2 F' E R E R2 E2 R",
-      "solveStep4": "L' E' L E L2 E L' E' L' L E' L E L2 E L' E' L",
-      "solveStep5": "B2 E2 B2",
+      "solveStep4": "L' E' L E L2 E L' E' L' L E' L E L2 E L' E' L E2",
+      "solveStep5": "B2 E2 B2 E2",
       "resetStep1": "L U L' U2 F U2 F' R D' R D",
       "resetStep2": "U2 R' U L U' R U2 L' U L U2 L' F' U B U' F U B'",
       "resetStep3": "R' E2 R2 E' R' E' F E2 F E' F' E F' E L E2 L2 E' L E2 B' E' B E'",
-      "resetStep4": "L' E L E' L2 E' L' E L' L E L E' L2 E' L' E L",
-      "resetStep5": "B2 E2 B2",
+      "resetStep4": "L' E L E' L2 E' L' E L' L E L E' L2 E' L' E L E2",
+      "resetStep5": "E2 B2 E2 B2",
       "FullSolve":  "D' R' D R' F U2 F' U2 L U' L' B U' F' U B' U' F L U2 L' U' L U2 R' U L' U' R U2 E B' E B E2 L' E L2 E2 L' E' F E' F E F' E2 F' E R E R2 E2 R L' E' L E L2 E L' E' L' L E' L E L2 E L' E' L B2 E2 B2",
       "Scramble":  "D' L U2 F' R' L2 U F U R D2 R2 L D2 R B2 L' F2 D2 B2"
     };
