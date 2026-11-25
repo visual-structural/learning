@@ -23,12 +23,12 @@
       "solveStep2": "R U' L' U R' U' L R U' L' U R' U' L R U2 R' U' R U2' L' U R' U' L U'",
       "solveStep3": "B2 E B2 E' R' E2 R L E2 L' B E B' E2 F' E F E' L E2 L' E F2 E F' E2 F'",
       "solveStep4": "F E' F E F2 E F' E' F",
-      "solveStep5": "B2 E B2",
+      "solveStep5": "B2 E B2 E",
       "resetStep1": "U' R' U2 R B U2 B2 U2 F' U' F R2 L",
       "resetStep2": "U L' U R U' L U2 R' U R U2 R' L' U R U' L U R' L' U R U' L U R'",
       "resetStep3": "F E2 F E' F2 E' L E2 L' E F' E' F E2 B E' B' L E2 L' R' E2 R E B2 E' B2",
       "resetStep4": "F' E F E' F2 E' F' E F'",
-      "resetStep5": "B2 E' B2",
+      "resetStep5": "B2 E' B2 E",
 
       "FullSolve": "L' R2 F' U F U2 B2 U2 B' R' U2 R U R U' L' U R' U' L R U' L' U R' U' L R U2 R' U' R U2' L' U R' U' L U' " +
                   "B2 E B2 E' R' E2 R L E2 L' B E B' E2 F' E F E' L E2 L' E F2 E F' E2 F' F E' F E F2 E F' E' F B2 E B2 E ",
