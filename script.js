@@ -60,13 +60,13 @@
       "solveStep1": "D' R' D R' F U2 F' U2 L U' L'",
       "solveStep2": "B U' F' U B' U' F L U2 L' U' L U2 R' U L' U' R U2",
       "solveStep3": "E B' E B E2 L' E L2 E2 L' E' F E' F E F' E2 F' E R E R2 E2 R",
-      "solveStep4": "L' E' L E L2 E L' E' L' L E' L E L2 E L' E' L E2",
-      "solveStep5": "B2 E2 B2 E2",
+      "solveStep4": "L' E' L E L2 E L' E' L' L E' L E L2 E L' E' L",
+      "solveStep5": "B2 E2 B2",
       "resetStep1": "L U L' U2 F U2 F' R D' R D",
       "resetStep2": "U2 R' U L U' R U2 L' U L U2 L' F' U B U' F U B'",
       "resetStep3": "R' E2 R2 E' R' E' F E2 F E' F' E F' E L E2 L2 E' L E2 B' E' B E'",
-      "resetStep4": "L' E L E' L2 E' L' E L' L E L E' L2 E' L' E L E2",
-      "resetStep5": "E2 B2 E2 B2",
+      "resetStep4": "L' E L E' L2 E' L' E L' L E L E' L2 E' L' E L",
+      "resetStep5": "B2 E2 B2",
       "FullSolve":  "D' R' D R' F U2 F' U2 L U' L' B U' F' U B' U' F L U2 L' U' L U2 R' U L' U' R U2 E B' E B E2 L' E L2 E2 L' E' F E' F E F' E2 F' E R E R2 E2 R L' E' L E L2 E L' E' L' L E' L E L2 E L' E' L B2 E2 B2",
       "Scramble":  "D' L U2 F' R' L2 U F U R D2 R2 L D2 R B2 L' F2 D2 B2"
     };
